@@ -84,3 +84,21 @@
 !*.elf
 !*.bmm
 !*.xmp
+
+
+
+
+
+#######
+#Added VStudio files (.cpp,.h, etc.)
+!*.cpp
+!*.sln
+!*.vs
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
+!*.h
+#!*.
+#!*.
+#!*.
+# ^^   Add every other file excluded
