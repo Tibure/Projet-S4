@@ -23,6 +23,7 @@ bool Game::update()
     if (checkEatsApple()) {
         _snake.grow();
         _score++;
+        placeApple();
     }
     return true;
 }
