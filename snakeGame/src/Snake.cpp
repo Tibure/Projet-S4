@@ -5,6 +5,7 @@ Snake::Snake() {
     _direction = UP;
     _body[0].x = 300;
     _body[0].y = 300;
+    move();
 }
 
 Snake::Snake(Position position) {
@@ -12,6 +13,7 @@ Snake::Snake(Position position) {
     _direction = UP;
     _body[0].x = position.x;
     _body[0].y = position.y;
+    move();
 }
 
 void Snake::move() {
@@ -36,7 +38,7 @@ void Snake::move() {
 }
 
 void Snake::grow() {
-    return; //TODO Faire en sorte qu'on puisse grossir
+    _length++;
 }
 
 void Snake::setDirection(int direction) {
