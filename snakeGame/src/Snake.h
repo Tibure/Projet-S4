@@ -19,7 +19,7 @@ public:
     int getLength();
     Position* getBody();
 
-    bool checkCollision(Position position);
+    bool checkCollision(Position position, bool ignoreHead = false);
 }
 
 #endif

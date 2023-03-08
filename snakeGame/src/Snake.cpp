@@ -55,8 +55,8 @@ Position* Snake::getBody() {
     return _body;
 }
 
-bool Snake::checkCollision(Position position) {
-    for (int i = 0; i < _length; i++) {
+bool Snake::checkCollision(Position position, bool ignoreHead) {
+    for (int i = ignoreHead ? 1 : 0; i < _length; i++) {
         if (_body[i].x == position.x && _body[i].y == position.y) {
             return true;
         }
