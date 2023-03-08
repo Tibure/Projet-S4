@@ -38,7 +38,7 @@ void Snake::move() {
 }
 
 void Snake::grow() {
-    _length++;
+    return; //TODO Faire grandir le serpent
 }
 
 void Snake::setDirection(int direction) {
