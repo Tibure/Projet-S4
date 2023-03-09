@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="atelier4_v_proc_ss_0_0_synth_1" LaunchDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_0837_smartconnect_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_0837_smartconnect_0_0_synth_1" LaunchDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/bd_0837_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="atelier4_v_proc_ss_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER pixelDataToVideoStream
+	OPTION supported_peripherals = (pixelDataToVideoStream);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = pixelDataToVideoStream;
+END DRIVER

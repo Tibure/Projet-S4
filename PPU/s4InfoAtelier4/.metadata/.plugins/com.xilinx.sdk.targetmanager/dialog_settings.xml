@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="project_system-bitFile" value="C:\Travail\s4InfoAtelier4\s4InfoAtelier4.runs\impl_1\atelier4_wrapper.bit"/>
+	<item key="project_system-bmmFile" value=""/>
+	<item key="project_system-target" value="Local"/>
+	<item key="project_system-device" value="Auto Detect"/>
+	<item key="project_system-partial_bit" value="false"/>
+	<item key="project_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="project_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351A77E3EA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351A77E3EA-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351A77E3EA-13722093-0&quot;}}]}"/>
+</section>

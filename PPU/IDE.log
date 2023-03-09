@@ -1,0 +1,30 @@
+10:41:22 ERROR : Workspace location C:\S4 Work\Projet\Travail contains spaces. Please switch to a workspace without spaces in its path.
+10:41:23 INFO  : Registering command handlers for Vitis TCF services
+10:41:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\S4 Work\Projet\Travail\temp_xsdb_launch_script.tcl
+10:41:25 ERROR : (XSDB Server)couldn't read file "C:\S4": permission denied
+
+10:41:26 INFO  : Platform repository initialization has completed.
+10:43:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\S4Work\Projet\Travail\temp_xsdb_launch_script.tcl
+10:43:58 INFO  : Registering command handlers for Vitis TCF services
+10:44:01 INFO  : XSCT server has started successfully.
+10:44:02 INFO  : Platform repository initialization has completed.
+10:44:02 INFO  : Successfully done setting XSCT server connection channel  
+10:44:02 INFO  : plnx-install-location is set to ''
+10:44:02 INFO  : Successfully done query RDI_DATADIR 
+10:44:02 INFO  : Successfully done setting workspace for the tool. 
+10:47:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\S4Work\Projet\Travail\temp_xsdb_launch_script.tcl
+10:47:42 INFO  : Registering command handlers for Vitis TCF services
+10:47:44 INFO  : XSCT server has started successfully.
+10:47:44 INFO  : Successfully done setting XSCT server connection channel  
+10:47:44 INFO  : plnx-install-location is set to ''
+10:47:44 INFO  : Successfully done setting workspace for the tool. 
+10:47:44 INFO  : Successfully done query RDI_DATADIR 
+10:47:45 INFO  : Platform repository initialization has completed.
+14:42:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\temp_xsdb_launch_script.tcl
+14:42:53 INFO  : Registering command handlers for Vitis TCF services
+14:42:56 INFO  : XSCT server has started successfully.
+14:42:57 INFO  : Successfully done setting XSCT server connection channel  
+14:42:57 INFO  : plnx-install-location is set to ''
+14:42:57 INFO  : Successfully done query RDI_DATADIR 
+14:42:58 INFO  : Successfully done setting workspace for the tool. 
+14:42:58 INFO  : Platform repository initialization has completed.

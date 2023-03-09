@@ -1,0 +1,33 @@
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_axi_vdma_0_0/sim/atelier4_axi_vdma_0_0.vhd" \
+"../../../bd/atelier4/ipshared/91fd/hdl/mycolorRegister_v1_0_S00_AXI.vhd" \
+"../../../bd/atelier4/ipshared/91fd/hdl/mycolorRegister_v1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_mycolorRegister_0_0/sim/atelier4_mycolorRegister_0_0.vhd" \
+"../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd" \
+"../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/sim/atelier4_pixelDataToVideoStre_0_3.vhd" \
+"../../../bd/atelier4/ip/atelier4_proc_sys_reset_0_0/sim/atelier4_proc_sys_reset_0_0.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/ClockGen.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/SyncAsync.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/SyncAsyncReset.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/DVI_Constants.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/OutputSERDES.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/TMDS_Encoder.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/rgb2dvi.vhd" \
+"../../../bd/atelier4/ip/atelier4_rgb2dvi_0_0/sim/atelier4_rgb2dvi_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_de31_psr0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_de31_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_de31_psr_aclk1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/sim/bd_1ef0_psr0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/sim/bd_1ef0_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/sim/bd_1ef0_psr_aclk1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_testPatternGen2_0_0/sim/atelier4_testPatternGen2_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/sim/bd_0cc7_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/sim/bd_0837_rst_axis_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/sim/bd_0837_reset_sel_axis_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/sim/bd_0837.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/sim/atelier4_v_proc_ss_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_tc_0_0/sim/atelier4_v_tc_0_0.vhd" \
+"../../../bd/atelier4/sim/atelier4.vhd" \
+
+nosort

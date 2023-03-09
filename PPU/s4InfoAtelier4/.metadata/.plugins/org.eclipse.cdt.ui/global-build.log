@@ -1,0 +1,17 @@
+12:22:04 **** Incremental Build of project atelier4_wrapper ****
+buildplatform.bat 59010 atelier4_wrapper no_domain_build 
+XSDB Server Channel: tcfchan#1
+12:22:10 **** Build of configuration Debug for project project ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+12:22:16 **** Build of configuration Debug for project project_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 59010 C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Travail/s4InfoAtelier4/project_system/Debug/system.bif
+sdcard_gen --xpfm C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/Travail/s4InfoAtelier4/project_system/Debug/system.bif --bitstream C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit --elf C:/Travail/s4InfoAtelier4/project/Debug/project.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+Running C:/S4/Vitis/2020.2/bin/bootgen  -image C:/Travail/s4InfoAtelier4/project_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
