@@ -45,39 +45,40 @@ begin
 
    case (Color_In) is
       when "0000" =>
-        Color_Out <= "010011001001111101001001"; -- Vert Foncé
+        Color_Out <= x"4FFFFF"; -- Transparent
       when "0001" =>
-        Color_out <= "011000101110000101011110"; --Vert pâle
+        Color_out <= x"4C499F"; -- verrt foncé 
       when "0010" =>
-        Color_out <= "111111110000000000000000"; -- Rouge
+        Color_out <= x"625EE1"; -- vert paêle  
       when "0011" =>
-        Color_out <= "111111111010010000011011"; -- Orange
+        Color_out <= x"FF0000"; -- rouge       
       when "0100" =>
-        Color_out <= "111111111111111100000000"; -- Jaune
+        Color_out <= x"FF1BA4"; -- orange      
       when "0101" =>
-        Color_out <= "011111110000000011111111"; -- Bleu foncé         
+        Color_out <= x"FFFFFF"; -- blanc           
       when "0110" =>
-        Color_out <= "011001101011001011111111"; -- Bleu pâle
+        Color_out <= x"606060"; -- gris foncé  
       when "0111" =>
-        Color_out <= "111111111111111111111111"; -- Blanc
+        Color_out <= x"C0C0C0"; -- gris pâle   
       when "1000" =>
-        Color_out <= "011000000110000001100000"; -- Gris Foncé
+        Color_out <= x"000000"; -- noir        
       when "1001" =>
-        Color_out <= "110000001100000011000000"; -- Gris pâle
+        Color_out <= x"99004C"; -- brun        
       when "1010" =>
-        Color_out <= "000000000000000000000000"; -- Noir
+        Color_out <= x"999900"; -- mauve foncé 
       when "1011" =>
-        Color_out <= "001100111111111111111111"; -- Turquoise
+        Color_out <= x"FFFF66"; -- mauve pâle  
       when "1100" =>
-        Color_out <= "100110010000000010011001"; -- Mauve foncé
+        Color_out <= x"CC6600"; -- Rose        
       when "1101" =>
-        Color_out <= "111111110110011011111111"; -- Mauve pâle
+        Color_out <= x"7FFF00"; -- bleu foncé  
       when "1110" =>
-        Color_out <= "110011000000000001100110"; -- Rose 
+        Color_out <= x"66FFB2"; -- bleu pâle   
       when "1111" =>
-        Color_out <= "100110010100110000000000"; -- Brun 
-      when others =>
-        Color_out <= "111111111111111111111111"; -- Blanc
+        Color_out <= x"FF00FF"; -- Blanc       
+
+
+        Color_out <= "111111111111111111111111";                
    end case;
 end process;
 

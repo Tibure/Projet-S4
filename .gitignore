@@ -4,6 +4,7 @@
 *.log
 *.debug
 *.str
+*.vhdl
 
 *.tmp
 *.rst
