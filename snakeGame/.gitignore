@@ -1,0 +1,4 @@
+#ignore this file, it's just for testing the build process
+out
+
+*.o

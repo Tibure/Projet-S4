@@ -4,10 +4,11 @@
 Game::Game(int areaWidth, int areaHeight)
 {
     _snake = Snake(Position(areaWidth/2, areaHeight/2));
-    placeApple();
     _score = 0;
     _areaWidth = areaWidth;
     _areaHeight = areaHeight;
+
+    placeApple();
 }
 
 Game::~Game()
