@@ -19,22 +19,22 @@ int main(int argc, char **argv)
 
 	map<string, string> codeCouleur;
 	map<string, string>::iterator it;
-	codeCouleur.insert({"010011001001111101001001", "0000"});
-	codeCouleur.insert({"011000101110000101011110", "0001"});
-	codeCouleur.insert({"111111110000000000000000", "0010"});
-	codeCouleur.insert({"111111111010010000011011", "0011"});
-	codeCouleur.insert({"111111111111111100000000", "0100"});
-	codeCouleur.insert({"011111110000000011111111", "0101"});
-	codeCouleur.insert({"011001101011001011111111", "0110"});
-	codeCouleur.insert({"111111111111111111111111", "0111"});
-	codeCouleur.insert({"011000000110000001100000", "1000"});
-	codeCouleur.insert({"110000001100000011000000", "1001"});
-	codeCouleur.insert({"000000000000000000000000", "1010"});
-	codeCouleur.insert({"001100111111111111111111", "1011"});
-	codeCouleur.insert({"100110010000000010011001", "1100"});
-	codeCouleur.insert({"111111110110011011111111", "1101"});
-	codeCouleur.insert({"110011000000000001100110", "1110"});
-	codeCouleur.insert({"100110010100110000000000", "1111"});
+	codeCouleur.insert({"010011111111111111111111", "0000"});
+	codeCouleur.insert({"010011001001111101001001", "0001"});
+	codeCouleur.insert({"011000101110000101011110", "0010"});
+	codeCouleur.insert({"111111110000000000000000", "0011"});
+	codeCouleur.insert({"111111111010010000011011", "0100"});
+	codeCouleur.insert({"111111111111111111111111", "0101"});
+	codeCouleur.insert({"011000000110000001100000", "0110"});
+	codeCouleur.insert({"110000001100000011000000", "0111"});
+	codeCouleur.insert({"000000000000000000000000", "1000"});
+	codeCouleur.insert({"100110010100110000000000", "1001"});
+	codeCouleur.insert({"100110010000000010011001", "1010"});
+	codeCouleur.insert({"111111110110011011111111", "1011"});
+	codeCouleur.insert({"110011000000000001100110", "1100"});
+	codeCouleur.insert({"011111110000000011111111", "1101"});
+	codeCouleur.insert({"011001101011001011111111", "1110"});
+	codeCouleur.insert({"111111111111111100000000", "1111"});
 	
     bitmap_image image(fileName + ".bmp");
 
@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 			if(it != codeCouleur.end())
 				outputFile4 <<"\""<< it->second <<"\", ";
 			else
-				outputFile4 << "\"" << "XXXX" << "\", ";		//Vide
+				outputFile4 << "\"" << "0000" << "\", ";		//Transparent
 			
 		}
 		outputFile4 << endl;
