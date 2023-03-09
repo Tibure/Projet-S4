@@ -10,6 +10,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.tile_package.all;
+use work.ppu_package.all;
 
 entity tile_handler is
 port (

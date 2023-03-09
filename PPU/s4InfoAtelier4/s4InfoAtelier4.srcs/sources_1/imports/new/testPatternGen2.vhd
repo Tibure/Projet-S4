@@ -49,12 +49,12 @@ architecture Behavioral of testPatternGen2 is
 
 begin
 
-process(i_y)
+process(i_x)
 begin
-   if(i_y(3) = '1') then
-       o_dataPixel <= i_colorDataA(23 downto 0);
-   else
+   if(i_x(3) = '1') then
        o_dataPixel <= i_colorDataB(23 downto 0);
+   else
+       o_dataPixel <= i_colorDataA(23 downto 0);
    end if;
 end process;
 

@@ -9,14 +9,16 @@ int main()
 	configureScaler();
     configureVdma();
 
-    int colorA = 0;
-    int colorB = 0xFF;
-    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorB);
+    int colorA = 0xFF;
+    int colorB = 0xFF00;
+    int colorC = 0xFF0000;
+    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorC);
+
 
     while(1)
     {
     MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, colorA );
-    colorA = colorA + 1024;
+    colorA = colorA + 0;
     sleep(1);
     }
 

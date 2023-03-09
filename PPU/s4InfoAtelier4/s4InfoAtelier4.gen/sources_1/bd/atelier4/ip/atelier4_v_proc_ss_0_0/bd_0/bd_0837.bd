@@ -687,6 +687,12 @@
       }
     },
     "interface_nets": {
+      "intf_net_axis_register_slice_0_M_AXIS": {
+        "interface_ports": [
+          "axis_register_slice_0/M_AXIS",
+          "vsc/s_axis_video"
+        ]
+      },
       "intf_net_bdry_in_s_axi_ctrl": {
         "interface_ports": [
           "s_axi_ctrl",
@@ -697,12 +703,6 @@
         "interface_ports": [
           "s_axis",
           "input_size_set/S_AXIS"
-        ]
-      },
-      "intf_net_smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "hsc/s_axi_CTRL"
         ]
       },
       "intf_net_axis_fifo_M_AXIS": {
@@ -717,16 +717,16 @@
           "vsc/s_axi_CTRL"
         ]
       },
+      "intf_net_smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "hsc/s_axi_CTRL"
+        ]
+      },
       "intf_net_vsc_m_axis_video": {
         "interface_ports": [
           "vsc/m_axis_video",
           "axis_fifo/S_AXIS"
-        ]
-      },
-      "intf_net_axis_register_slice_0_M_AXIS": {
-        "interface_ports": [
-          "axis_register_slice_0/M_AXIS",
-          "vsc/s_axis_video"
         ]
       },
       "intf_net_input_size_set_M_AXIS": {

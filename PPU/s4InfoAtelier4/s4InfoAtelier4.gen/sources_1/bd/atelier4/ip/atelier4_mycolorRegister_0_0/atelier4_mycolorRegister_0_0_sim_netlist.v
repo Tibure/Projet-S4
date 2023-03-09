@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Mar  3 12:00:10 2022
-// Host        : DESKTOP-7O8NHLB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top atelier4_mycolorRegister_0_0 -prefix
-//               atelier4_mycolorRegister_0_0_ atelier4_mycolorRegister_0_0_sim_netlist.v
+// Date        : Thu Mar  9 11:46:13 2023
+// Host        : LAPTOP-KI2VB3H7 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0_sim_netlist.v
 // Design      : atelier4_mycolorRegister_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -111,6 +111,7 @@ module atelier4_mycolorRegister_0_0
         .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "mycolorRegister_v1_0" *) 
 module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
    (S_AXI_AWREADY,
     S_AXI_WREADY,
@@ -193,6 +194,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
         .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "mycolorRegister_v1_0_S00_AXI" *) 
 module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
    (S_AXI_AWREADY,
     S_AXI_WREADY,

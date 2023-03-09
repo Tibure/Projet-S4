@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="bd_0837" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1674509865"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1674509865"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1674509865"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1674509865"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1678382065"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1678382065"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1678382065"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1678382065"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\bd_0837.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -38,11 +38,6 @@
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="sim\bd_0837.protoinst">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
   </CompositeFile>

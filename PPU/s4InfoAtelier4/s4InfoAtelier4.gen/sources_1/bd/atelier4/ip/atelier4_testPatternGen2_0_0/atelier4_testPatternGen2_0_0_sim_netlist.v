@@ -1,8 +1,8 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 14:35:41 2023
-// Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+// Date        : Thu Mar  9 12:15:24 2023
+// Host        : LAPTOP-KI2VB3H7 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0_sim_netlist.v
 // Design      : atelier4_testPatternGen2_0_0
@@ -36,14 +36,14 @@ module atelier4_testPatternGen2_0_0
   wire \<const1> ;
   wire [31:0]i_colorDataA;
   wire [31:0]i_colorDataB;
-  wire [11:0]i_y;
+  wire [11:0]i_x;
   wire [23:0]o_dataPixel;
 
   assign o_dataValid = \<const1> ;
   atelier4_testPatternGen2_0_0_testPatternGen2 U0
        (.i_colorDataA(i_colorDataA[23:0]),
         .i_colorDataB(i_colorDataB[23:0]),
-        .i_y(i_y[3]),
+        .i_x(i_x[3]),
         .o_dataPixel(o_dataPixel));
   VCC VCC
        (.P(\<const1> ));
@@ -52,210 +52,210 @@ endmodule
 (* ORIG_REF_NAME = "testPatternGen2" *) 
 module atelier4_testPatternGen2_0_0_testPatternGen2
    (o_dataPixel,
-    i_colorDataA,
     i_colorDataB,
-    i_y);
+    i_colorDataA,
+    i_x);
   output [23:0]o_dataPixel;
-  input [23:0]i_colorDataA;
   input [23:0]i_colorDataB;
-  input [0:0]i_y;
+  input [23:0]i_colorDataA;
+  input [0:0]i_x;
 
   wire [23:0]i_colorDataA;
   wire [23:0]i_colorDataB;
-  wire [0:0]i_y;
+  wire [0:0]i_x;
   wire [23:0]o_dataPixel;
 
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[0]_INST_0 
-       (.I0(i_colorDataA[0]),
-        .I1(i_colorDataB[0]),
-        .I2(i_y),
+       (.I0(i_colorDataB[0]),
+        .I1(i_colorDataA[0]),
+        .I2(i_x),
         .O(o_dataPixel[0]));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[10]_INST_0 
-       (.I0(i_colorDataA[10]),
-        .I1(i_colorDataB[10]),
-        .I2(i_y),
+       (.I0(i_colorDataB[10]),
+        .I1(i_colorDataA[10]),
+        .I2(i_x),
         .O(o_dataPixel[10]));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[11]_INST_0 
-       (.I0(i_colorDataA[11]),
-        .I1(i_colorDataB[11]),
-        .I2(i_y),
+       (.I0(i_colorDataB[11]),
+        .I1(i_colorDataA[11]),
+        .I2(i_x),
         .O(o_dataPixel[11]));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[12]_INST_0 
-       (.I0(i_colorDataA[12]),
-        .I1(i_colorDataB[12]),
-        .I2(i_y),
+       (.I0(i_colorDataB[12]),
+        .I1(i_colorDataA[12]),
+        .I2(i_x),
         .O(o_dataPixel[12]));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[13]_INST_0 
-       (.I0(i_colorDataA[13]),
-        .I1(i_colorDataB[13]),
-        .I2(i_y),
+       (.I0(i_colorDataB[13]),
+        .I1(i_colorDataA[13]),
+        .I2(i_x),
         .O(o_dataPixel[13]));
   (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[14]_INST_0 
-       (.I0(i_colorDataA[14]),
-        .I1(i_colorDataB[14]),
-        .I2(i_y),
+       (.I0(i_colorDataB[14]),
+        .I1(i_colorDataA[14]),
+        .I2(i_x),
         .O(o_dataPixel[14]));
   (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[15]_INST_0 
-       (.I0(i_colorDataA[15]),
-        .I1(i_colorDataB[15]),
-        .I2(i_y),
+       (.I0(i_colorDataB[15]),
+        .I1(i_colorDataA[15]),
+        .I2(i_x),
         .O(o_dataPixel[15]));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[16]_INST_0 
-       (.I0(i_colorDataA[16]),
-        .I1(i_colorDataB[16]),
-        .I2(i_y),
+       (.I0(i_colorDataB[16]),
+        .I1(i_colorDataA[16]),
+        .I2(i_x),
         .O(o_dataPixel[16]));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[17]_INST_0 
-       (.I0(i_colorDataA[17]),
-        .I1(i_colorDataB[17]),
-        .I2(i_y),
+       (.I0(i_colorDataB[17]),
+        .I1(i_colorDataA[17]),
+        .I2(i_x),
         .O(o_dataPixel[17]));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[18]_INST_0 
-       (.I0(i_colorDataA[18]),
-        .I1(i_colorDataB[18]),
-        .I2(i_y),
+       (.I0(i_colorDataB[18]),
+        .I1(i_colorDataA[18]),
+        .I2(i_x),
         .O(o_dataPixel[18]));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[19]_INST_0 
-       (.I0(i_colorDataA[19]),
-        .I1(i_colorDataB[19]),
-        .I2(i_y),
+       (.I0(i_colorDataB[19]),
+        .I1(i_colorDataA[19]),
+        .I2(i_x),
         .O(o_dataPixel[19]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[1]_INST_0 
-       (.I0(i_colorDataA[1]),
-        .I1(i_colorDataB[1]),
-        .I2(i_y),
+       (.I0(i_colorDataB[1]),
+        .I1(i_colorDataA[1]),
+        .I2(i_x),
         .O(o_dataPixel[1]));
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[20]_INST_0 
-       (.I0(i_colorDataA[20]),
-        .I1(i_colorDataB[20]),
-        .I2(i_y),
+       (.I0(i_colorDataB[20]),
+        .I1(i_colorDataA[20]),
+        .I2(i_x),
         .O(o_dataPixel[20]));
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[21]_INST_0 
-       (.I0(i_colorDataA[21]),
-        .I1(i_colorDataB[21]),
-        .I2(i_y),
+       (.I0(i_colorDataB[21]),
+        .I1(i_colorDataA[21]),
+        .I2(i_x),
         .O(o_dataPixel[21]));
   (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[22]_INST_0 
-       (.I0(i_colorDataA[22]),
-        .I1(i_colorDataB[22]),
-        .I2(i_y),
+       (.I0(i_colorDataB[22]),
+        .I1(i_colorDataA[22]),
+        .I2(i_x),
         .O(o_dataPixel[22]));
   (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[23]_INST_0 
-       (.I0(i_colorDataA[23]),
-        .I1(i_colorDataB[23]),
-        .I2(i_y),
+       (.I0(i_colorDataB[23]),
+        .I1(i_colorDataA[23]),
+        .I2(i_x),
         .O(o_dataPixel[23]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[2]_INST_0 
-       (.I0(i_colorDataA[2]),
-        .I1(i_colorDataB[2]),
-        .I2(i_y),
+       (.I0(i_colorDataB[2]),
+        .I1(i_colorDataA[2]),
+        .I2(i_x),
         .O(o_dataPixel[2]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[3]_INST_0 
-       (.I0(i_colorDataA[3]),
-        .I1(i_colorDataB[3]),
-        .I2(i_y),
+       (.I0(i_colorDataB[3]),
+        .I1(i_colorDataA[3]),
+        .I2(i_x),
         .O(o_dataPixel[3]));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[4]_INST_0 
-       (.I0(i_colorDataA[4]),
-        .I1(i_colorDataB[4]),
-        .I2(i_y),
+       (.I0(i_colorDataB[4]),
+        .I1(i_colorDataA[4]),
+        .I2(i_x),
         .O(o_dataPixel[4]));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[5]_INST_0 
-       (.I0(i_colorDataA[5]),
-        .I1(i_colorDataB[5]),
-        .I2(i_y),
+       (.I0(i_colorDataB[5]),
+        .I1(i_colorDataA[5]),
+        .I2(i_x),
         .O(o_dataPixel[5]));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[6]_INST_0 
-       (.I0(i_colorDataA[6]),
-        .I1(i_colorDataB[6]),
-        .I2(i_y),
+       (.I0(i_colorDataB[6]),
+        .I1(i_colorDataA[6]),
+        .I2(i_x),
         .O(o_dataPixel[6]));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[7]_INST_0 
-       (.I0(i_colorDataA[7]),
-        .I1(i_colorDataB[7]),
-        .I2(i_y),
+       (.I0(i_colorDataB[7]),
+        .I1(i_colorDataA[7]),
+        .I2(i_x),
         .O(o_dataPixel[7]));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[8]_INST_0 
-       (.I0(i_colorDataA[8]),
-        .I1(i_colorDataB[8]),
-        .I2(i_y),
+       (.I0(i_colorDataB[8]),
+        .I1(i_colorDataA[8]),
+        .I2(i_x),
         .O(o_dataPixel[8]));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \o_dataPixel[9]_INST_0 
-       (.I0(i_colorDataA[9]),
-        .I1(i_colorDataB[9]),
-        .I2(i_y),
+       (.I0(i_colorDataB[9]),
+        .I1(i_colorDataA[9]),
+        .I2(i_x),
         .O(o_dataPixel[9]));
 endmodule
 `ifndef GLBL

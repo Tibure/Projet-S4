@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 16:41:44 2023
+// Date        : Mon Jan 23 16:41:43 2023
 // Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top atelier4_v_proc_ss_0_0 -prefix
+//               atelier4_v_proc_ss_0_0_ atelier4_v_proc_ss_0_0_sim_netlist.v
 // Design      : atelier4_v_proc_ss_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -185,7 +185,7 @@ module atelier4_v_proc_ss_0_0
         .s_axis_tvalid(s_axis_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837" *) (* hw_handoff = "atelier4_v_proc_ss_0_0.hwdef" *) 
+(* hw_handoff = "atelier4_v_proc_ss_0_0.hwdef" *) 
 module atelier4_v_proc_ss_0_0_bd_0837
    (aclk_axis,
     aclk_ctrl,
@@ -700,7 +700,6 @@ module atelier4_v_proc_ss_0_0_bd_0837
         .Dout(net_xlslice_1_Dout));
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_axis_fifo_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_axis_fifo_0
    (s_axis_aresetn,
     s_axis_aclk,
@@ -746,7 +745,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_axis_fifo_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_axis_register_slice_0_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_axis_register_slice_0_0
    (aclk,
     aresetn,
@@ -792,7 +790,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_axis_register_slice_0_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_hsc_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_hsc_0
    (s_axi_CTRL_AWADDR,
     s_axi_CTRL_AWVALID,
@@ -874,7 +871,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_hsc_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_input_size_set_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_input_size_set_0
    (aclk,
     aresetn,
@@ -920,7 +916,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_input_size_set_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_reset_sel_axis_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_reset_sel_axis_0
    (s_axi_aclk,
     s_axi_aresetn,
@@ -970,7 +965,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_reset_sel_axis_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_rst_axis_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_rst_axis_0
    (slowest_sync_clk,
     ext_reset_in,
@@ -996,7 +990,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_rst_axis_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_smartconnect_0_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_smartconnect_0_0
    (aclk,
     aclk1,
@@ -1160,7 +1153,6 @@ module atelier4_v_proc_ss_0_0_bd_0837_smartconnect_0_0
 
 endmodule
 
-(* ORIG_REF_NAME = "bd_0837_vsc_0" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_vsc_0
    (s_axi_CTRL_AWADDR,
     s_axi_CTRL_AWVALID,
@@ -1242,8 +1234,7 @@ module atelier4_v_proc_ss_0_0_bd_0837_vsc_0
 
 endmodule
 
-(* CHECK_LICENSE_TYPE = "bd_0837_xlslice_0_0,xlslice_v1_0_2_xlslice,{}" *) (* ORIG_REF_NAME = "bd_0837_xlslice_0_0" *) (* downgradeipidentifiedwarnings = "yes" *) 
-(* x_core_info = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "bd_0837_xlslice_0_0,xlslice_v1_0_2_xlslice,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_xlslice_0_0
    (Din,
     Dout);
@@ -1255,8 +1246,7 @@ module atelier4_v_proc_ss_0_0_bd_0837_xlslice_0_0
   assign Dout[0] = Din[0];
 endmodule
 
-(* CHECK_LICENSE_TYPE = "bd_0837_xlslice_1_0,xlslice_v1_0_2_xlslice,{}" *) (* ORIG_REF_NAME = "bd_0837_xlslice_1_0" *) (* downgradeipidentifiedwarnings = "yes" *) 
-(* x_core_info = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "bd_0837_xlslice_1_0,xlslice_v1_0_2_xlslice,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *) 
 module atelier4_v_proc_ss_0_0_bd_0837_xlslice_1_0
    (Din,
     Dout);
