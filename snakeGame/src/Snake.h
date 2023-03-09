@@ -20,6 +20,6 @@ public:
     Position* getBody();
 
     bool checkCollision(Position position, bool ignoreHead = false);
-}
+};
 
 #endif
