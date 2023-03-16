@@ -11,7 +11,7 @@ constant OP_SIZE : integer := 4;
 
 constant CC_IN_ROW    : integer := 16;
 constant CC_IN_COL    : integer := 16;
-constant CC_SIZE : integer := 5;
+constant CC_SIZE : integer := 3;
 
 constant TEX_INDEX_SZ : integer := 7;
 constant TILE_IN_ROW : integer := 64;
