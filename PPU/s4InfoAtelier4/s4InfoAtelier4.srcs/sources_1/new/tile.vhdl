@@ -15,8 +15,8 @@ port (
     i_x : in std_logic_vector(3 downto 0);
     i_y : in std_logic_vector(3 downto 0);
     i_rotation : in std_logic_vector(1 downto 0);
-    i_tileID : in std_logic_Vector(7 downto 0);
-    o_CourlorCode : out std_logic_vector(3 downto 0)
+    i_tileID : in std_logic_Vector(3 downto 0);
+    o_ColorCode : out std_logic_vector(3 downto 0)
     
     ); end tile;
 
@@ -51,7 +51,7 @@ begin
             s_index(3 downto 0) <= i_y(3 downto 0);
        end case;
 				
-	    o_CourlorCode   <= s_tile_textures(to_integer(unsigned(i_tileID)))
+	    o_ColorCode   <= s_tile_textures(to_integer(unsigned(i_tileID)))
                            (to_integer(unsigned(s_index)));
                            
    

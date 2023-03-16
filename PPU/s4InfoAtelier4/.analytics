@@ -50,3 +50,20 @@ timestamp=[2023-03-09 12:21:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2023-03-09 12:22:08], mode=PLATFORM_GENERATION, duration=0:00:03.621, duration_ms=3621, data={name=atelier4_wrapper}
 timestamp=[2023-03-09 12:22:10], mode=BUILD, duration=0:00:00.403, duration_ms=403, data={name=project, configuration=Debug, clean_build=false}
 timestamp=[2023-03-09 12:22:23], mode=BUILD, duration=0:00:06.545, duration_ms=6545, data={name=project_system, configuration=Debug, clean_build=false}
+timestamp=[2023-03-16 14:50:17], mode=WORKBENCH_START, duration=0:00:06.650, duration_ms=6650, data={}
+timestamp=[2023-03-16 14:50:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.914, duration_ms=914, data={editors_count=27, platform_editors_count=18, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,project,project_system}
+timestamp=[2023-03-16 14:50:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.336, duration_ms=3336, data={}
+timestamp=[2023-03-16 14:57:59], mode=PLATFORM_GENERATION, duration=0:00:11.978, duration_ms=11978, data={name=atelier4_wrapper}
+timestamp=[2023-03-16 14:58:01], mode=BUILD, duration=0:00:00.676, duration_ms=676, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-16 14:58:10], mode=BUILD, duration=0:00:04.347, duration_ms=4347, data={name=project_system, configuration=Debug, clean_build=false}
+timestamp=[2023-03-16 15:00:08], mode=BUILD, duration=0:00:00.291, duration_ms=291, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-16 15:17:17], mode=WORKBENCH_START, duration=0:00:07.576, duration_ms=7576, data={}
+timestamp=[2023-03-16 15:17:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.596, duration_ms=596, data={editors_count=27, platform_editors_count=18, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,project,project_system}
+timestamp=[2023-03-16 15:17:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.098, duration_ms=98, data={}
+timestamp=[2023-03-16 15:18:11], mode=PLATFORM_GENERATION, duration=0:00:01.665, duration_ms=1665, data={name=atelier4_wrapper}
+timestamp=[2023-03-16 15:19:05], mode=WORKBENCH_START, duration=0:00:07.665, duration_ms=7665, data={}
+timestamp=[2023-03-16 15:19:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.591, duration_ms=591, data={editors_count=27, platform_editors_count=18, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,project,project_system}
+timestamp=[2023-03-16 15:19:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.087, duration_ms=87, data={}
+timestamp=[2023-03-16 15:22:41], mode=WORKBENCH_START, duration=0:00:07.579, duration_ms=7579, data={}
+timestamp=[2023-03-16 15:22:41], mode=WORKBENCH_UI_INIT, duration=0:00:00.596, duration_ms=596, data={editors_count=27, platform_editors_count=18, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,project,project_system}
+timestamp=[2023-03-16 15:22:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.080, duration_ms=80, data={}

@@ -1649,3 +1649,116 @@ con
 
 12:22:36 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
 13:39:29 INFO  : Disconnected from the channel tcfchan#3.
+14:50:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+14:50:17 INFO  : XSCT server has started successfully.
+14:50:17 INFO  : plnx-install-location is set to ''
+14:50:17 INFO  : Successfully done setting XSCT server connection channel  
+14:50:17 INFO  : Successfully done setting workspace for the tool. 
+14:50:19 INFO  : Successfully done query RDI_DATADIR 
+14:50:22 INFO  : Platform repository initialization has completed.
+14:50:22 INFO  : Registering command handlers for Vitis TCF services
+14:57:37 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:57:58 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:57:58 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:57:59 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:58:01 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:58:01 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:58:01 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+14:58:01 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:58:05 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+15:00:08 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E3EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E3EA-13722093-0"}' command is executed.
+15:01:20 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+15:01:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E3EA' is selected.
+15:01:28 INFO  : 'jtag frequency' command is executed.
+15:01:29 INFO  : Context for 'APU' is selected.
+15:01:29 INFO  : System reset is completed.
+15:01:32 INFO  : 'after 3000' command is executed.
+15:01:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E3EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E3EA-13722093-0"}' command is executed.
+15:01:33 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+15:01:33 INFO  : Context for 'APU' is selected.
+15:01:33 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:01:33 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:33 INFO  : Context for 'APU' is selected.
+15:01:33 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+15:01:33 INFO  : 'ps7_init' command is executed.
+15:01:33 INFO  : 'ps7_post_config' command is executed.
+15:01:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:34 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:34 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E3EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E3EA-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:34 INFO  : 'con' command is executed.
+15:01:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:01:34 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:13:27 INFO  : Disconnected from the channel tcfchan#3.
+15:17:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+15:17:15 INFO  : XSCT server has started successfully.
+15:17:15 INFO  : Successfully done setting XSCT server connection channel  
+15:17:15 INFO  : plnx-install-location is set to ''
+15:17:15 INFO  : Successfully done setting workspace for the tool. 
+15:17:18 INFO  : Platform repository initialization has completed.
+15:17:18 INFO  : Successfully done query RDI_DATADIR 
+15:17:18 INFO  : Registering command handlers for Vitis TCF services
+15:17:48 ERROR : Failed to update hardware specification for project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa}'. Click on details for more information.
+15:18:05 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:18:14 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:19:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+15:19:04 INFO  : XSCT server has started successfully.
+15:19:04 INFO  : Successfully done setting XSCT server connection channel  
+15:19:04 INFO  : plnx-install-location is set to ''
+15:19:04 INFO  : Successfully done setting workspace for the tool. 
+15:19:06 INFO  : Platform repository initialization has completed.
+15:19:06 INFO  : Successfully done query RDI_DATADIR 
+15:19:07 INFO  : Registering command handlers for Vitis TCF services
+15:19:10 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:19:19 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:19:37 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:20:22 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:21:17 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:21:22 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:22:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+15:22:39 INFO  : XSCT server has started successfully.
+15:22:39 INFO  : plnx-install-location is set to ''
+15:22:39 INFO  : Successfully done setting XSCT server connection channel  
+15:22:39 INFO  : Successfully done setting workspace for the tool. 
+15:22:42 INFO  : Platform repository initialization has completed.
+15:22:42 INFO  : Successfully done query RDI_DATADIR 
+15:22:42 INFO  : Registering command handlers for Vitis TCF services
+15:22:53 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.
+15:24:11 ERROR : Failed to read platform from project 'atelier4_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Travail/s4InfoAtelier4/atelier4_wrapper/platform.spr}'. Click on details for more information.

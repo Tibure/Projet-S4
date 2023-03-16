@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Mar  9 12:19:49 2023
-| Host         : LAPTOP-KI2VB3H7 running 64-bit major release  (build 9200)
+| Date         : Thu Mar 16 15:11:55 2023
+| Host         : XPS-Etienne running 64-bit major release  (build 9200)
 | Command      : report_drc -file atelier4_wrapper_drc_routed.rpt -pb atelier4_wrapper_drc_routed.pb -rpx atelier4_wrapper_drc_routed.rpx
 | Design       : atelier4_wrapper
 | Device       : xc7z010clg400-1
@@ -134,21 +134,21 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-48 net(s) have no routable loads. The problem bus(es) and/or net(s) are atelier4_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
+48 net(s) have no routable loads. The problem bus(es) and/or net(s) are atelier4_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/smartconnect_0/inst/m03_nodes/m03_aw_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_aw_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe
  (the first 15 of 48 listed).
 Related violations: <none>
 

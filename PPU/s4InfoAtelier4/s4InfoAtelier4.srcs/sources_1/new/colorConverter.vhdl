@@ -75,10 +75,9 @@ begin
       when "1110" =>
         Color_out <= x"66FFB2"; -- bleu pâle   
       when "1111" =>
-        Color_out <= x"FF00FF"; -- Blanc       
-
-
-        Color_out <= "111111111111111111111111";                
+        Color_out <= x"FF00FF"; -- Blanc 
+      when others =>
+        Color_out <= x"4FFFFF";               
    end case;
 end process;
 

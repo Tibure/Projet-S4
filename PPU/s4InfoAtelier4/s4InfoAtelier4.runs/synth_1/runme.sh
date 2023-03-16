@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/S4/Vitis/2020.2/bin;C:/S4/Vivado/2020.2/ids_lite/ISE/bin/nt64;C:/S4/Vivado/2020.2/ids_lite/ISE/lib/nt64:C:/S4/Vivado/2020.2/bin
+  PATH=D:/Xilinx/Vitis/2020.2/bin;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2020.2/bin
 else
-  PATH=C:/S4/Vitis/2020.2/bin;C:/S4/Vivado/2020.2/ids_lite/ISE/bin/nt64;C:/S4/Vivado/2020.2/ids_lite/ISE/lib/nt64:C:/S4/Vivado/2020.2/bin:$PATH
+  PATH=D:/Xilinx/Vitis/2020.2/bin;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2020.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1'
+HD_PWD='C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

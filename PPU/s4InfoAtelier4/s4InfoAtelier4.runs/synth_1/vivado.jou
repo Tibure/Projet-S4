@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Mar  9 12:15:28 2023
-# Process ID: 37600
-# Current directory: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1
+# Start of session at: Thu Mar 16 15:08:29 2023
+# Process ID: 25192
+# Current directory: C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1
 # Command line: vivado.exe -log atelier4_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_wrapper.tcl
-# Log file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/atelier4_wrapper.vds
-# Journal file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1\vivado.jou
+# Log file: C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/atelier4_wrapper.vds
+# Journal file: C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source atelier4_wrapper.tcl -notrace

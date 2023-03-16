@@ -1,10 +1,51 @@
-12:22:16 **** Build of configuration Debug for project project_system ****
+14:58:06 **** Incremental Build of configuration Debug for project project_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 59010 C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Travail/s4InfoAtelier4/project_system/Debug/system.bif
+generate_system_bif.bat 61413 C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Travail/s4InfoAtelier4/project_system/Debug/system.bif
 sdcard_gen --xpfm C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/Travail/s4InfoAtelier4/project_system/Debug/system.bif --bitstream C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit --elf C:/Travail/s4InfoAtelier4/project/Debug/project.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
-Running C:/S4/Vitis/2020.2/bin/bootgen  -image C:/Travail/s4InfoAtelier4/project_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+creating BOOT.BIN using C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+I/O error : Permission denied
+I/O error : Permission denied
+warning: failed to load external entity "C:/Users/etien/OneDrive"
+unable to parse C:/Users/etien/OneDrive
+-:1: parser error : Document is empty
 
-12:22:23 Build Finished (took 6s.530ms)
+^
+unable to parse -
+warning: failed to load external entity "USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm"
+unable to parse USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+I/O error : Permission denied
+I/O error : Permission denied
+warning: failed to load external entity "C:/Users/etien/OneDrive"
+unable to parse C:/Users/etien/OneDrive
+-:1: parser error : Document is empty
+
+^
+unable to parse -
+warning: failed to load external entity "USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm"
+unable to parse USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+I/O error : Permission denied
+I/O error : Permission denied
+warning: failed to load external entity "C:/Users/etien/OneDrive"
+unable to parse C:/Users/etien/OneDrive
+-:1: parser error : Document is empty
+
+^
+unable to parse -
+warning: failed to load external entity "USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm"
+unable to parse USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+I/O error : Permission denied
+I/O error : Permission denied
+warning: failed to load external entity "C:/Users/etien/OneDrive"
+unable to parse C:/Users/etien/OneDrive
+-:1: parser error : Document is empty
+
+^
+unable to parse -
+warning: failed to load external entity "USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm"
+unable to parse USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+Error intializing SD boot data : Unable to read software platform XML image metadata for platform path C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper, sdx:configuration atelier4_wrapper, sdx:image 
+make: *** [makefile:39: package] Error 1
+
+14:58:10 Build Finished (took 4s.332ms)
 

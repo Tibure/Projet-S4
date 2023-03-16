@@ -35,7 +35,7 @@ use ieee.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity BackGroundMannager is
+entity BackGroundManager is
     Port ( 
            i_clk : in std_logic;
            i_g_X : in STD_LOGIC_VECTOR (9 downto 0);

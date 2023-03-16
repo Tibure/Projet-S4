@@ -46,17 +46,34 @@ end testPatternGen2;
 
 architecture Behavioral of testPatternGen2 is
 
+component Datapath is
+    Port (
+           clk : in std_logic;
+           i_x : in std_logic_vector(11 downto 0);
+           i_y : in std_logic_vector(11 downto 0);
+           o_dataPixel : out std_logic_vector(23 downto 0));
+    end component;
+
 
 begin
 
-process(i_x)
-begin
-   if(i_x(3) = '1') then
-       o_dataPixel <= i_colorDataB(23 downto 0);
-   else
-       o_dataPixel <= i_colorDataA(23 downto 0);
-   end if;
-end process;
+inst_datapath : Datapath
+    port map(
+        clk => clk,
+        i_x => i_x,
+        i_y => i_y,
+        o_dataPixel => o_dataPixel
+        );
+
+
+--process(i_x)
+--begin
+--   if(i_x(3) = '1') then
+--       o_dataPixel <= i_colorDataB(23 downto 0);
+--   else
+--       o_dataPixel <= i_colorDataA(23 downto 0);
+--   end if;
+--end process;
 
 o_dataValid <= '1';
 

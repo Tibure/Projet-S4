@@ -14,16 +14,14 @@ use work.ppu_package.all;
 package tile_package is 
 
 constant TILE_COUNT     : integer := 1024;
-constant TILE_TEX_COUNT : integer := 256;
+constant TILE_TEX_COUNT : integer := 16;
 
 
 constant TILE_SIZE : integer := (TILE_COUNT - 1);
 
 type vector_tile_pos is array (0 to TILE_SIZE)            of std_logic_vector(POS_SIZE downto 0);
 type vector_tile_cc  is array (0 to TILE_SIZE)            of std_logic_vector(CC_SIZE  downto 0);
-type tile_textures   is array (0 to (TILE_TEX_COUNT - 1)) of texture;
-function x_coord     (i : integer) return std_logic_vector;
-function y_coord     (i : integer) return std_logic_vector;
+type tile_textures   is array (0 to 15) of texture;
 
 
 --Tuile Background centre
@@ -199,20 +197,7 @@ constant s_tile_textures : tile_textures := (
 
 end package tile_package;
 
-package body tile_package is
-
-    function x_coord (i : integer) return std_logic_vector is
-    begin
-            return std_logic_vector(TO_UNSIGNED (i,POS_SIZE +1 ));
-
-    end function;
-    
-    function y_coord (i : integer) return std_logic_vector is
-    begin
-                return coords((i/32) *16)(POS_SIZE downto 0);
-
-    end function;
-    
+package body tile_package is  
     
     
 end package body tile_package;
