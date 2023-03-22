@@ -78,9 +78,10 @@ port (
     i_x : in std_logic_vector(3 downto 0);
     i_y : in std_logic_vector(3 downto 0);
     i_rotation : in std_logic_vector(1 downto 0);
-    i_tileID : in std_logic_Vector(7 downto 0);
+    i_tileID : in std_logic_Vector(3 downto 0);
     o_ColorCode : out std_logic_vector(3 downto 0)
 );
+
 end component;
 
 component colorConverter is
@@ -90,8 +91,8 @@ component colorConverter is
 
 begin
 
-g_X <= i_x;
-g_Y <= i_y;
+g_X <= i_x(11 downto 2);
+g_Y <= i_y(11 downto 2);
 o_dataPixel <= color;
 
  inst_background_manager : BackGroundManager

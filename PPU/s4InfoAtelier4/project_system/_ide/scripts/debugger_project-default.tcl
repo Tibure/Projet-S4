@@ -13,7 +13,7 @@ connect -url tcp:127.0.0.1:3121
 targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
-targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E3EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E3EA-13722093-0"}
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77B04A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77B04A-13722093-0"}
 fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
 loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs

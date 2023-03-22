@@ -1,22 +1,6 @@
-2023-03-16T15:18:09.881477200255-15:18:09 **** Incremental Build of project atelier4_wrapper ****
-000-buildplatform.bat 60248 atelier4_wrapper no_domain_build 
+2023-03-21T15:05:52.340849300255-15:05:52 **** Incremental Build of project atelier4_wrapper ****
+000-buildplatform.bat 54361 atelier4_wrapper no_domain_build 
 000-XSDB Server Channel: tcfchan#1
-000-Reading the platform  : "atelier4_wrapper"
-000-Reading the platform  : "atelier4_wrapper"
-000-No Platform exists with name:  atelier4_wrapper
-000-    invoked from within
-000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active atelier4_wrapper; platform generate -domains}}}"
-000-    (procedure "::tcf::send_command" line 4)
-000-    invoked from within
-000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
-000-    invoked from within
-000-"if { $iswindows == 1 } {    
-000-
-000-    set XSDB_PORT [lindex $argv 0]
-000-    set PLATFORM_NAME [lindex $argv 1]
-000-    set arglen [llength $argv]
-000-    set lastind..."
-000-    (file "D:/Xilinx/Vitis/2020.2\scripts\vitis\util\buildplatform.tcl" line 11)
 00255-
-15:18:11 Build Finished (took 1s.438ms)
+15:05:55 Build Finished (took 2s.937ms)
 

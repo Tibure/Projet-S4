@@ -1,1 +1,0 @@
-The user must import sources in sdk project.

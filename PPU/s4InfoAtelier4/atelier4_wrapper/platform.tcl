@@ -28,16 +28,6 @@ platform clean
 platform generate
 platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
-platform generate
-platform active {atelier4_wrapper}
 platform active {atelier4_wrapper}
 platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
-platform active {atelier4_wrapper}
-platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
-platform generate -domains 
-platform active {atelier4_wrapper}
-platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
-platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
-platform active {atelier4_wrapper}
-platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa}

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 15:36:57 2023
+// Date        : Mon Jan 23 15:36:58 2023
 // Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top atelier4_pixelDataToVideoStre_0_3 -prefix
-//               atelier4_pixelDataToVideoStre_0_3_ atelier4_pixelDataToVideoStre_0_3_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3_sim_netlist.v
 // Design      : atelier4_pixelDataToVideoStre_0_3
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -153,6 +153,7 @@ module atelier4_pixelDataToVideoStre_0_3
         .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "pixelDataToVideoStream_v1_0" *) 
 module atelier4_pixelDataToVideoStre_0_3_pixelDataToVideoStream_v1_0
    (o_blank,
     Q,
@@ -1456,6 +1457,7 @@ module atelier4_pixelDataToVideoStre_0_3_pixelDataToVideoStream_v1_0
         .\slv_reg1_reg[21]_0 ({pixelDataToVideoStream_v1_0_S00_AXI_inst_n_13,pixelDataToVideoStream_v1_0_S00_AXI_inst_n_14,pixelDataToVideoStream_v1_0_S00_AXI_inst_n_15,pixelDataToVideoStream_v1_0_S00_AXI_inst_n_16}));
 endmodule
 
+(* ORIG_REF_NAME = "pixelDataToVideoStream_v1_0_S00_AXI" *) 
 module atelier4_pixelDataToVideoStre_0_3_pixelDataToVideoStream_v1_0_S00_AXI
    (axi_awready_reg_0,
     axi_wready_reg_0,

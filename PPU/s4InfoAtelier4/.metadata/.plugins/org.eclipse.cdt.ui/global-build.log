@@ -1,19 +1,29 @@
-15:18:09 **** Incremental Build of project atelier4_wrapper ****
-buildplatform.bat 60248 atelier4_wrapper no_domain_build 
+15:05:52 **** Incremental Build of project atelier4_wrapper ****
+buildplatform.bat 54361 atelier4_wrapper no_domain_build 
 XSDB Server Channel: tcfchan#1
-Reading the platform  : "atelier4_wrapper"
-Reading the platform  : "atelier4_wrapper"
-No Platform exists with name:  atelier4_wrapper
-    invoked from within
-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active atelier4_wrapper; platform generate -domains}}}"
-    (procedure "::tcf::send_command" line 4)
-    invoked from within
-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
-    invoked from within
-"if { $iswindows == 1 } {    
-
-    set XSDB_PORT [lindex $argv 0]
-    set PLATFORM_NAME [lindex $argv 1]
-    set arglen [llength $argv]
-    set lastind..."
-    (file "D:/Xilinx/Vitis/2020.2\scripts\vitis\util\buildplatform.tcl" line 11)
+15:05:57 **** Incremental Build of configuration Debug for project project ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13:9: warning: unused variable 'colorB' [-Wunused-variable]
+   13 |     int colorB = 0xFF00;
+      |         ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "project.elf"  ./src/main.o ./src/scaler.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size project.elf  |tee "project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 166796	   1472	 160848	 329116	  5059c	project.elf
+'Finished building: project.elf.size'
+' '

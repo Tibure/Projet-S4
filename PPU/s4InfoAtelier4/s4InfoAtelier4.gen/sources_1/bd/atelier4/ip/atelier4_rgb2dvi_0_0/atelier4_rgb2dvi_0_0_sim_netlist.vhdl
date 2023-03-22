@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu Mar  9 11:46:33 2023
--- Host        : LAPTOP-KI2VB3H7 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/atelier4_rgb2dvi_0_0_sim_netlist.vhdl
+-- Date        : Thu Mar  3 11:58:53 2022
+-- Host        : DESKTOP-7O8NHLB running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top atelier4_rgb2dvi_0_0 -prefix
+--               atelier4_rgb2dvi_0_0_ atelier4_rgb2dvi_0_0_sim_netlist.vhdl
 -- Design      : atelier4_rgb2dvi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity atelier4_rgb2dvi_0_0_OutputSERDES is
     PixelClk : in STD_LOGIC;
     aRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_OutputSERDES : entity is "OutputSERDES";
 end atelier4_rgb2dvi_0_0_OutputSERDES;
 
 architecture STRUCTURE of atelier4_rgb2dvi_0_0_OutputSERDES is
@@ -659,8 +657,6 @@ entity atelier4_rgb2dvi_0_0_SyncAsync is
     PixelClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_SyncAsync : entity is "SyncAsync";
 end atelier4_rgb2dvi_0_0_SyncAsync;
 
 architecture STRUCTURE of atelier4_rgb2dvi_0_0_SyncAsync is
@@ -810,8 +806,6 @@ entity atelier4_rgb2dvi_0_0_TMDS_Encoder is
     vid_pVDE : in STD_LOGIC;
     vid_pData : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_TMDS_Encoder : entity is "TMDS_Encoder";
 end atelier4_rgb2dvi_0_0_TMDS_Encoder;
 
 architecture STRUCTURE of atelier4_rgb2dvi_0_0_TMDS_Encoder is
@@ -4592,8 +4586,6 @@ entity atelier4_rgb2dvi_0_0_ResetBridge is
     in0 : in STD_LOGIC;
     PixelClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_ResetBridge : entity is "ResetBridge";
 end atelier4_rgb2dvi_0_0_ResetBridge;
 
 architecture STRUCTURE of atelier4_rgb2dvi_0_0_ResetBridge is
@@ -4655,8 +4647,6 @@ entity atelier4_rgb2dvi_0_0_ClockGen is
     \oSyncStages_reg[0]\ : in STD_LOGIC;
     aRst_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_ClockGen : entity is "ClockGen";
 end atelier4_rgb2dvi_0_0_ClockGen;
 
 architecture STRUCTURE of atelier4_rgb2dvi_0_0_ClockGen is
@@ -4826,8 +4816,6 @@ entity atelier4_rgb2dvi_0_0_rgb2dvi is
     PixelClk : in STD_LOGIC;
     SerialClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of atelier4_rgb2dvi_0_0_rgb2dvi : entity is "rgb2dvi";
   attribute kClkPrimitive : string;
   attribute kClkPrimitive of atelier4_rgb2dvi_0_0_rgb2dvi : entity is "PLL";
   attribute kClkRange : integer;
