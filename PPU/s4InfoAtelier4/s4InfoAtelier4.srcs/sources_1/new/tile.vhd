@@ -33,22 +33,22 @@ begin
    if( rising_edge(i_clk)) then
         case (i_rotation) is
           when "00" =>  -- 0 degre
-            s_index(7 downto 4) <= i_x(3 downto 0);
-            s_index(3 downto 0) <= i_y(3 downto 0);  
+            s_index(3 downto 0) <= i_x(3 downto 0);
+            s_index(7 downto 4) <= i_y(3 downto 0);  
              
           when "01" =>  -- 90 deg
-            s_index(7 downto 4) <= std_logic_vector((CC_IN_ROW) - unsigned(i_y(3 downto 0))) ;
-            s_index(3 downto 0) <= i_x(3 downto 0);   
+            s_index(3 downto 0) <= std_logic_vector((CC_IN_ROW) - unsigned(i_y(3 downto 0))) ;
+            s_index(7 downto 4) <= i_x(3 downto 0);   
           when "10" =>  -- 180 deg
-            s_index(7 downto 4) <= std_logic_vector((CC_IN_ROW) - unsigned(i_x(3 downto 0))) ;
-            s_index(3 downto 0) <= std_logic_vector((CC_IN_COL) - unsigned(i_y(3 downto 0))) ;  
+            s_index(3 downto 0) <= std_logic_vector((CC_IN_ROW) - unsigned(i_x(3 downto 0))) ;
+            s_index(7 downto 4) <= std_logic_vector((CC_IN_COL) - unsigned(i_y(3 downto 0))) ;  
           when "11" =>  -- 270 deg
-            s_index(7 downto 4) <= i_y(3 downto 0); 
-            s_index(3 downto 0) <= std_logic_vector((CC_IN_COL) - unsigned(i_x(3 downto 0))) ;
+            s_index(3 downto 0) <= i_y(3 downto 0); 
+            s_index(7 downto 4) <= std_logic_vector((CC_IN_COL) - unsigned(i_x(3 downto 0))) ;
               
           when others =>
-            s_index(7 downto 4) <= i_x(3 downto 0);
-            s_index(3 downto 0) <= i_y(3 downto 0);
+            s_index(3 downto 0) <= i_x(3 downto 0);
+            s_index(7 downto 4) <= i_y(3 downto 0);
        end case;
 				
 	    o_ColorCode   <= s_tile_textures(to_integer(unsigned(i_tileID)))

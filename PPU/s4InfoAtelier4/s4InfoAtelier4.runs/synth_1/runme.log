@@ -15,8 +15,8 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4I
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/S4/Vivado/2020.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1116.629 ; gain = 0.000
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1116.176 ; gain = 0.000
 Command: synth_design -top atelier4_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -24,54 +24,54 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28612
+INFO: [Synth 8-7075] Helper process launched with PID 14536
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1135.535 ; gain = 18.906
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1135.793 ; gain = 19.617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'atelier4_wrapper' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
 INFO: [Synth 8-3491] module 'atelier4' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:14' bound to instance 'atelier4_i' of component 'atelier4' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:79]
 INFO: [Synth 8-638] synthesizing module 'atelier4' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
-INFO: [Synth 8-3491] module 'atelier4_axi_vdma_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'atelier4_axi_vdma_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:951]
-INFO: [Synth 8-638] synthesizing module 'atelier4_axi_vdma_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_axi_vdma_0_0_stub.vhdl:78]
-INFO: [Synth 8-3491] module 'atelier4_clk_wiz_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'atelier4_clk_wiz_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1021]
-INFO: [Synth 8-638] synthesizing module 'atelier4_clk_wiz_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_clk_wiz_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'atelier4_mycolorRegister_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:5' bound to instance 'mycolorRegister_0' of component 'atelier4_mycolorRegister_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1028]
-INFO: [Synth 8-638] synthesizing module 'atelier4_mycolorRegister_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'atelier4_pixelDataToVideoStre_0_3' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:5' bound to instance 'pixelDataToVideoStre_0' of component 'atelier4_pixelDataToVideoStre_0_3' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1054]
-INFO: [Synth 8-638] synthesizing module 'atelier4_pixelDataToVideoStre_0_3' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'atelier4_proc_sys_reset_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'atelier4_proc_sys_reset_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1091]
-INFO: [Synth 8-638] synthesizing module 'atelier4_proc_sys_reset_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'atelier4_processing_system7_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'atelier4_processing_system7_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1104]
-INFO: [Synth 8-638] synthesizing module 'atelier4_processing_system7_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_processing_system7_0_0_stub.vhdl:121]
-INFO: [Synth 8-3491] module 'atelier4_rgb2dvi_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'atelier4_rgb2dvi_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1217]
-INFO: [Synth 8-638] synthesizing module 'atelier4_rgb2dvi_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'atelier4_smartconnect_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1230]
-INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_smartconnect_0_0_stub.vhdl:128]
-INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_1' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_smartconnect_0_1_stub.vhdl:5' bound to instance 'smartconnect_1' of component 'atelier4_smartconnect_0_1' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1350]
-INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_1' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_smartconnect_0_1_stub.vhdl:80]
-INFO: [Synth 8-3491] module 'atelier4_testPatternGen2_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:5' bound to instance 'testPatternGen2_0' of component 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1422]
-INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'atelier4_v_axi4s_vid_out_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'atelier4_v_axi4s_vid_out_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1433]
-INFO: [Synth 8-638] synthesizing module 'atelier4_v_axi4s_vid_out_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'atelier4_v_proc_ss_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:5' bound to instance 'v_proc_ss_0' of component 'atelier4_v_proc_ss_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1466]
-INFO: [Synth 8-638] synthesizing module 'atelier4_v_proc_ss_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'atelier4_v_tc_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'atelier4_v_tc_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1510]
-INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-7356-LAPTOP-KI2VB3H7/realtime/atelier4_v_tc_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'atelier4_axi_vdma_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'atelier4_axi_vdma_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:951]
+INFO: [Synth 8-638] synthesizing module 'atelier4_axi_vdma_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:78]
+INFO: [Synth 8-3491] module 'atelier4_clk_wiz_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'atelier4_clk_wiz_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1021]
+INFO: [Synth 8-638] synthesizing module 'atelier4_clk_wiz_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'atelier4_mycolorRegister_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:5' bound to instance 'mycolorRegister_0' of component 'atelier4_mycolorRegister_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1028]
+INFO: [Synth 8-638] synthesizing module 'atelier4_mycolorRegister_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'atelier4_pixelDataToVideoStre_0_3' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:5' bound to instance 'pixelDataToVideoStre_0' of component 'atelier4_pixelDataToVideoStre_0_3' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1054]
+INFO: [Synth 8-638] synthesizing module 'atelier4_pixelDataToVideoStre_0_3' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'atelier4_proc_sys_reset_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'atelier4_proc_sys_reset_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'atelier4_proc_sys_reset_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_processing_system7_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'atelier4_processing_system7_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'atelier4_processing_system7_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:121]
+INFO: [Synth 8-3491] module 'atelier4_rgb2dvi_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'atelier4_rgb2dvi_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1217]
+INFO: [Synth 8-638] synthesizing module 'atelier4_rgb2dvi_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'atelier4_smartconnect_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1230]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:128]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_1' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:5' bound to instance 'smartconnect_1' of component 'atelier4_smartconnect_0_1' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1350]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_1' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'atelier4_testPatternGen2_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:5' bound to instance 'testPatternGen2_0' of component 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'atelier4_v_axi4s_vid_out_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'atelier4_v_axi4s_vid_out_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1433]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_axi4s_vid_out_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'atelier4_v_proc_ss_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:5' bound to instance 'v_proc_ss_0' of component 'atelier4_v_proc_ss_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1466]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_proc_ss_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'atelier4_v_tc_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'atelier4_v_tc_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1510]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/.Xil/Vivado-29624-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'atelier4' (1#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'atelier4_wrapper' (2#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1196.777 ; gain = 80.148
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1196.617 ; gain = 80.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1196.777 ; gain = 80.148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1214.535 ; gain = 98.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1196.777 ; gain = 80.148
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1214.535 ; gain = 98.359
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1196.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1214.535 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -110,20 +110,20 @@ Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/dont_tou
 Finished Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1230.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1250.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1230.715 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1250.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1230.715 ; gain = 114.086
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1250.883 ; gain = 134.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1230.715 ; gain = 114.086
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1250.883 ; gain = 134.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -421,10 +421,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/v_tc_0. (constraint fi
 Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/pixelDataToVideoStre_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/testPatternGen2_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1230.715 ; gain = 114.086
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.883 ; gain = 134.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1230.715 ; gain = 114.086
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.883 ; gain = 134.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -446,25 +446,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1230.715 ; gain = 114.086
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1250.883 ; gain = 134.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1273.023 ; gain = 156.395
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1269.887 ; gain = 153.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1273.172 ; gain = 156.543
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1270.184 ; gain = 154.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.254 ; gain = 176.625
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1290.254 ; gain = 174.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -482,37 +482,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -557,23 +557,23 @@ Report Cell Usage:
 |14    |IBUF                                   |     1|
 +------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1300.031 ; gain = 149.465
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.031 ; gain = 183.402
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1296.043 ; gain = 143.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1296.043 ; gain = 179.867
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1312.070 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1308.109 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1315.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1311.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 50 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1315.059 ; gain = 198.430
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1311.082 ; gain = 194.906
 INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/atelier4_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file atelier4_wrapper_utilization_synth.rpt -pb atelier4_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 14:56:05 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 14:44:15 2023...

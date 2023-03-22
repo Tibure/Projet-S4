@@ -41,8 +41,8 @@ end Datapath;
 
 architecture Behavioral of Datapath is
 
-signal g_X          : std_logic_vector(9 downto 0);
-signal g_Y          : std_logic_vector(9 downto 0);
+signal g_X          : std_logic_vector(11 downto 0);
+signal g_Y          : std_logic_vector(11 downto 0);
 signal set_t_id     : std_logic_vector(3 downto 0);
 signal we_t_id      : std_logic;
 signal tuileX       : std_logic_vector(5 downto 0);
@@ -59,8 +59,8 @@ signal color        : std_logic_vector(23 downto 0);
 component BackGroundManager is
     Port ( 
            i_clk : in std_logic;
-           i_g_X : in STD_LOGIC_VECTOR (9 downto 0);
-           i_g_Y : in STD_LOGIC_VECTOR (9 downto 0);
+           i_g_X : in STD_LOGIC_VECTOR (11 downto 0);
+           i_g_Y : in STD_LOGIC_VECTOR (11 downto 0);
            set_t_id : in STD_LOGIC_VECTOR (3 downto 0);
            i_we_t_id : in STD_LOGIC;
            i_tuileX  : in std_logic_vector(5 downto 0);
@@ -91,8 +91,8 @@ component colorConverter is
 
 begin
 
-g_X <= i_x(11 downto 2);
-g_Y <= i_y(11 downto 2);
+g_X <= i_x;
+g_Y <= i_y;
 o_dataPixel <= color;
 
  inst_background_manager : BackGroundManager

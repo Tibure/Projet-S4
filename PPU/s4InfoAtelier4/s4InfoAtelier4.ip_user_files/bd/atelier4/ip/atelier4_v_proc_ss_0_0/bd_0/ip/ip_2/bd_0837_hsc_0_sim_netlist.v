@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Mar  3 12:00:56 2022
-// Host        : DESKTOP-7O8NHLB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top bd_0837_hsc_0 -prefix
-//               bd_0837_hsc_0_ bd_0837_hsc_0_sim_netlist.v
+// Date        : Mon Jan 23 16:41:03 2023
+// Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0_sim_netlist.v
 // Design      : bd_0837_hsc_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -70,7 +70,7 @@ module bd_0837_hsc_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RDATA" *) output [31:0]s_axi_CTRL_RDATA;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RRESP" *) output [1:0]s_axi_CTRL_RRESP;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RVALID" *) output s_axi_CTRL_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 16, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 74250000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_CTRL_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 16, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 74250000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_CTRL_RREADY;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:s_axis_video:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 74250000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input ap_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ap_rst_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output interrupt;
@@ -193,6 +193,7 @@ module bd_0837_hsc_0
         .s_axis_video_TVALID(s_axis_video_TVALID));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_AXIvideo2MultiPixStream" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_AXIvideo2MultiPixStream
    (\B_V_data_1_state_reg[1] ,
     internal_full_n_reg,
@@ -2488,6 +2489,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_AXIvideo2MultiPixStream
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_Block_split12_proc" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_Block_split12_proc
    (start_once_reg_reg_0,
     SS,
@@ -2547,6 +2549,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_Block_split12_proc
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_Block_split1_proc" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_Block_split1_proc
    (ap_return_preg,
     ap_done_reg,
@@ -2586,6 +2589,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_Block_split1_proc
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_CTRL_s_axi" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_CTRL_s_axi
    (DOADO,
     DOBDO,
@@ -9093,6 +9097,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_CTRL_s_axi
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_CTRL_s_axi_ram" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_CTRL_s_axi_ram
    (DOADO,
     DOBDO,
@@ -10821,6 +10826,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_CTRL_s_axi_ram__parameterized0
         .O(\gen_write[1].mem_reg_11 ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_MultiPixStream2AXIvideo" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo
    (\B_V_data_1_state_reg[0] ,
     MultiPixStream2AXIvideo_U0_stream_out_420_read,
@@ -11871,6 +11877,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp
    (\i_reg_190_reg[1] ,
     \add_ln1342_reg_483_reg[0] ,
@@ -11961,6 +11968,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp
         .\q0_reg[1]_3 (\q0_reg[1]_2 ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp_rom" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp_rom
    (\i_reg_190_reg[1] ,
     \add_ln1342_reg_483_reg[0] ,
@@ -12124,6 +12132,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_MultiPixStream2AXIvideo_mapComp_rom
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d2_S" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d2_S
    (\SRL_SIG_reg[0][0] ,
     Block_split1_proc_U0_ap_continue,
@@ -12314,6 +12323,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d2_S
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d2_S_shiftReg" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d2_S_shiftReg
    (\SRL_SIG_reg[0][0]_0 ,
     E,
@@ -12468,6 +12478,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d2_S_shiftReg
         .O(ap_block_pp0_stage0_110014));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d6_S" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d6_S
    (v_hcresampler_core_U0_bPassThru_dout,
     bPassThruHcr2_c_full_n,
@@ -12681,6 +12692,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d6_S
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d6_S_shiftReg" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d6_S_shiftReg
    (v_hcresampler_core_U0_bPassThru_dout,
     select_ln1443_fu_209_p3,
@@ -12757,6 +12769,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d6_S_shiftReg
         .O(select_ln1443_fu_209_p3));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d7_S" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d7_S
    (bPassThruVcr_c_dout,
     bPassThruVcr_c_full_n,
@@ -12947,6 +12960,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d7_S
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w1_d7_S_shiftReg" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d7_S_shiftReg
    (bPassThruVcr_c_dout,
     xor_ln1669_fu_223_p2,
@@ -13023,6 +13037,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w1_d7_S_shiftReg
         .O(xor_ln1669_fu_223_p2));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w24_d16_S" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w24_d16_S
    (stream_in_full_n,
     stream_in_empty_n,
@@ -14034,6 +14049,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w24_d16_S_5
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w24_d16_S_shiftReg" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w24_d16_S_shiftReg
    (out,
     Q,
@@ -16073,6 +16089,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w24_d16_S_shiftReg_9
         .Q(out[9]));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w8_d2_S" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w8_d2_S
    (ColorMode_c17_empty_n,
     ColorMode_c17_full_n,
@@ -16621,6 +16638,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w8_d2_S_1
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_fifo_w8_d2_S_shiftReg" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w8_d2_S_shiftReg
    (Block_split1_proc_U0_ap_return,
     internal_full_n_reg,
@@ -17279,6 +17297,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_fifo_w8_d2_S_shiftReg_48
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_hscale_core_polyphase" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase
    (\j_reg_435_reg[0]_0 ,
     ADDRBWRADDR,
@@ -23011,6 +23030,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase
         .R(y_reg_446));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0
    (q00,
     select_ln608_reg_1359,
@@ -23224,6 +23244,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_16
         .select_ln608_reg_1359(select_ln608_reg_1359));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_ram" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_ram
    (q00,
     select_ln608_reg_1359,
@@ -25321,6 +25342,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_ram_45
         .WE(p_0_in));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_hscale_polyphase" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_hscale_polyphase
    (p_36_in,
     FiltCoeff_5_0_address0,
@@ -29692,6 +29714,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_hscale_polyphase
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1
    (P,
     p_reg_reg,
@@ -29912,6 +29935,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1_18
         .stream_upsampled_empty_n(stream_upsampled_empty_n));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0
    (P,
     \ap_CS_fsm_reg[4] ,
@@ -30629,6 +30653,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0_40
         .O(tmp_fu_367_p10[0]));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1
    (P,
     p_reg_reg,
@@ -30769,6 +30794,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_20
         .p_reg_reg_3(p_reg_reg_2));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1
    (P,
     FiltCoeff_1_0_ce0,
@@ -31157,6 +31183,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_38
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1
    (PCOUT,
     p_reg_reg,
@@ -31297,6 +31324,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_22
         .p_reg_reg_2(p_reg_reg_1));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2
    (PCOUT,
     FiltCoeff_2_0_ce0,
@@ -31682,6 +31710,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_36
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1
    (P,
     p_reg_reg,
@@ -31822,6 +31851,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1_24
         .p_reg_reg_1(p_reg_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3
    (P,
     FiltCoeff_3_0_ce0,
@@ -32210,6 +32240,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3_34
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1
    (PCOUT,
     p_reg_reg,
@@ -32350,6 +32381,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_26
         .p_reg_reg_1(p_reg_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4
    (PCOUT,
     FiltCoeff_4_0_ce0,
@@ -32735,6 +32767,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_32
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1
    (in,
     p_reg_reg,
@@ -32875,6 +32908,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1_28
         .p_reg_reg_1(p_reg_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5
    (FiltCoeff_5_0_ce0,
     in,
@@ -33554,6 +33588,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5_30
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_reg_ap_uint_9_s" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_reg_ap_uint_9_s
    (\ReadEn_reg_469_reg[0] ,
     p_4_in,
@@ -33868,6 +33903,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_reg_ap_uint_9_s
         .S(A[7:4]));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_regslice_both" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_regslice_both
    (\B_V_data_1_state_reg[0]_0 ,
     ap_enable_reg_pp1_iter0_reg,
@@ -37348,6 +37384,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_regslice_both__parameterized1_51
         .O(\sof_reg_171_reg[0] ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_AXIvideo2MultiPixStream_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_AXIvideo2MultiPixStream_U0
    (start_for_AXIvideo2MultiPixStream_U0_full_n,
     AXIvideo2MultiPixStream_U0_ap_start,
@@ -37474,6 +37511,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_AXIvideo2MultiPixStream_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_Block_split1_proc_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_Block_split1_proc_U0
    (start_for_Block_split1_proc_U0_full_n,
     Block_split1_proc_U0_ap_start,
@@ -37618,6 +37656,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_Block_split1_proc_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_MultiPixStream2AXIvideo_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_MultiPixStream2AXIvideo_U0
    (start_for_MultiPixStream2AXIvideo_U0_full_n,
     MultiPixStream2AXIvideo_U0_ap_start,
@@ -37763,6 +37802,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_MultiPixStream2AXIvideo_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_v_hcresampler_core_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_hcresampler_core_U0
    (start_for_v_hcresampler_core_U0_full_n,
     v_hcresampler_core_U0_ap_start,
@@ -37958,6 +37998,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_hcresampler_core_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_v_hscaler_entry32_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_hscaler_entry32_U0
    (start_for_v_hscaler_entry32_U0_full_n,
     v_hscaler_entry32_U0_ap_start,
@@ -38112,6 +38153,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_hscaler_entry32_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_start_for_v_vcresampler_core_U0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_vcresampler_core_U0
    (start_for_v_vcresampler_core_U0_full_n,
     v_vcresampler_core_U0_ap_start,
@@ -38322,6 +38364,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_start_for_v_vcresampler_core_U0
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_hcresampler_core" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_hcresampler_core
    (Q,
     v_hcresampler_core_U0_srcImg_read,
@@ -41600,6 +41643,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_hcresampler_core
         .R(y_reg_187));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_hcresampler_core26" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_hcresampler_core26
    (tmp_reg_800_pp0_iter1_reg,
     out,
@@ -44880,7 +44924,7 @@ endmodule
 
 (* C_S_AXI_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_ADDR_WIDTH = "16" *) (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) 
 (* C_S_AXI_CTRL_WSTRB_WIDTH = "4" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_WSTRB_WIDTH = "4" *) 
-(* hls_module = "yes" *) 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_hscaler" *) (* hls_module = "yes" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler
    (s_axi_CTRL_AWVALID,
     s_axi_CTRL_AWREADY,
@@ -47074,6 +47118,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler
         .\y_reg_190_reg[7]_0 ({v_vcresampler_core_U0_n_50,v_vcresampler_core_U0_n_51,v_vcresampler_core_U0_n_52,v_vcresampler_core_U0_n_53}));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_hscaler_entry32" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler_entry32
    (start_once_reg_reg_0,
     SS,
@@ -47118,6 +47163,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler_entry32
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_hscaler_entry4" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler_entry4
    (start_once_reg,
     ap_sync_reg_v_hscaler_entry4_U0_ap_ready_reg,
@@ -47204,6 +47250,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_hscaler_entry4
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_vcresampler_core" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core
    (Q,
     start_once_reg,
@@ -49716,6 +49763,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0
    (D,
     WEA,
@@ -49893,6 +49941,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_6
         .tmp_reg_534(tmp_reg_534));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_ram" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_ram
    (p_27_in,
     in,
@@ -50664,6 +50713,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_ram_7
         .O(DIADI[0]));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0
    (E,
     in,
@@ -50714,6 +50764,7 @@ module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0
         .tmp_reg_534(tmp_reg_534));
 endmodule
 
+(* ORIG_REF_NAME = "bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram" *) 
 module bd_0837_hsc_0_bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram
    (E,
     in,

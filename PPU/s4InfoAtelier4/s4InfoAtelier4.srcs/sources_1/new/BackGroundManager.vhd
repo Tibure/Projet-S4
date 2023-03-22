@@ -38,8 +38,8 @@ use ieee.numeric_std.all;
 entity BackGroundManager is
     Port ( 
            i_clk : in std_logic;
-           i_g_X : in STD_LOGIC_VECTOR (9 downto 0);
-           i_g_Y : in STD_LOGIC_VECTOR (9 downto 0);
+           i_g_X : in STD_LOGIC_VECTOR (11 downto 0);
+           i_g_Y : in STD_LOGIC_VECTOR (11 downto 0);
            set_t_id : in STD_LOGIC_VECTOR (3 downto 0);
            i_we_t_id : in STD_LOGIC;
            i_tuileX  : in std_logic_vector(5 downto 0);
@@ -55,21 +55,36 @@ architecture Behavioral of BackGroundManager is
 type BackgroundTilesCol is array(0 to 64) of std_logic_vector(5 downto 0); -- 4 bit tuiles id + 2 bits rotation
 type BackgroundTiles is array(0 to 64) of BackgroundTilesCol;
 
-signal BackgroundDefault : BackgroundTiles := (others => (others => (others => '0')));
+signal BackgroundDefault : BackgroundTiles := (others => (others => ("000000")));
+signal s_gX : unsigned(11 downto 0);
+signal s_gY : unsigned(11 downto 0);
+
 
 
 begin
-process(i_clk,i_g_x,i_g_Y,set_t_id,i_we_t_id,i_tuileX,i_tuileY) begin
+BackgroundDefault(10)(5) <= "000001";
+BackgroundDefault(10)(7) <= "000010";
+BackgroundDefault(10)(9) <= "000011";
+BackgroundDefault(10)(11)<= "000111";
+BackgroundDefault(12)(5)  <= "001000";
+BackgroundDefault(12)(7) <= "010010";
+BackgroundDefault(12)(9) <= "100010";
+BackgroundDefault(12)(11)<= "110010";
+
+s_gX <= unsigned(i_g_X);
+s_gY <= unsigned(i_g_Y);
+
+process(i_clk,s_gX,s_gY,set_t_id,i_we_t_id,i_tuileX,i_tuileY) begin
     if(rising_edge(i_clk)) then
         if(i_we_t_id = '1') then    
             BackgroundDefault(to_integer(unsigned(i_tuileX)))(to_integer(unsigned(i_tuileY)))(3 downto 0) <= set_t_id;
             BackgroundDefault(to_integer(unsigned(i_tuileX)))(to_integer(unsigned(i_tuileY)))(5 downto 4) <= i_tuileRotation;
         end if;
         end if;
-        o_x <= std_logic_vector(TO_UNSIGNED(to_integer(unsigned(i_g_X))mod 16,4));
-        o_y <= std_logic_vector(TO_UNSIGNED(to_integer(unsigned(i_g_y))mod 16,4));
-        o_t_id <= BackgroundDefault(to_integer(unsigned(i_g_X))mod 64)(to_integer(unsigned(i_g_y))mod 64) (3 downto 0);
-        o_Rotation <=BackgroundDefault(to_integer(unsigned(i_g_X))mod 64)(to_integer(unsigned(i_g_y))mod 64) (5 downto 4);
+        o_x <= std_logic_vector(TO_UNSIGNED(to_integer(s_gX)mod 16,4));
+        o_y <= std_logic_vector(TO_UNSIGNED(to_integer(s_gY)mod 16,4));
+        o_t_id <= BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (3 downto 0);
+        o_Rotation <=BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (5 downto 4);
         
    end process;
 
