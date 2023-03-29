@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ProjectMarcheChrist" location="C:/S3/project_1/ProjectMarcheChrist" platform="C:/S3/project_1/nomPertinent_wrapper/export/nomPertinent_wrapper/nomPertinent_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="ProjectMarcheChrist_system" sysConfig="nomPertinent_wrapper" runtime="cpp" cpu="freertos10_xilinx_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="freertos10_xilinx" mssSignature="ca51a154cea7eb1f68752c5156831116">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.697136844">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1664803205" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

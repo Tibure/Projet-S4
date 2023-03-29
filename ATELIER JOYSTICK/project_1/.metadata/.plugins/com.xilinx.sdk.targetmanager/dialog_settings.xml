@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="ProjectMarcheChrist_system-bitFile" value="${project_loc:ProjectMarcheChrist}/_ide/bitstream/nomPertinent_wrapper.bit"/>
+	<item key="ProjectMarcheChrist_system-bmmFile" value=""/>
+	<item key="ProjectMarcheChrist_system-target" value="Local"/>
+	<item key="ProjectMarcheChrist_system-device" value="Auto Detect"/>
+	<item key="ProjectMarcheChrist_system-partial_bit" value="false"/>
+	<item key="ProjectMarcheChrist_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="ProjectMarcheChrist_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351A77E3EA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351A77E3EA-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351A77E3EA-13722093-0&quot;}}]}"/>
+</section>

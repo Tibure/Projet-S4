@@ -1,0 +1,10 @@
+15:24:52 **** Incremental Build of configuration Debug for project ProjectMarcheChrist_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 49722 C:/S3/project_1/nomPertinent_wrapper/export/nomPertinent_wrapper/nomPertinent_wrapper.xpfm freertos10_xilinx_ps7_cortexa9_0 C:/S3/project_1/ProjectMarcheChrist_system/Debug/system.bif
+sdcard_gen --xpfm C:/S3/project_1/nomPertinent_wrapper/export/nomPertinent_wrapper/nomPertinent_wrapper.xpfm --sys_config nomPertinent_wrapper --bif C:/S3/project_1/ProjectMarcheChrist_system/Debug/system.bif --bitstream C:/S3/project_1/ProjectMarcheChrist/_ide/bitstream/nomPertinent_wrapper.bit --elf C:/S3/project_1/ProjectMarcheChrist/Debug/ProjectMarcheChrist.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/S3/project_1/ProjectMarcheChrist/_ide/bitstream/nomPertinent_wrapper.bit
+Running C:/S4/Vitis/2020.2/bin/bootgen  -image C:/S3/project_1/ProjectMarcheChrist_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:24:58 Build Finished (took 5s.963ms)
+
