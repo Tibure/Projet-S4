@@ -56,6 +56,36 @@ component Datapath is
 
 signal colorPixel : std_logic_vector(23 downto 0);
 
+      signal   background_g_X : STD_LOGIC_VECTOR (11 downto 0);
+      signal   background_g_Y : STD_LOGIC_VECTOR (11 downto 0);
+      signal   set_tile_id : STD_LOGIC_VECTOR (3 downto 0);
+      signal   we_tile_id : STD_LOGIC;
+      signal   background_tuileX  : std_logic_vector(5 downto 0);
+      signal   background_tuileY  : std_logic_Vector(5 downto 0);
+      signal   background_tuileRotation: std_logic_vector(1 downto 0);
+      signal   o_x : STD_LOGIC_VECTOR (3 downto 0);
+      signal   o_y : STD_LOGIC_VECTOR (3 downto 0);
+      signal   o_t_id : STD_LOGIC_VECTOR (3 downto 0);
+      signal   o_Rotation_t : std_logic_vector(1 downto 0);
+
+
+     signal   actor_g_x :  STD_LOGIC_VECTOR (11 downto 0);
+     signal   actor_g_y :  STD_LOGIC_VECTOR (11 downto 0);
+     signal   set_actor_id : STD_LOGIC_VECTOR (3 downto 0);
+     signal   set_actor_gx :  STD_LOGIC_VECTOR (11 downto 0);
+     signal   set_actor_gy : STD_LOGIC_VECTOR (11 downto 0);
+     signal   we_actor :  STD_LOGIC;
+     signal   tileID_actor :  STD_LOGIC_VECTOR (3 downto 0);
+     signal   tileRot_actor :  STD_LOGIC_VECTOR (1 downto 0);
+     signal   vis_actor :  STD_LOGIC;
+     signal   o_x_actor :  STD_LOGIC_VECTOR (3 downto 0);
+     signal   o_y_actor :  STD_LOGIC_VECTOR (3 downto 0);
+     signal   o_hit_actor : std_logic;
+     signal   o_t_id_actor :  STD_LOGIC_VECTOR (3 downto 0);
+     signal   o_t_rot_actor :  STD_LOGIC_VECTOR (1 downto 0);
+
+
+
 begin
 
 inst_datapath : Datapath
@@ -64,6 +94,7 @@ inst_datapath : Datapath
         i_x => i_x,
         i_y => i_y,
         o_dataPixel => o_dataPixel
+        
         );
 
 --process(i_x)

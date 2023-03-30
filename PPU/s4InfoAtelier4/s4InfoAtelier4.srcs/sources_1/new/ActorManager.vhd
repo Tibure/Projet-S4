@@ -37,7 +37,7 @@ entity ActorManager is
            i_clk : in std_logic;
            i_g_x : in STD_LOGIC_VECTOR (11 downto 0);
            i_g_y : in STD_LOGIC_VECTOR (11 downto 0);
-           set_a_id : in STD_LOGIC_VECTOR (3 downto 0);
+           set_a_id : in STD_LOGIC_VECTOR (2 downto 0);
            set_a_gx : in STD_LOGIC_VECTOR (11 downto 0);
            set_a_gy : in STD_LOGIC_VECTOR (11 downto 0);
            i_we_a : in STD_LOGIC;
