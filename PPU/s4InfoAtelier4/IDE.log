@@ -1294,3 +1294,915 @@ con
 
 14:52:46 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
 15:19:38 INFO  : Disconnected from the channel tcfchan#3.
+19:52:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+19:52:09 INFO  : XSCT server has started successfully.
+19:52:09 INFO  : Successfully done setting XSCT server connection channel  
+19:52:09 INFO  : plnx-install-location is set to ''
+19:52:09 INFO  : Successfully done setting workspace for the tool. 
+19:52:11 INFO  : Platform repository initialization has completed.
+19:52:12 INFO  : Successfully done query RDI_DATADIR 
+19:52:12 INFO  : Registering command handlers for Vitis TCF services
+19:52:27 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+19:52:39 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+19:52:39 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+19:52:39 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+19:52:41 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+19:52:41 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+19:52:41 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+19:52:41 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+19:52:45 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+19:52:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:52:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:52:55 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+20:05:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:05:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+20:05:06 INFO  : 'jtag frequency' command is executed.
+20:05:06 INFO  : Context for 'APU' is selected.
+20:05:06 INFO  : System reset is completed.
+20:05:09 INFO  : 'after 3000' command is executed.
+20:05:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+20:05:10 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+20:05:10 INFO  : Context for 'APU' is selected.
+20:05:10 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+20:05:10 INFO  : 'configparams force-mem-access 1' command is executed.
+20:05:10 INFO  : Context for 'APU' is selected.
+20:05:10 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+20:05:11 INFO  : 'ps7_init' command is executed.
+20:05:11 INFO  : 'ps7_post_config' command is executed.
+20:05:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:05:11 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:05:11 INFO  : 'configparams force-mem-access 0' command is executed.
+20:05:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:05:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:05:12 INFO  : 'con' command is executed.
+20:05:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:05:12 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+22:08:52 INFO  : Disconnected from the channel tcfchan#3.
+22:25:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+22:25:48 INFO  : XSCT server has started successfully.
+22:25:48 INFO  : Successfully done setting XSCT server connection channel  
+22:25:48 INFO  : plnx-install-location is set to ''
+22:25:48 INFO  : Successfully done setting workspace for the tool. 
+22:25:53 INFO  : Platform repository initialization has completed.
+22:25:53 INFO  : Successfully done query RDI_DATADIR 
+22:25:54 INFO  : Registering command handlers for Vitis TCF services
+22:26:43 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+22:26:46 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+22:26:46 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+22:26:52 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:26:55 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+22:26:55 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+22:26:55 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+22:27:03 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+22:27:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+22:27:09 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+22:27:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+22:27:14 INFO  : 'jtag frequency' command is executed.
+22:27:14 INFO  : Context for 'APU' is selected.
+22:27:14 INFO  : System reset is completed.
+22:27:17 INFO  : 'after 3000' command is executed.
+22:27:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+22:27:19 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+22:27:19 INFO  : Context for 'APU' is selected.
+22:27:19 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+22:27:19 INFO  : 'configparams force-mem-access 1' command is executed.
+22:27:19 INFO  : Context for 'APU' is selected.
+22:27:19 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+22:27:20 INFO  : 'ps7_init' command is executed.
+22:27:20 INFO  : 'ps7_post_config' command is executed.
+22:27:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:21 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:27:21 INFO  : 'configparams force-mem-access 0' command is executed.
+22:27:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:27:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:21 INFO  : 'con' command is executed.
+22:27:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:27:21 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+01:18:23 INFO  : Disconnected from the channel tcfchan#2.
+13:14:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+13:14:35 INFO  : XSCT server has started successfully.
+13:14:35 INFO  : Successfully done setting XSCT server connection channel  
+13:14:35 INFO  : plnx-install-location is set to ''
+13:14:35 INFO  : Successfully done setting workspace for the tool. 
+13:14:38 INFO  : Platform repository initialization has completed.
+13:14:38 INFO  : Registering command handlers for Vitis TCF services
+13:14:38 INFO  : Successfully done query RDI_DATADIR 
+13:14:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+13:14:56 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+13:15:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:15:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+13:15:02 INFO  : 'jtag frequency' command is executed.
+13:15:02 INFO  : Context for 'APU' is selected.
+13:15:02 INFO  : System reset is completed.
+13:15:05 INFO  : 'after 3000' command is executed.
+13:15:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+13:15:07 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+13:15:07 INFO  : Context for 'APU' is selected.
+13:15:07 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+13:15:07 INFO  : 'configparams force-mem-access 1' command is executed.
+13:15:07 INFO  : Context for 'APU' is selected.
+13:15:07 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+13:15:07 INFO  : 'ps7_init' command is executed.
+13:15:07 INFO  : 'ps7_post_config' command is executed.
+13:15:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:08 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:15:08 INFO  : 'configparams force-mem-access 0' command is executed.
+13:15:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:15:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:08 INFO  : 'con' command is executed.
+13:15:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:15:08 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:03:42 INFO  : Disconnected from the channel tcfchan#1.
+14:03:54 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+14:03:56 INFO  : XSCT server has started successfully.
+14:03:56 INFO  : plnx-install-location is set to ''
+14:03:56 INFO  : Successfully done setting XSCT server connection channel  
+14:03:56 INFO  : Successfully done setting workspace for the tool. 
+14:03:58 INFO  : Platform repository initialization has completed.
+14:03:58 INFO  : Successfully done query RDI_DATADIR 
+14:03:59 INFO  : Registering command handlers for Vitis TCF services
+14:04:12 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:04:33 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:04:33 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:04:33 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:04:36 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:04:36 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:04:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+14:04:36 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:04:38 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:04:40 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:04:40 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+14:04:40 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+14:04:45 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:04:49 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+14:04:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:04:54 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+14:05:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+14:05:00 INFO  : 'jtag frequency' command is executed.
+14:05:01 INFO  : Context for 'APU' is selected.
+14:05:01 INFO  : System reset is completed.
+14:05:04 INFO  : 'after 3000' command is executed.
+14:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:05:05 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+14:05:05 INFO  : Context for 'APU' is selected.
+14:05:05 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:05:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:05:05 INFO  : Context for 'APU' is selected.
+14:05:05 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+14:05:06 INFO  : 'ps7_init' command is executed.
+14:05:06 INFO  : 'ps7_post_config' command is executed.
+14:05:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:06 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:05:06 INFO  : 'configparams force-mem-access 0' command is executed.
+14:05:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:05:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:06 INFO  : 'con' command is executed.
+14:05:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:05:06 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:08:18 INFO  : Disconnected from the channel tcfchan#3.
+14:26:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+14:26:50 INFO  : XSCT server has started successfully.
+14:26:50 INFO  : plnx-install-location is set to ''
+14:26:50 INFO  : Successfully done setting XSCT server connection channel  
+14:26:50 INFO  : Successfully done setting workspace for the tool. 
+14:26:53 INFO  : Platform repository initialization has completed.
+14:26:53 INFO  : Successfully done query RDI_DATADIR 
+14:26:53 INFO  : Registering command handlers for Vitis TCF services
+14:27:17 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:27:43 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:27:43 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:28:54 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:28:56 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:28:56 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+14:28:56 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:29:00 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+14:29:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:29:06 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+14:29:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+14:29:21 INFO  : 'jtag frequency' command is executed.
+14:29:21 INFO  : Context for 'APU' is selected.
+14:29:21 INFO  : System reset is completed.
+14:29:24 INFO  : 'after 3000' command is executed.
+14:29:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:29:25 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+14:29:25 INFO  : Context for 'APU' is selected.
+14:29:25 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:29:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:29:26 INFO  : Context for 'APU' is selected.
+14:29:26 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+14:29:26 INFO  : 'ps7_init' command is executed.
+14:29:26 INFO  : 'ps7_post_config' command is executed.
+14:29:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:27 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:27 INFO  : 'configparams force-mem-access 0' command is executed.
+14:29:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:29:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:27 INFO  : 'con' command is executed.
+14:29:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:29:27 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:41:34 INFO  : Disconnected from the channel tcfchan#2.
+14:52:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+14:52:51 INFO  : XSCT server has started successfully.
+14:52:51 INFO  : Successfully done setting XSCT server connection channel  
+14:52:51 INFO  : plnx-install-location is set to ''
+14:52:51 INFO  : Successfully done setting workspace for the tool. 
+14:52:53 INFO  : Platform repository initialization has completed.
+14:52:53 INFO  : Successfully done query RDI_DATADIR 
+14:52:53 INFO  : Registering command handlers for Vitis TCF services
+14:53:29 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:54:12 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:54:12 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:54:31 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:54:33 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:54:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+14:54:33 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:54:36 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+14:54:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:54:42 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+14:54:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+14:54:50 INFO  : 'jtag frequency' command is executed.
+14:54:50 INFO  : Context for 'APU' is selected.
+14:54:50 INFO  : System reset is completed.
+14:54:53 INFO  : 'after 3000' command is executed.
+14:54:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+14:54:54 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+14:54:54 INFO  : Context for 'APU' is selected.
+14:54:55 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:54:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:55 INFO  : Context for 'APU' is selected.
+14:54:55 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+14:54:55 INFO  : 'ps7_init' command is executed.
+14:54:55 INFO  : 'ps7_post_config' command is executed.
+14:54:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:56 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:56 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:56 INFO  : 'con' command is executed.
+14:54:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:56 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:55:15 INFO  : Disconnected from the channel tcfchan#2.
+15:14:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+15:14:17 INFO  : XSCT server has started successfully.
+15:14:17 INFO  : Successfully done setting XSCT server connection channel  
+15:14:17 INFO  : plnx-install-location is set to ''
+15:14:17 INFO  : Successfully done setting workspace for the tool. 
+15:14:20 INFO  : Platform repository initialization has completed.
+15:14:20 INFO  : Successfully done query RDI_DATADIR 
+15:14:21 INFO  : Registering command handlers for Vitis TCF services
+15:14:56 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+15:15:19 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+15:15:19 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+15:15:20 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:15:22 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:15:22 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+15:15:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+15:15:22 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+15:15:27 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+15:15:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+15:15:40 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+15:15:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+15:15:55 INFO  : 'jtag frequency' command is executed.
+15:15:55 INFO  : Context for 'APU' is selected.
+15:15:55 INFO  : System reset is completed.
+15:15:58 INFO  : 'after 3000' command is executed.
+15:15:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+15:15:59 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+15:15:59 INFO  : Context for 'APU' is selected.
+15:16:00 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:16:00 INFO  : 'configparams force-mem-access 1' command is executed.
+15:16:00 INFO  : Context for 'APU' is selected.
+15:16:00 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+15:16:00 INFO  : 'ps7_init' command is executed.
+15:16:00 INFO  : 'ps7_post_config' command is executed.
+15:16:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:01 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:16:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:16:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:01 INFO  : 'con' command is executed.
+15:16:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:16:01 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:23:11 INFO  : Disconnected from the channel tcfchan#3.
+15:29:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+15:29:11 INFO  : XSCT server has started successfully.
+15:29:11 INFO  : Successfully done setting XSCT server connection channel  
+15:29:11 INFO  : plnx-install-location is set to ''
+15:29:11 INFO  : Successfully done setting workspace for the tool. 
+15:29:13 INFO  : Platform repository initialization has completed.
+15:29:13 INFO  : Successfully done query RDI_DATADIR 
+15:29:14 INFO  : Registering command handlers for Vitis TCF services
+15:29:27 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+15:29:36 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+15:29:36 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+15:29:36 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:29:39 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:29:39 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+15:29:39 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+15:29:39 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+15:29:43 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+15:29:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+15:29:51 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+15:30:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+15:30:04 INFO  : 'jtag frequency' command is executed.
+15:30:04 INFO  : Context for 'APU' is selected.
+15:30:04 INFO  : System reset is completed.
+15:30:07 INFO  : 'after 3000' command is executed.
+15:30:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+15:30:08 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+15:30:08 INFO  : Context for 'APU' is selected.
+15:30:08 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:30:08 INFO  : 'configparams force-mem-access 1' command is executed.
+15:30:09 INFO  : Context for 'APU' is selected.
+15:30:09 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+15:30:09 INFO  : 'ps7_init' command is executed.
+15:30:09 INFO  : 'ps7_post_config' command is executed.
+15:30:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:10 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:30:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:30:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:30:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:10 INFO  : 'con' command is executed.
+15:30:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:30:10 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:33:41 INFO  : Disconnected from the channel tcfchan#3.
+18:27:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+18:27:02 INFO  : XSCT server has started successfully.
+18:27:02 INFO  : Successfully done setting XSCT server connection channel  
+18:27:02 INFO  : plnx-install-location is set to ''
+18:27:02 INFO  : Successfully done setting workspace for the tool. 
+18:27:05 INFO  : Platform repository initialization has completed.
+18:27:06 INFO  : Successfully done query RDI_DATADIR 
+18:27:06 INFO  : Registering command handlers for Vitis TCF services
+18:27:21 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+18:28:02 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+18:28:02 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+18:28:09 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:28:11 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+18:28:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+18:28:11 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:28:15 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+18:28:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+18:28:21 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+18:28:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+18:28:26 INFO  : 'jtag frequency' command is executed.
+18:28:26 INFO  : Context for 'APU' is selected.
+18:28:26 INFO  : System reset is completed.
+18:28:29 INFO  : 'after 3000' command is executed.
+18:28:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+18:28:30 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+18:28:30 INFO  : Context for 'APU' is selected.
+18:28:30 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+18:28:30 INFO  : 'configparams force-mem-access 1' command is executed.
+18:28:30 INFO  : Context for 'APU' is selected.
+18:28:30 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+18:28:31 INFO  : 'ps7_init' command is executed.
+18:28:31 INFO  : 'ps7_post_config' command is executed.
+18:28:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:31 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:28:32 INFO  : 'configparams force-mem-access 0' command is executed.
+18:28:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:28:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:32 INFO  : 'con' command is executed.
+18:28:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:28:32 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+18:41:59 INFO  : Disconnected from the channel tcfchan#2.
+18:53:10 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+18:53:12 INFO  : XSCT server has started successfully.
+18:53:12 INFO  : plnx-install-location is set to ''
+18:53:12 INFO  : Successfully done setting XSCT server connection channel  
+18:53:12 INFO  : Successfully done setting workspace for the tool. 
+18:53:15 INFO  : Platform repository initialization has completed.
+18:53:15 INFO  : Successfully done query RDI_DATADIR 
+18:53:15 INFO  : Registering command handlers for Vitis TCF services
+18:53:34 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+18:53:53 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+18:53:53 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+18:54:11 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:54:13 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+18:54:13 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+18:54:13 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:54:17 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+18:54:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+18:54:26 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+18:54:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+18:54:36 INFO  : 'jtag frequency' command is executed.
+18:54:36 INFO  : Context for 'APU' is selected.
+18:54:36 INFO  : System reset is completed.
+18:54:39 INFO  : 'after 3000' command is executed.
+18:54:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+18:54:41 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+18:54:41 INFO  : Context for 'APU' is selected.
+18:54:41 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+18:54:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:54:41 INFO  : Context for 'APU' is selected.
+18:54:41 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+18:54:41 INFO  : 'ps7_init' command is executed.
+18:54:41 INFO  : 'ps7_post_config' command is executed.
+18:54:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:54:42 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:54:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:54:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:54:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:54:42 INFO  : 'con' command is executed.
+18:54:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:54:42 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+18:54:59 INFO  : Disconnected from the channel tcfchan#2.
+19:11:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+19:11:19 INFO  : XSCT server has started successfully.
+19:11:20 INFO  : plnx-install-location is set to ''
+19:11:20 INFO  : Successfully done setting XSCT server connection channel  
+19:11:20 INFO  : Successfully done setting workspace for the tool. 
+19:11:22 INFO  : Platform repository initialization has completed.
+19:11:22 INFO  : Successfully done query RDI_DATADIR 
+19:11:22 INFO  : Registering command handlers for Vitis TCF services
+19:11:35 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+19:11:40 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+19:11:40 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+19:11:57 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+19:11:59 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+19:11:59 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+19:11:59 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+19:12:04 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+19:12:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:12:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:12:09 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+19:12:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:12:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+19:12:14 INFO  : 'jtag frequency' command is executed.
+19:12:15 INFO  : Context for 'APU' is selected.
+19:12:15 INFO  : System reset is completed.
+19:12:18 INFO  : 'after 3000' command is executed.
+19:12:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:12:19 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+19:12:19 INFO  : Context for 'APU' is selected.
+19:12:19 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+19:12:19 INFO  : 'configparams force-mem-access 1' command is executed.
+19:12:19 INFO  : Context for 'APU' is selected.
+19:12:19 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+19:12:20 INFO  : 'ps7_init' command is executed.
+19:12:20 INFO  : 'ps7_post_config' command is executed.
+19:12:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:12:20 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:12:20 INFO  : 'configparams force-mem-access 0' command is executed.
+19:12:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:12:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:12:20 INFO  : 'con' command is executed.
+19:12:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:12:20 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+19:12:31 INFO  : Disconnected from the channel tcfchan#2.
+19:24:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+19:24:17 INFO  : XSCT server has started successfully.
+19:24:17 INFO  : Successfully done setting XSCT server connection channel  
+19:24:17 INFO  : plnx-install-location is set to ''
+19:24:17 INFO  : Successfully done setting workspace for the tool. 
+19:24:19 INFO  : Platform repository initialization has completed.
+19:24:19 INFO  : Successfully done query RDI_DATADIR 
+19:24:20 INFO  : Registering command handlers for Vitis TCF services
+19:24:39 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+19:24:45 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+19:24:45 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+19:24:52 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+19:24:54 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+19:24:54 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+19:24:54 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+19:24:58 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+19:25:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:25:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:25:03 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+19:25:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:25:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+19:25:10 INFO  : 'jtag frequency' command is executed.
+19:25:10 INFO  : Context for 'APU' is selected.
+19:25:10 INFO  : System reset is completed.
+19:25:13 INFO  : 'after 3000' command is executed.
+19:25:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:25:14 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+19:25:14 INFO  : Context for 'APU' is selected.
+19:25:15 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+19:25:15 INFO  : 'configparams force-mem-access 1' command is executed.
+19:25:15 INFO  : Context for 'APU' is selected.
+19:25:15 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+19:25:15 INFO  : 'ps7_init' command is executed.
+19:25:15 INFO  : 'ps7_post_config' command is executed.
+19:25:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:25:15 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:25:16 INFO  : 'configparams force-mem-access 0' command is executed.
+19:25:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:25:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:25:16 INFO  : 'con' command is executed.
+19:25:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:25:16 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+19:25:43 INFO  : Disconnected from the channel tcfchan#2.
+19:45:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+19:45:16 INFO  : XSCT server has started successfully.
+19:45:16 INFO  : plnx-install-location is set to ''
+19:45:16 INFO  : Successfully done setting XSCT server connection channel  
+19:45:16 INFO  : Successfully done setting workspace for the tool. 
+19:45:18 INFO  : Platform repository initialization has completed.
+19:45:18 INFO  : Successfully done query RDI_DATADIR 
+19:45:19 INFO  : Registering command handlers for Vitis TCF services
+19:45:32 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+19:45:42 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+19:45:42 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+19:45:42 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+19:45:45 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+19:45:45 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+19:45:45 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+19:45:45 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+19:45:49 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+19:46:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:46:19 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+19:46:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:24 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+19:46:24 INFO  : 'jtag frequency' command is executed.
+19:46:24 INFO  : Context for 'APU' is selected.
+19:46:24 INFO  : System reset is completed.
+19:46:27 INFO  : 'after 3000' command is executed.
+19:46:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+19:46:28 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+19:46:28 INFO  : Context for 'APU' is selected.
+19:46:29 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+19:46:29 INFO  : 'configparams force-mem-access 1' command is executed.
+19:46:29 INFO  : Context for 'APU' is selected.
+19:46:29 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+19:46:29 INFO  : 'ps7_init' command is executed.
+19:46:29 INFO  : 'ps7_post_config' command is executed.
+19:46:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:46:29 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:46:30 INFO  : 'configparams force-mem-access 0' command is executed.
+19:46:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:46:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:46:30 INFO  : 'con' command is executed.
+19:46:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:46:30 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+19:46:45 INFO  : Disconnected from the channel tcfchan#3.
+20:15:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+20:15:52 INFO  : XSCT server has started successfully.
+20:15:52 INFO  : Successfully done setting XSCT server connection channel  
+20:15:52 INFO  : plnx-install-location is set to ''
+20:15:52 INFO  : Successfully done setting workspace for the tool. 
+20:15:54 INFO  : Platform repository initialization has completed.
+20:15:55 INFO  : Successfully done query RDI_DATADIR 
+20:15:55 INFO  : Registering command handlers for Vitis TCF services
+20:16:14 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+20:16:21 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+20:16:21 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm;atelier4_wrapper|C:/Users/etien/OneDrive - USherbrooke/2023HIV/Projet/Projet/PPU/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+20:16:33 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:16:34 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+20:16:34 INFO  : The updated bitstream files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\bitstream' in project 'project'.
+20:16:34 INFO  : The file 'C:\Travail\s4InfoAtelier4\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+20:16:38 INFO  : The updated ps init files are copied from platform to folder 'C:\Travail\s4InfoAtelier4\project\_ide\psinit' in project 'project'.
+20:16:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:16:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+20:16:47 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.bit"
+20:16:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:16:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2568A' is selected.
+20:16:53 INFO  : 'jtag frequency' command is executed.
+20:16:53 INFO  : Context for 'APU' is selected.
+20:16:53 INFO  : System reset is completed.
+20:16:56 INFO  : 'after 3000' command is executed.
+20:16:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}' command is executed.
+20:16:57 INFO  : Device configured successfully with "C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit"
+20:16:57 INFO  : Context for 'APU' is selected.
+20:16:57 INFO  : Hardware design and registers information is loaded from 'C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+20:16:57 INFO  : 'configparams force-mem-access 1' command is executed.
+20:16:57 INFO  : Context for 'APU' is selected.
+20:16:57 INFO  : Sourcing of 'C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl' is done.
+20:16:58 INFO  : 'ps7_init' command is executed.
+20:16:58 INFO  : 'ps7_post_config' command is executed.
+20:16:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:16:58 INFO  : The application 'C:/Travail/s4InfoAtelier4/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:16:58 INFO  : 'configparams force-mem-access 0' command is executed.
+20:16:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2568A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2568A-13722093-0"}
+fpga -file C:/Travail/s4InfoAtelier4/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Travail/s4InfoAtelier4/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Travail/s4InfoAtelier4/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:16:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:16:59 INFO  : 'con' command is executed.
+20:16:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:16:59 INFO  : Launch script is exported to file 'C:\Travail\s4InfoAtelier4\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+20:18:17 INFO  : Disconnected from the channel tcfchan#2.

@@ -1,6 +1,6 @@
-14:52:07 **** Incremental Build of project atelier4_wrapper ****
-buildplatform.bat 55965 atelier4_wrapper no_domain_build 
+20:16:19 **** Incremental Build of project atelier4_wrapper ****
+buildplatform.bat 57850 atelier4_wrapper no_domain_build 
 XSDB Server Channel: tcfchan#1
 
-14:52:09 Build Finished (took 1s.869ms)
+20:16:21 Build Finished (took 1s.803ms)
 

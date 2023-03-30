@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 22 14:39:07 2023" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 29 19:54:04 2023" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="bd_0837" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -30,6 +30,51 @@
     <PORT DIR="O" LEFT="0" NAME="aresetn_io_axis" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="xlslice_0_Dout">
       <CONNECTIONS>
         <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="s_axis_tdest" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tdest">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tdest"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="s_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tkeep">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tkeep"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="input_size_set_s_axis_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="input_size_set_s_axis_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tuser">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tuser"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="input_size_set_s_axis_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="17" NAME="s_axi_ctrl_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="smartconnect_0_S00_AXI_awaddr">
@@ -125,51 +170,6 @@
     <PORT DIR="I" LEFT="0" NAME="s_axi_ctrl_rready" RIGHT="0" SIGIS="undef" SIGNAME="smartconnect_0_S00_AXI_rready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="smartconnect_0" PORT="S00_AXI_rready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="s_axis_tdest" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tdest">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tdest"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="s_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tkeep">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tkeep"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="input_size_set_s_axis_tlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="input_size_set_s_axis_tready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tstrb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tstrb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tuser">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tuser"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="input_size_set_s_axis_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="input_size_set" PORT="s_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TDATA">

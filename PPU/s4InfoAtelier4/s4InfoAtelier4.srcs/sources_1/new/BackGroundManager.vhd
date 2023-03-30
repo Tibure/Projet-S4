@@ -21,7 +21,6 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.ppu_package.all;
 use ieee.numeric_std.all;
 
 
@@ -52,7 +51,7 @@ entity BackGroundManager is
 end BackGroundManager;
 
 architecture Behavioral of BackGroundManager is
-type BackgroundTilesCol is array(0 to 64) of std_logic_vector(5 downto 0); -- 4 bit tuiles id + 2 bits rotation
+type BackgroundTilesCol is array(0 to 64) of std_logic_vector(5 downto 0); -- 2 bits rotation + 4 bits tuiles id
 type BackgroundTiles is array(0 to 64) of BackgroundTilesCol;
 
 signal BackgroundDefault : BackgroundTiles := (others => (others => ("000000")));
@@ -62,17 +61,38 @@ signal s_gY : unsigned(11 downto 0);
 
 
 begin
-BackgroundDefault(10)(5) <= "000001";
-BackgroundDefault(10)(7) <= "000010";
-BackgroundDefault(10)(9) <= "000011";
-BackgroundDefault(10)(11)<= "000111";
-BackgroundDefault(12)(5)  <= "001000";
-BackgroundDefault(12)(7) <= "010010";
-BackgroundDefault(12)(9) <= "100010";
-BackgroundDefault(12)(11)<= "110010";
+
+BackgroundDefault(8)(8) <= "000011";    --Orange
+BackgroundDefault(4)(12) <= "000100";   --Pomme
+
+BackgroundDefault(5)(5) <= "001000";    --Tete serpent
+BackgroundDefault(5)(6) <= "000101";    --Corps serpent
+BackgroundDefault(5)(7) <= "010110";    --90 serpent
+BackgroundDefault(6)(7)<= "010111";     --Queue serpent
+
+
+
+
+BackgroundDefault(0)(0) <= "010001";
+BackgroundDefault(1)(0) <= "010010";
+BackgroundDefault(2)(0) <= "010010";
+BackgroundDefault(3)(0) <= "010010";
+BackgroundDefault(4)(0) <= "010010";
+BackgroundDefault(5)(0) <= "010010";
+
+BackgroundDefault(0)(1) <= "100010";
+BackgroundDefault(0)(2) <= "100010";
+BackgroundDefault(0)(3) <= "100010";
+BackgroundDefault(0)(4) <= "100010";
+BackgroundDefault(0)(5) <= "100010";
 
 s_gX <= unsigned(i_g_X);
 s_gY <= unsigned(i_g_Y);
+
+o_x <= std_logic_vector(TO_UNSIGNED(to_integer(s_gX)mod 16,4));
+o_y <= std_logic_vector(TO_UNSIGNED(to_integer(s_gY)mod 16,4));
+o_t_id <= BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (3 downto 0);
+o_Rotation <=BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (5 downto 4);
 
 process(i_clk,s_gX,s_gY,set_t_id,i_we_t_id,i_tuileX,i_tuileY) begin
     if(rising_edge(i_clk)) then
@@ -81,11 +101,6 @@ process(i_clk,s_gX,s_gY,set_t_id,i_we_t_id,i_tuileX,i_tuileY) begin
             BackgroundDefault(to_integer(unsigned(i_tuileX)))(to_integer(unsigned(i_tuileY)))(5 downto 4) <= i_tuileRotation;
         end if;
         end if;
-        o_x <= std_logic_vector(TO_UNSIGNED(to_integer(s_gX)mod 16,4));
-        o_y <= std_logic_vector(TO_UNSIGNED(to_integer(s_gY)mod 16,4));
-        o_t_id <= BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (3 downto 0);
-        o_Rotation <=BackgroundDefault(to_integer(s_gX)/ 16)(to_integer(s_gY)/ 16) (5 downto 4);
-        
    end process;
 
 

@@ -54,6 +54,7 @@ component Datapath is
            o_dataPixel : out std_logic_vector(23 downto 0));
     end component;
 
+signal colorPixel : std_logic_vector(23 downto 0);
 
 begin
 
@@ -64,7 +65,6 @@ inst_datapath : Datapath
         i_y => i_y,
         o_dataPixel => o_dataPixel
         );
-
 
 --process(i_x)
 --begin
