@@ -1,10 +1,12 @@
 #ifndef __DIRECTION_H__
 #define __DIRECTION_H__
 
-#define UP 1
-#define DOWN 2
+#define DOWN 0
+#define RIGHT 1
+#define UP 2
 #define LEFT 3
-#define RIGHT 4
+
+#define Direction int
 
 
 #endif

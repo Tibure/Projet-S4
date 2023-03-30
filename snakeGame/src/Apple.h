@@ -1,22 +1,15 @@
-#ifndef __APPLE_H__
-#define __APPLE_H__
+#ifndef APPLE_H
+#define APPLE_H
 
-#include "Position.h"
+#include "snake.h"
 
-class Apple
-{
-private:
-    Position _position;
+typedef struct {
+    Position position;
+} Apple;
 
-public:
-    Apple();
-    Apple(Position position);
-    ~Apple();
-
-    void setPosition(Position position);
-    Position getPosition();
-
-};
-
+Apple init_apple();
+void destroy_apple(Apple* apple);
+Position get_apple_position(Apple* apple);
+void set_apple_position(Apple* apple, Position position);
 
 #endif
