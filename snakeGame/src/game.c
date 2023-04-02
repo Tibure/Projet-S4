@@ -17,12 +17,19 @@ void init_game(Game* game, int areaWidth, int areaHeight) {
     game->_apple = init_apple();
 
     place_apple_game(game);
+    
 }
 
 bool update_game(Game* game) {
     if (check_game_over_game(game)) return false;
 
     move_snake(&game->_snake);
+    int cpt = sizeof(&game->_snake._body);
+    for( int i =0 ; i<cpt; i++){
+    int dataSnake = get_snake_data(&game->_snake,1);
+    
+}
+    //FONCTION VITIS pour envoter data a utiliser avec dataSnake ici
 
     if (check_eats_apple_game(game)) {
         grow_snake(&game->_snake);
