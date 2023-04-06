@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Mar  9 14:49:14 2023
-# Process ID: 39736
+# Start of session at: Wed Apr  5 09:25:27 2023
+# Process ID: 31204
 # Current directory: C:/Travail/s4InfoAtelier4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32156 C:\Travail\s4InfoAtelier4\s4InfoAtelier4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17804 C:\Travail\s4InfoAtelier4\s4InfoAtelier4.xpr
 # Log file: C:/Travail/s4InfoAtelier4/vivado.log
 # Journal file: C:/Travail/s4InfoAtelier4\vivado.jou
 #-----------------------------------------------------------
@@ -19,7 +19,10 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4I
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/S4/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1095.391 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1078.188 ; gain = 0.000
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  9 15:21:51 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 11:36:53 2023...

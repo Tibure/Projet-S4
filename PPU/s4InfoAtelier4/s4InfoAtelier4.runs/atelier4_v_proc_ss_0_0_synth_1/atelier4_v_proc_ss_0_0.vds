@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 23 16:41:06 2023
+# Process ID: 49468
+# Current directory: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1
+# Command line: vivado.exe -log atelier4_v_proc_ss_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_v_proc_ss_0_0.tcl
+# Log file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/atelier4_v_proc_ss_0_0.vds
+# Journal file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source atelier4_v_proc_ss_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top atelier4_v_proc_ss_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46712
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1187.359 ; gain = 68.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_proc_ss_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/synth/atelier4_v_proc_ss_0_0.vhd:102]
+INFO: [Synth 8-3491] module 'bd_0837' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:11' bound to instance 'U0' of component 'bd_0837' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/synth/atelier4_v_proc_ss_0_0.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'bd_0837' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:61]
+INFO: [Synth 8-3491] module 'bd_0837_axis_fifo_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_axis_fifo_0_stub.vhdl:5' bound to instance 'axis_fifo' of component 'bd_0837_axis_fifo_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:589]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_axis_fifo_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_axis_fifo_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'bd_0837_axis_register_slice_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_axis_register_slice_0_0_stub.vhdl:5' bound to instance 'axis_register_slice_0' of component 'bd_0837_axis_register_slice_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:612]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_axis_register_slice_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_axis_register_slice_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'bd_0837_hsc_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_hsc_0_stub.vhdl:5' bound to instance 'hsc' of component 'bd_0837_hsc_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:635]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_hsc_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_hsc_0_stub.vhdl:49]
+INFO: [Synth 8-3491] module 'bd_0837_input_size_set_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_input_size_set_0_stub.vhdl:5' bound to instance 'input_size_set' of component 'bd_0837_input_size_set_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:676]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_input_size_set_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_input_size_set_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'bd_0837_reset_sel_axis_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_reset_sel_axis_0_stub.vhdl:5' bound to instance 'reset_sel_axis' of component 'bd_0837_reset_sel_axis_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:699]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_reset_sel_axis_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_reset_sel_axis_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'bd_0837_rst_axis_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_rst_axis_0_stub.vhdl:5' bound to instance 'rst_axis' of component 'bd_0837_rst_axis_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:724]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_rst_axis_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_rst_axis_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'bd_0837_smartconnect_0_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'bd_0837_smartconnect_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:737]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_smartconnect_0_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_smartconnect_0_0_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'bd_0837_vsc_0' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_vsc_0_stub.vhdl:5' bound to instance 'vsc' of component 'bd_0837_vsc_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:819]
+INFO: [Synth 8-638] synthesizing module 'bd_0837_vsc_0' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/.Xil/Vivado-49468-DESKTOP-STNSRIB/realtime/bd_0837_vsc_0_stub.vhdl:49]
+INFO: [Synth 8-3491] module 'bd_0837_xlslice_0_0' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_8/synth/bd_0837_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'bd_0837_xlslice_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:860]
+INFO: [Synth 8-6157] synthesizing module 'bd_0837_xlslice_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_8/synth/bd_0837_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 2 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (1#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0837_xlslice_0_0' (2#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_8/synth/bd_0837_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'bd_0837_xlslice_1_0' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_9/synth/bd_0837_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'bd_0837_xlslice_1_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:865]
+INFO: [Synth 8-6157] synthesizing module 'bd_0837_xlslice_1_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_9/synth/bd_0837_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 2 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (2#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0837_xlslice_1_0' (3#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_9/synth/bd_0837_xlslice_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'bd_0837' (4#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_v_proc_ss_0_0' (5#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/synth/atelier4_v_proc_ss_0_0.vhd:102]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.652 ; gain = 127.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.652 ; gain = 127.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.652 ; gain = 127.633
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1246.652 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/bd_0837_smartconnect_0_0/bd_0837_smartconnect_0_0_in_context.xdc] for cell 'U0/smartconnect_0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/bd_0837_smartconnect_0_0/bd_0837_smartconnect_0_0_in_context.xdc] for cell 'U0/smartconnect_0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0/bd_0837_vsc_0_in_context.xdc] for cell 'U0/vsc'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0/bd_0837_vsc_0_in_context.xdc] for cell 'U0/vsc'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0/bd_0837_hsc_0_in_context.xdc] for cell 'U0/hsc'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0/bd_0837_hsc_0_in_context.xdc] for cell 'U0/hsc'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_3/bd_0837_input_size_set_0/bd_0837_input_size_set_0_in_context.xdc] for cell 'U0/input_size_set'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_3/bd_0837_input_size_set_0/bd_0837_input_size_set_0_in_context.xdc] for cell 'U0/input_size_set'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0/bd_0837_rst_axis_0_in_context.xdc] for cell 'U0/rst_axis'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0/bd_0837_rst_axis_0_in_context.xdc] for cell 'U0/rst_axis'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0/bd_0837_reset_sel_axis_0_in_context.xdc] for cell 'U0/reset_sel_axis'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0/bd_0837_reset_sel_axis_0_in_context.xdc] for cell 'U0/reset_sel_axis'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0/bd_0837_axis_register_slice_0_0_in_context.xdc] for cell 'U0/axis_register_slice_0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0/bd_0837_axis_register_slice_0_0_in_context.xdc] for cell 'U0/axis_register_slice_0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_7/bd_0837_axis_fifo_0/bd_0837_axis_fifo_0_in_context.xdc] for cell 'U0/axis_fifo'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_7/bd_0837_axis_fifo_0/bd_0837_axis_fifo_0_in_context.xdc] for cell 'U0/axis_fifo'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1268.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1279.996 ; gain = 11.305
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1279.996 ; gain = 160.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1279.996 ; gain = 160.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/vsc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/hsc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/input_size_set. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/rst_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/reset_sel_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/axis_register_slice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/axis_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1279.996 ; gain = 160.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1279.996 ; gain = 160.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.996 ; gain = 160.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1317.754 ; gain = 198.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1317.977 ; gain = 198.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1337.094 ; gain = 218.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |bd_0837_axis_fifo_0             |         1|
+|2     |bd_0837_axis_register_slice_0_0 |         1|
+|3     |bd_0837_hsc_0                   |         1|
+|4     |bd_0837_input_size_set_0        |         1|
+|5     |bd_0837_reset_sel_axis_0        |         1|
+|6     |bd_0837_rst_axis_0              |         1|
+|7     |bd_0837_smartconnect_0_0        |         1|
+|8     |bd_0837_vsc_0                   |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |bd_0837_axis_fifo_0_bbox             |     1|
+|2     |bd_0837_axis_register_slice_0_0_bbox |     1|
+|3     |bd_0837_hsc_0_bbox                   |     1|
+|4     |bd_0837_input_size_set_0_bbox        |     1|
+|5     |bd_0837_reset_sel_axis_0_bbox        |     1|
+|6     |bd_0837_rst_axis_0_bbox              |     1|
+|7     |bd_0837_smartconnect_0_0_bbox        |     1|
+|8     |bd_0837_vsc_0_bbox                   |     1|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.914 ; gain = 191.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1343.914 ; gain = 224.895
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1343.914 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1369.016 ; gain = 249.996
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/atelier4_v_proc_ss_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP atelier4_v_proc_ss_0_0, cache-ID = 27c61a79bef0ab93
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_v_proc_ss_0_0_synth_1/atelier4_v_proc_ss_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file atelier4_v_proc_ss_0_0_utilization_synth.rpt -pb atelier4_v_proc_ss_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 23 16:41:44 2023...

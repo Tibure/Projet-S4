@@ -47,9 +47,9 @@ begin
       when "0000" =>
         Color_Out <= x"4FFFFF"; -- Transparent
       when "0001" =>
-        Color_out <= x"4C499F"; -- verrt foncé 
+        Color_out <= x"4C499F"; -- verrt fonc? 
       when "0010" =>
-        Color_out <= x"625EE1"; -- vert paêle  
+        Color_out <= x"625EE1"; -- vert pa?le  
       when "0011" =>
         Color_out <= x"FF0000"; -- rouge       
       when "0100" =>
@@ -57,28 +57,27 @@ begin
       when "0101" =>
         Color_out <= x"FFFFFF"; -- blanc           
       when "0110" =>
-        Color_out <= x"606060"; -- gris foncé  
+        Color_out <= x"606060"; -- gris fonc?  
       when "0111" =>
-        Color_out <= x"C0C0C0"; -- gris pâle   
+        Color_out <= x"C0C0C0"; -- gris p?le   
       when "1000" =>
         Color_out <= x"000000"; -- noir        
       when "1001" =>
         Color_out <= x"99004C"; -- brun        
       when "1010" =>
-        Color_out <= x"999900"; -- mauve foncé 
+        Color_out <= x"999900"; -- mauve fonc? 
       when "1011" =>
-        Color_out <= x"FFFF66"; -- mauve pâle  
+        Color_out <= x"FFFF66"; -- mauve p?le  
       when "1100" =>
         Color_out <= x"CC6600"; -- Rose        
       when "1101" =>
-        Color_out <= x"7FFF00"; -- bleu foncé  
+        Color_out <= x"7FFF00"; -- bleu fonc?  
       when "1110" =>
-        Color_out <= x"66FFB2"; -- bleu pâle   
+        Color_out <= x"66FFB2"; -- bleu p?le   
       when "1111" =>
-        Color_out <= x"FF00FF"; -- Blanc       
-
-
-        Color_out <= "111111111111111111111111";                
+        Color_out <= x"FF00FF"; -- Blanc 
+      when others =>
+        Color_out <= x"4FFFFF";               
    end case;
 end process;
 

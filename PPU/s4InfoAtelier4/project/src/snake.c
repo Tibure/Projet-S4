@@ -1,6 +1,7 @@
 #include "snake.h"
 #include <stdio.h>
 #include <math.h>
+#include "xil_printf.h"
 #define BITS 10
 
 Snake init_snake(Position position) {
@@ -36,7 +37,7 @@ char* to_binary_S(double nombre) {
     char* binaire = (char *) malloc(BITS + 1);
     double resultat_arrondi = my_round_S(nombre * 16);
     if (resultat_arrondi < 0.0 || resultat_arrondi > 1023.0) {
-        printf("Erreur : la valeur doit être comprise entre 0 et 64.\n");
+        //printf("Erreur : la valeur doit être comprise entre 0 et 64.\n");
         exit(1);
     } else {
         // Conversion en binaire sur 10 bits
@@ -53,23 +54,35 @@ char* to_binary_S(double nombre) {
 
 
 void move_snake(Snake* snake) {
-    int i;
-    for (i = snake->_length - 1; i > 0; i--) {
+
+    for (int i = snake->_length - 1; i > 0; i--) {
         snake->_body[i].x = snake->_body[i - 1].x;
         snake->_body[i].y = snake->_body[i - 1].y;
     }
+    int datePixelX = (int) (snake->_body[0].x * 16);
+    int datePixelY = (int) (snake->_body[0].y * 16);
+    //double newPos = 0.0;
+    //double offset = 1.0/16.0;
+
     switch (snake->_direction) {
         case DOWN:
+        	//newPos = snake->_body[0].y -offset;
+        	//xil_printf("Offset: %d,%d\tOldPosY: %d,%d\tNewPosY: %d,%d\n", (int)offset, (int)((offset-(int)offset)*1000000),(int)snake->_body[0].y, (int)((snake->_body[0].y-(int)snake->_body[0].y)*1000000), (int)newPos, (int)((newPos-(int)newPos)*1000000));
             snake->_body[0].y = snake->_body[0].y - 0.0625 ;
+            xil_printf("POS X: %d  , POSY: %d \n ",datePixelX, datePixelY );
+
             break;
         case RIGHT:
             snake->_body[0].x = snake->_body[0].x + 0.0625;
+            xil_printf("POS X: %d  , POSY: %d \n ",datePixelX, datePixelY );
             break;
         case UP:
             snake->_body[0].y = snake->_body[0].y + 0.0625;
+            xil_printf("POS X: %d  , POSY: %d \n ",datePixelX, datePixelY );
             break;
         case LEFT:
             snake->_body[0].x = snake->_body[0].x - 0.0625;
+            xil_printf("POS X: %d  , POSY: %d \n ",datePixelX, datePixelY );
             break;
     }
 }
@@ -125,44 +138,70 @@ int get_snake_data(Snake* snake,int body_part){
     }
 
     //Actor ID
-    char actorID[5] = "";
+    char tuileID[5] = "";
     if (body_part == 0) {
-		strcpy(actorID,"1000");//tete
+		strcpy(tuileID,"1000");//tete
         
 
     }
     else if(body_part != (sizeof(snake->_body)/sizeof(snake->_body[0]))-1){
-		strcpy(actorID,"0101");//corps normal
+		strcpy(tuileID,"0101");//corps normal
         
 
     }
     else{
-		strcpy(actorID,"0111");//queue
+		strcpy(tuileID,"0111");//queue
         
     }
 
-    //position x
-    char* posX= to_binary_S(snake->_body[body_part].x);
+    char opcode[33]="01";
 
+
+    char* acteurID = to_binary_3bits(body_part);
+
+
+    char visibility[2] = "";
+    if(body_part >  snake->_length ) {
+    	strcpy(visibility, "0");
+    }
+    else{
+    	strcpy(visibility, "1");
+    }
+
+    char* posX= to_binary_S(snake->_body[body_part].x);
     //position y
     char* posY= to_binary_S(snake->_body[body_part].y);
 
 	
-	strcat(posX,posY);
-	strcat(posX,rot);
-	strcat(posX,actorID);
-	
-	int data = strtol(posX,NULL,2);
+    strcat(opcode,posX);
+	strcat(opcode,posY);
+	strcat(opcode,tuileID);
+	strcat(opcode,rot);
+	strcat(opcode,visibility);
+	strcat(opcode,acteurID);
+	xil_printf("chaine: %s \n",opcode);
+	int data = strtol(opcode,NULL,2);
 	return data;
-	
 
-	
-	
+}
 
 
-
-
+char* to_binary_3bits(int nombre){
+    char* binaire = (char *) malloc(3 + 1);
     
+    if (nombre >7 ) {
+        //printf("Erreur : la valeur doit être comprise entre 0 et 7.\n");
+        exit(1);
+    } else {
+        // Conversion en binaire sur 10 bits
 
+        for (int i = 3 - 1; i >= 0; i--) {
+            binaire[i] = '0' + (nombre & 1);
+            nombre >>= 1; // Décalage à droite de 1 bit
+        }
+    }
+    binaire[3] = '\0'; // On ajoute le caractère de fin de chaîne
+
+    return binaire;
 
 }

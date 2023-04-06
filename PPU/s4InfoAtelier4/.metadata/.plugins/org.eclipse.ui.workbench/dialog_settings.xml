@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\S4Work\Projet\Projet-S4\snakeGame\src"/>
+			<item value="C:\S4Work\Projet\Projet-S4\PPU\s4InfoAtelier4\project\src"/>
+			<item value="C:\S4Work\Projet\Travail\s4InfoAtelier4\project\src"/>
+		</list>
+	</section>
+</section>

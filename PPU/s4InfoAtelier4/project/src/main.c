@@ -8,8 +8,8 @@
 
 int main()
 {
-    int areaWidth = 64;
-    int areaHeight = 64;
+    double areaWidth = 64;
+    double areaHeight = 64;
 
     // Initialize the game
     Game game;
@@ -22,7 +22,7 @@ int main()
     MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorC);
 
     // Set the initial direction of the snake
-    set_snake_direction_game(&game, 0);
+    set_snake_direction_game(&game, 2);
 
     // Run the game loop
     while (1) {
@@ -30,7 +30,7 @@ int main()
         bool gameIsOver = !update_game(&game);
         system("clear");
         MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, colorA );
-        for (int y = 0; y < areaHeight; y++) {
+        /*for (int y = 0; y < areaHeight; y++) {
                    for (int x = 0; x < areaWidth; x++) {
                        if (check_snake_collision(&game._snake, createPosition(x, y), true)) {
                     	   xil_printf("O");
@@ -41,7 +41,7 @@ int main()
                        }
                    }
                    xil_printf("\n");
-               }
+               }*/
 
          sleep(1);
 

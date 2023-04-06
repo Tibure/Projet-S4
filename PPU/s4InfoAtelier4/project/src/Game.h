@@ -12,7 +12,7 @@ typedef struct {
     int _areaHeight;
 } Game;
 
-Position createPosition(int x, int y);
+Position createPosition(double x, double y);
 
 void init_game(Game* game, int area_width, int area_height);
 void destroy_game(Game* game);
@@ -28,5 +28,8 @@ bool check_eats_apple_game(Game* game);
 bool check_win_game(Game* game);
 bool check_game_over_game(Game* game);
 void place_apple_game(Game* game);
+void init_border();
+char* to_binairy_border(int nombre);
+
 
 #endif

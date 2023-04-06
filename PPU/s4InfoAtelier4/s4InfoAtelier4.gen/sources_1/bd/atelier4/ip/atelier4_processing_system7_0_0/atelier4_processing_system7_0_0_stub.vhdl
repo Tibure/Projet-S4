@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 -- Date        : Mon Jan 23 14:35:46 2023
 -- Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top atelier4_processing_system7_0_0 -prefix
---               atelier4_processing_system7_0_0_ atelier4_processing_system7_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0_stub.vhdl
 -- Design      : atelier4_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

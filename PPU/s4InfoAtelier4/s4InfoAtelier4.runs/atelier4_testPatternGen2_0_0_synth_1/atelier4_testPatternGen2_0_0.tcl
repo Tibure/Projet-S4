@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "atelier4_testPatternGen2_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -99,7 +95,17 @@ set_property ip_output_repo c:/Travail/s4InfoAtelier4/s4InfoAtelier4.cache/ip [c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd
+read_vhdl -library xil_defaultlib {
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd
+}
+read_vhdl -library work {
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile_package.vhd
+  C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd
+}
 read_ip -quiet C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
 
 OPTRACE "Adding files" END { }

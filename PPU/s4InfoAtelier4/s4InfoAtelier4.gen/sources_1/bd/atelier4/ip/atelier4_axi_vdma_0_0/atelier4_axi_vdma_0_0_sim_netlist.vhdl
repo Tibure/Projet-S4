@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon Jan 23 14:36:38 2023
+-- Date        : Mon Jan 23 14:36:41 2023
 -- Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top atelier4_axi_vdma_0_0 -prefix
---               atelier4_axi_vdma_0_0_ atelier4_axi_vdma_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0_sim_netlist.vhdl
 -- Design      : atelier4_axi_vdma_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -53,6 +53,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_ibttcc is
     D : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \sig_child_addr_cntr_lsh_reg[11]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_ibttcc : entity is "axi_datamover_ibttcc";
 end atelier4_axi_vdma_0_0_axi_datamover_ibttcc;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_ibttcc is
@@ -5184,6 +5186,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf is
     sig_dre2ibtt_tlast_reg_reg_0 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf : entity is "axi_datamover_mssai_skid_buf";
 end atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf is
@@ -7774,6 +7778,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_pcc is
     sig_cmd2addr_valid_reg_0 : in STD_LOGIC;
     sig_inhibit_rdy_n_1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_pcc : entity is "axi_datamover_pcc";
 end atelier4_axi_vdma_0_0_axi_datamover_pcc;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_pcc is
@@ -12760,6 +12766,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl is
     sig_data2rsc_valid : in STD_LOGIC;
     sig_data2rsc_decerr : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl : entity is "axi_datamover_rd_status_cntl";
 end atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl is
@@ -12876,6 +12884,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_reset is
     sig_halt_cmplt_reg_2 : in STD_LOGIC;
     sig_next_calc_error_reg : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_reset : entity is "axi_datamover_reset";
 end atelier4_axi_vdma_0_0_axi_datamover_reset;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_reset is
@@ -13125,6 +13135,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf is
     \sig_strb_skid_reg_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \sig_strb_reg_out_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf : entity is "axi_datamover_skid2mm_buf";
 end atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf is
@@ -15515,6 +15527,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_skid_buf is
     \sig_data_reg_out_reg[64]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_data_skid_reg_reg[67]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_skid_buf : entity is "axi_datamover_skid_buf";
 end atelier4_axi_vdma_0_0_axi_datamover_skid_buf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_skid_buf is
@@ -18250,6 +18264,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_slice is
     sig_fifo_mssai : in STD_LOGIC_VECTOR ( 1 downto 0 );
     sig_stream_rst : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_slice : entity is "axi_datamover_slice";
 end atelier4_axi_vdma_0_0_axi_datamover_slice;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_slice is
@@ -18645,6 +18661,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_strb_gen2 is
     D : out STD_LOGIC_VECTOR ( 5 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_strb_gen2 : entity is "axi_datamover_strb_gen2";
 end atelier4_axi_vdma_0_0_axi_datamover_strb_gen2;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_strb_gen2 is
@@ -18751,6 +18769,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if is
     zero_hsize_err : in STD_LOGIC;
     zero_vsize_err : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if : entity is "axi_vdma_cmdsts_if";
 end atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if is
@@ -19917,6 +19937,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_fsync_gen is
     \GEN_LINEBUF_NO_SOF.all_lines_xfred_reg\ : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_fsync_gen : entity is "axi_vdma_fsync_gen";
 end atelier4_axi_vdma_0_0_axi_vdma_fsync_gen;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_fsync_gen is
@@ -20271,6 +20293,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr is
     mm2s_dmacr : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr : entity is "axi_vdma_genlock_mngr";
 end atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr is
@@ -20379,6 +20403,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_genlock_mux is
     mm2s_frame_ptr_out : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_s2mm_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_genlock_mux : entity is "axi_vdma_genlock_mux";
 end atelier4_axi_vdma_0_0_axi_vdma_genlock_mux;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_genlock_mux is
@@ -20448,6 +20474,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_intrpt is
     SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     \GEN_INCLUDE_S2MM.GEN_CH2_FRM_CNTR.ch2_thresh_count_reg[7]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_intrpt : entity is "axi_vdma_intrpt";
 end atelier4_axi_vdma_0_0_axi_vdma_intrpt;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_intrpt is
@@ -22064,6 +22092,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_reg_mux is
     \out\ : out STD_LOGIC_VECTOR ( 31 downto 0 );
     in0 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_reg_mux : entity is "axi_vdma_reg_mux";
 end atelier4_axi_vdma_0_0_axi_vdma_reg_mux;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_reg_mux is
@@ -22133,6 +22163,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_regdirect is
     mm2s_axi2ip_wrce : in STD_LOGIC_VECTOR ( 3 downto 0 );
     D : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_regdirect : entity is "axi_vdma_regdirect";
 end atelier4_axi_vdma_0_0_axi_vdma_regdirect;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_regdirect is
@@ -24298,6 +24330,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_register is
     \ENABLE_DMACR_FRM_CNTR.dmacr_i_reg[22]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \MM2S_ERR_FOR_IRQ.frm_store_i_reg[4]_1\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_register : entity is "axi_vdma_register";
 end atelier4_axi_vdma_0_0_axi_vdma_register;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_register is
@@ -26277,6 +26311,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_skid_buf is
     empty : in STD_LOGIC;
     m_axis_mm2s_tready_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_skid_buf : entity is "axi_vdma_skid_buf";
 end atelier4_axi_vdma_0_0_axi_vdma_skid_buf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_skid_buf is
@@ -28711,6 +28747,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_sm is
     \cmnds_queued_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_sm : entity is "axi_vdma_sm";
 end atelier4_axi_vdma_0_0_axi_vdma_sm;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_sm is
@@ -34345,6 +34383,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_sof_gen is
     \out\ : in STD_LOGIC;
     mm2s_dmac2cdc_fsync_out : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_sof_gen : entity is "axi_vdma_sof_gen";
 end atelier4_axi_vdma_0_0_axi_vdma_sof_gen;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_sof_gen is
@@ -34591,6 +34631,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_sts_mngr is
     s2mm_dmasr : in STD_LOGIC_VECTOR ( 0 to 0 );
     s2mm_ftchcmdsts_idle : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_sts_mngr : entity is "axi_vdma_sts_mngr";
 end atelier4_axi_vdma_0_0_axi_vdma_sts_mngr;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_sts_mngr is
@@ -34783,6 +34825,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_d
     D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \r0_data_reg[95]_0\ : in STD_LOGIC_VECTOR ( 95 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer : entity is "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer";
 end atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer is
@@ -39479,6 +39523,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_u
     \r0_keep_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \r0_data_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer : entity is "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer";
 end atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer is
@@ -42719,6 +42765,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity atelier4_axi_vdma_0_0_axi_vdma_vid_cdc is
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_vid_cdc : entity is "axi_vdma_vid_cdc";
 end atelier4_axi_vdma_0_0_axi_vdma_vid_cdc;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_vid_cdc is
@@ -43372,6 +43420,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_vregister is
     \stride_vid_reg[15]_2\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \GEN_START_ADDR_REG[0].start_address_vid_reg[0][31]_1\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_vregister : entity is "axi_vdma_vregister";
 end atelier4_axi_vdma_0_0_axi_vdma_vregister;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_vregister is
@@ -46024,6 +46074,8 @@ entity atelier4_axi_vdma_0_0_cdc_sync is
     prmry_min_assert_sftrst : in STD_LOGIC;
     axis_soft_reset_re : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_cdc_sync : entity is "cdc_sync";
 end atelier4_axi_vdma_0_0_cdc_sync;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_cdc_sync is
@@ -50401,6 +50453,8 @@ entity atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f is
     sig_stream_rst : in STD_LOGIC;
     m_axi_s2mm_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f : entity is "cntr_incr_decr_addn_f";
 end atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f is
@@ -52398,6 +52452,8 @@ entity atelier4_axi_vdma_0_0_dynshreg_f is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_s2mm_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_dynshreg_f : entity is "dynshreg_f";
 end atelier4_axi_vdma_0_0_dynshreg_f;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_dynshreg_f is
@@ -57939,6 +57995,8 @@ entity atelier4_axi_vdma_0_0_xpm_counter_updn is
     \count_value_i_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_counter_updn : entity is "xpm_counter_updn";
 end atelier4_axi_vdma_0_0_xpm_counter_updn;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_xpm_counter_updn is
@@ -63424,6 +63482,8 @@ entity atelier4_axi_vdma_0_0_xpm_fifo_reg_bit is
     wr_clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end atelier4_axi_vdma_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_xpm_fifo_reg_bit is
@@ -63670,6 +63730,8 @@ entity atelier4_axi_vdma_0_0_xpm_fifo_rst is
     rst_d1 : in STD_LOGIC;
     wr_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end atelier4_axi_vdma_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_xpm_fifo_rst is
@@ -64230,6 +64292,8 @@ entity atelier4_axi_vdma_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of atelier4_axi_vdma_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of atelier4_axi_vdma_0_0_xpm_memory_base : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of atelier4_axi_vdma_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -67979,6 +68043,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_lite_if is
     \GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.ip2axi_rddata_captured_d1_reg[20]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.ip2axi_rddata_captured_d1_reg[28]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_lite_if : entity is "axi_vdma_lite_if";
 end atelier4_axi_vdma_0_0_axi_vdma_lite_if;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_lite_if is
@@ -73707,6 +73773,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_reg_module is
     \ENABLE_DMACR_FRM_CNTR.dmacr_i_reg[22]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \MM2S_ERR_FOR_IRQ.frm_store_i_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_reg_module : entity is "axi_vdma_reg_module";
 end atelier4_axi_vdma_0_0_axi_vdma_reg_module;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_reg_module is
@@ -74258,6 +74326,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_reset is
     \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.INPUT_FLOP.REG_PLEVEL_IN_cdc_from\ : in STD_LOGIC;
     prmry_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_reset : entity is "axi_vdma_reset";
 end atelier4_axi_vdma_0_0_axi_vdma_reset;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_reset is
@@ -75874,6 +75944,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dw
     all_idle_reg : in STD_LOGIC;
     mm2s_halt : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter : entity is "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter";
 end atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter is
@@ -76260,6 +76332,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_vidreg_module is
     \stride_vid_reg[15]_1\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \GEN_START_ADDR_REG[0].start_address_vid_reg[0][31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_vidreg_module : entity is "axi_vdma_vidreg_module";
 end atelier4_axi_vdma_0_0_axi_vdma_vidreg_module;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_vidreg_module is
@@ -76485,6 +76559,8 @@ entity atelier4_axi_vdma_0_0_srl_fifo_rbu_f is
     s_axis_s2mm_cmd_tvalid : in STD_LOGIC;
     \sig_input_addr_reg_reg[31]\ : in STD_LOGIC_VECTOR ( 48 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_srl_fifo_rbu_f : entity is "srl_fifo_rbu_f";
 end atelier4_axi_vdma_0_0_srl_fifo_rbu_f;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_srl_fifo_rbu_f is
@@ -77834,6 +77910,8 @@ entity atelier4_axi_vdma_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of atelier4_axi_vdma_0_0_xpm_fifo_base : entity is 0;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of atelier4_axi_vdma_0_0_xpm_fifo_base : entity is "1'b0";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of atelier4_axi_vdma_0_0_xpm_fifo_base : entity is 8;
   attribute PE_THRESH_MAX : integer;
@@ -80970,6 +81048,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter is
     \FSM_onehot_state_reg[2]\ : in STD_LOGIC;
     mm2s_halt : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter : entity is "axi_vdma_mm2s_axis_dwidth_converter";
 end atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter is
@@ -81649,6 +81729,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_mngr is
     \DYNAMIC_SLAVE_MODE_FRAME_CNT.frame_number_i_reg[4]_2\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \cmnds_queued_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_mngr : entity is "axi_vdma_mngr";
 end atelier4_axi_vdma_0_0_axi_vdma_mngr;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_mngr is
@@ -82996,6 +83078,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_reg_if is
     s_axi_lite_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_lite_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_reg_if : entity is "axi_vdma_reg_if";
 end atelier4_axi_vdma_0_0_axi_vdma_reg_if;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_reg_if is
@@ -84175,6 +84259,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_rst_module is
     \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.INPUT_FLOP.REG_PLEVEL_IN_cdc_from\ : in STD_LOGIC;
     \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.INPUT_FLOP.REG_PLEVEL_IN_cdc_from_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_rst_module : entity is "axi_vdma_rst_module";
 end atelier4_axi_vdma_0_0_axi_vdma_rst_module;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_rst_module is
@@ -84367,6 +84453,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter is
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \r0_data_reg[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter : entity is "axi_vdma_s2mm_axis_dwidth_converter";
 end atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter is
@@ -84409,6 +84497,8 @@ entity atelier4_axi_vdma_0_0_srl_fifo_f is
     s_axis_s2mm_cmd_tvalid : in STD_LOGIC;
     \sig_input_addr_reg_reg[31]\ : in STD_LOGIC_VECTOR ( 48 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_srl_fifo_f : entity is "srl_fifo_f";
 end atelier4_axi_vdma_0_0_srl_fifo_f;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_srl_fifo_f is
@@ -85187,6 +85277,8 @@ entity atelier4_axi_vdma_0_0_xpm_fifo_sync is
   attribute FIFO_WRITE_DEPTH of atelier4_axi_vdma_0_0_xpm_fifo_sync : entity is 2048;
   attribute FULL_RESET_VALUE : integer;
   attribute FULL_RESET_VALUE of atelier4_axi_vdma_0_0_xpm_fifo_sync : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_xpm_fifo_sync : entity is "xpm_fifo_sync";
   attribute PROG_EMPTY_THRESH : integer;
   attribute PROG_EMPTY_THRESH of atelier4_axi_vdma_0_0_xpm_fifo_sync : entity is 10;
   attribute PROG_FULL_THRESH : integer;
@@ -86531,6 +86623,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_fifo is
     s_axis_s2mm_cmd_tvalid : in STD_LOGIC;
     \sig_input_addr_reg_reg[31]\ : in STD_LOGIC_VECTOR ( 48 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_fifo : entity is "axi_datamover_fifo";
 end atelier4_axi_vdma_0_0_axi_datamover_fifo;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_fifo is
@@ -87997,6 +88091,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_sfifo is
     \GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SOF.sof_flag_reg_0\ : in STD_LOGIC;
     lsig_cmd_loaded : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_sfifo : entity is "axi_vdma_sfifo";
 end atelier4_axi_vdma_0_0_axi_vdma_sfifo;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_sfifo is
@@ -88743,6 +88839,8 @@ entity atelier4_axi_vdma_0_0_sync_fifo_fg is
     \out\ : in STD_LOGIC;
     sig_cmd_stat_rst_user_reg_n_cdc_from : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_sync_fifo_fg : entity is "sync_fifo_fg";
 end atelier4_axi_vdma_0_0_sync_fifo_fg;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_sync_fifo_fg is
@@ -90129,6 +90227,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_addr_cntl is
     m_axi_mm2s_arready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 36 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_addr_cntl : entity is "axi_datamover_addr_cntl";
 end atelier4_axi_vdma_0_0_axi_datamover_addr_cntl;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_addr_cntl is
@@ -91309,6 +91409,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_cmd_status is
     \in\ : in STD_LOGIC_VECTOR ( 48 downto 0 );
     slverr_i_reg : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_cmd_status : entity is "axi_datamover_cmd_status";
 end atelier4_axi_vdma_0_0_axi_datamover_cmd_status;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_cmd_status is
@@ -91496,6 +91598,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl is
     sig_rst2all_stop_request : in STD_LOGIC;
     \sig_addr_posted_cntr_reg[2]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl : entity is "axi_datamover_rddata_cntl";
 end atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl is
@@ -92522,6 +92626,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter is
     \FSM_sequential_sig_cmdcntl_sm_state_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter : entity is "axi_datamover_s2mm_scatter";
 end atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter is
@@ -94135,6 +94241,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord is
     \out\ : in STD_LOGIC;
     sig_cmd_stat_rst_user_reg_n_cdc_from : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord : entity is "axi_datamover_sfifo_autord";
 end atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord is
@@ -94328,6 +94436,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl is
     m_axi_s2mm_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \GEN_ENABLE_INDET_BTT.sig_coelsc_eop_reg_1\ : in STD_LOGIC_VECTOR ( 18 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl : entity is "axi_datamover_wr_status_cntl";
 end atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl is
@@ -94871,6 +94981,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_wrdata_cntl is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_wrdata_cntl : entity is "axi_datamover_wrdata_cntl";
 end atelier4_axi_vdma_0_0_axi_datamover_wrdata_cntl;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_wrdata_cntl is
@@ -96463,6 +96575,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \GEN_LINEBUF_NO_SOF.vsize_counter_reg[12]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf : entity is "axi_vdma_mm2s_linebuf";
 end atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf is
@@ -97504,6 +97618,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf is
     \sig_mssa_index_reg_out_reg[1]\ : in STD_LOGIC;
     \sig_mssa_index_reg_out_reg[0]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf : entity is "axi_vdma_s2mm_linebuf";
 end atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf is
@@ -98878,6 +98994,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_indet_btt is
     DI : in STD_LOGIC_VECTOR ( 2 downto 0 );
     sig_stbs2sfcc_asserted : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_indet_btt : entity is "axi_datamover_indet_btt";
 end atelier4_axi_vdma_0_0_axi_datamover_indet_btt;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_indet_btt is
@@ -100026,6 +100144,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_rd_sf is
     \count_value_i_reg[10]_0\ : in STD_LOGIC;
     sig_cmd_stat_rst_user_reg_n_cdc_from : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_rd_sf : entity is "axi_datamover_rd_sf";
 end atelier4_axi_vdma_0_0_axi_datamover_rd_sf;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_rd_sf is
@@ -100358,6 +100478,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign is
     \in\ : in STD_LOGIC_VECTOR ( 19 downto 0 );
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign : entity is "axi_datamover_s2mm_realign";
 end atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign is
@@ -100598,6 +100720,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap is
     m_axi_mm2s_arready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 48 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap : entity is "axi_datamover_mm2s_full_wrap";
 end atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap is
@@ -100929,6 +101053,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap is
     m_axi_s2mm_bvalid : in STD_LOGIC;
     m_axis_s2mm_sts_tready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap : entity is "axi_datamover_s2mm_full_wrap";
 end atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap is
@@ -101797,6 +101923,8 @@ entity atelier4_axi_vdma_0_0_axi_datamover is
     m_axi_s2mm_bvalid : in STD_LOGIC;
     m_axis_s2mm_sts_tready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_datamover : entity is "axi_datamover";
 end atelier4_axi_vdma_0_0_axi_datamover;
 
 architecture STRUCTURE of atelier4_axi_vdma_0_0_axi_datamover is
@@ -102125,6 +102253,8 @@ entity atelier4_axi_vdma_0_0_axi_vdma is
   attribute C_USE_MM2S_FSYNC of atelier4_axi_vdma_0_0_axi_vdma : entity is 0;
   attribute C_USE_S2MM_FSYNC : integer;
   attribute C_USE_S2MM_FSYNC of atelier4_axi_vdma_0_0_axi_vdma : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of atelier4_axi_vdma_0_0_axi_vdma : entity is "axi_vdma";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of atelier4_axi_vdma_0_0_axi_vdma : entity is "yes";
   attribute ip_group : string;

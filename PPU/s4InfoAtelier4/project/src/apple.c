@@ -1,6 +1,8 @@
 #include "Apple.h"
 #include <stdlib.h>
 
+int cptAppleOrange = 0;
+
 Apple init_apple() {
     Apple apple;
     apple.position.x = 0;
@@ -28,19 +30,19 @@ double my_round_A(double x) {
 
 char* to_binary_A(double nombre) {	
     char* binaire = (char *) malloc(BITS + 1);
-    double resultat_arrondi = my_round_A(nombre * 16);
-    if (resultat_arrondi < 0.0 || resultat_arrondi > 1023.0) {
+
+    if (nombre > 64 ) {
         //printf("Erreur : la valeur doit être comprise entre 0 et 64.\n");
         exit(1);
     } else {
         // Conversion en binaire sur 10 bits
-        uint16_t entier = (uint16_t) resultat_arrondi;
-        for (int i = BITS - 1; i >= 0; i--) {
+        uint16_t entier = (uint16_t) nombre;
+        for (int i = 6 - 1; i >= 0; i--) {
             binaire[i] = '0' + (entier & 1);
             entier >>= 1; // Décalage à droite de 1 bit
         }
     }
-    binaire[BITS] = '\0'; // On ajoute le caractère de fin de chaîne
+    binaire[6] = '\0'; // On ajoute le caractère de fin de chaîne
 
     return binaire;
 }
@@ -61,13 +63,19 @@ Position get_apple_position(Apple* apple) {
 
 int get_apple_data(Apple* apple){
 
-        //rotation
-        char rot[2] = "00";
+     //rotation
+     char opcode[19] = "00";
+     char rot[3] = "00";
+     char pad[15]= "00000000000000";
 
+     char tuileID[5] = "";
+     if(cptAppleOrange % 2 == 0){
+    	 strcpy(tuileID,"0100"); //apple
 
-    //Actor ID
-    char actorID[4] = "0100";
-
+     }
+     else{
+    	 strcpy(tuileID,"0111"); //orange
+     }
 
     //position x
     char* posX= to_binary_A(apple->position.x);
@@ -76,23 +84,46 @@ int get_apple_data(Apple* apple){
     char* posY= to_binary_A(apple->position.x);
 
 	
-	strcat(posX,posY);
-	strcat(posX,rot);
-	strcat(posX,actorID);
+	strcat(opcode,posX);
+	strcat(opcode,posY);
+	strcat(opcode,tuileID);
+	strcat(opcode,rot);
+	strcat(opcode,pad);
 	
 	int data = strtol(posX,NULL,2);
+	cptAppleOrange++;
 	return data;
 	
 
-	
-	
+
+}
+
+int set_tile(Apple* apple){
+
+    //rotation
+    char opcode[33] = "00";
+    char rot[3] = "00";
+    char pad[15] = "00000000000000";
 
 
+    char tuileID[5] = "0000";
+
+   //position x
+   char* posX= to_binary_A(apple->position.x);
+
+   //position y
+   char* posY= to_binary_A(apple->position.x);
 
 
-    
+	strcat(opcode,posX);
+	strcat(opcode,posY);
+	strcat(opcode,tuileID);
+	strcat(opcode,rot);
+	strcat(opcode,pad);
 
+	int data = strtol(posX,NULL,2);
 
+	return data;
 }
 
 

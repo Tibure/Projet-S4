@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Mon Jan 23 15:35:50 2023
---Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+--Date        : Wed Mar 22 11:59:45 2023
+--Host        : XPS-Etienne running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
 --Purpose     : IP block netlist
@@ -490,18 +490,6 @@ architecture STRUCTURE of atelier4 is
     M00_AXI_rready : out STD_LOGIC
   );
   end component atelier4_smartconnect_0_1;
-  component atelier4_testPatternGen2_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    rstn : in STD_LOGIC;
-    i_x : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    o_dataValid : out STD_LOGIC;
-    o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component atelier4_testPatternGen2_0_0;
   component atelier4_v_axi4s_vid_out_0_0 is
   port (
     aclk : in STD_LOGIC;
@@ -634,6 +622,18 @@ architecture STRUCTURE of atelier4 is
     m00_axis_tuser : out STD_LOGIC
   );
   end component atelier4_pixelDataToVideoStre_0_3;
+  component atelier4_testPatternGen2_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rstn : in STD_LOGIC;
+    i_x : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    o_dataValid : out STD_LOGIC;
+    o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component atelier4_testPatternGen2_0_0;
   signal Net : STD_LOGIC;
   signal axi_vdma_0_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal axi_vdma_0_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 2 downto 0 );

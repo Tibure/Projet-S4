@@ -28,11 +28,96 @@ platform clean
 platform generate
 platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate
 platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
 platform active {atelier4_wrapper}
 platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
 platform active {atelier4_wrapper}
 platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate
+platform generate
+platform generate -domains 
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}

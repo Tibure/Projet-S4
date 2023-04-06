@@ -12,8 +12,8 @@
 #define false 0
 
 typedef struct {
-    int x;
-    int y;
+    double x;
+    double y;
 } Position;
 
 
@@ -34,6 +34,7 @@ Position* get_snake_body(Snake* snake);
 int get_snake_data(Snake* snake, int body_part);
 bool check_snake_collision(Snake* snake, Position position, bool ignore_head);
 char* to_binary_S(double nombre);
+char* to_binary_3bits(int nombre);
 double my_round_S(double x);
 
 

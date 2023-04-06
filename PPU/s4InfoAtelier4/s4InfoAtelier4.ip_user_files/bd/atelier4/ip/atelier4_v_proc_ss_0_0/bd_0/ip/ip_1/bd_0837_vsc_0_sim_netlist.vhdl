@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu Mar  3 12:00:14 2022
--- Host        : DESKTOP-7O8NHLB running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top bd_0837_vsc_0 -prefix
---               bd_0837_vsc_0_ bd_0837_vsc_0_sim_netlist.vhdl
+-- Date        : Mon Jan 23 16:40:44 2023
+-- Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0_sim_netlist.vhdl
 -- Design      : bd_0837_vsc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,6 +28,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_Block_split4_proc is
     start_once_reg_reg_0 : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_Block_split4_proc : entity is "bd_0837_vsc_0_Block_split4_proc";
 end bd_0837_vsc_0_bd_0837_vsc_0_Block_split4_proc;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_Block_split4_proc is
@@ -172,6 +174,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi_ram is
     s_axi_CTRL_WVALID : in STD_LOGIC;
     \gen_write[1].mem_reg_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi_ram : entity is "bd_0837_vsc_0_CTRL_s_axi_ram";
 end bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi_ram;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi_ram is
@@ -872,6 +876,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S_shiftReg is
     \out\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w10_d2_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S_shiftReg is
@@ -2715,6 +2721,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S_shiftReg is
     \in\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w10_d4_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S_shiftReg is
@@ -3031,6 +3039,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S_shiftReg is
     if_din : in STD_LOGIC_VECTOR ( 10 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w11_d2_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S_shiftReg is
@@ -4347,6 +4357,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S_shiftReg is
     \in\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w24_d16_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S_shiftReg is
@@ -5955,6 +5967,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S_shiftReg is
     \in\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w32_d4_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S_shiftReg is
@@ -6517,6 +6531,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S_shiftReg is
     D : in STD_LOGIC_VECTOR ( 7 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w8_d2_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S_shiftReg is
@@ -7166,6 +7182,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S_shiftReg is
     \in\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S_shiftReg : entity is "bd_0837_vsc_0_fifo_w8_d3_S_shiftReg";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S_shiftReg;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S_shiftReg is
@@ -7532,6 +7550,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0 is
     ap_block_pp1_stage0_11001 : in STD_LOGIC;
     ap_enable_reg_pp1_iter0 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1_DSP48_0 is
@@ -7892,6 +7912,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1 is
     ap_block_pp1_stage0_11001 : in STD_LOGIC;
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1 is
@@ -8328,6 +8350,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2 is
@@ -8754,6 +8778,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1_DSP48_3 is
@@ -9117,6 +9143,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4 is
@@ -9540,6 +9568,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1_DSP48_5 is
@@ -10353,6 +10383,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_reg_unsigned_short_s is
     \d_read_reg_22_reg[9]_0\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_reg_unsigned_short_s : entity is "bd_0837_vsc_0_reg_unsigned_short_s";
 end bd_0837_vsc_0_bd_0837_vsc_0_reg_unsigned_short_s;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_reg_unsigned_short_s is
@@ -11015,6 +11047,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_regslice_both is
     icmp_ln951_reg_503 : in STD_LOGIC;
     \B_V_data_1_payload_B_reg[23]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_regslice_both : entity is "bd_0837_vsc_0_regslice_both";
 end bd_0837_vsc_0_bd_0837_vsc_0_regslice_both;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_regslice_both is
@@ -15316,6 +15350,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0 is
     \mOutPtr_reg[0]_0\ : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0 : entity is "bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0";
 end bd_0837_vsc_0_bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0 is
@@ -15446,6 +15482,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0 is
     ap_rst_n : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0 : entity is "bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0";
 end bd_0837_vsc_0_bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0 is
@@ -15626,6 +15664,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_start_for_v_vcresampler_core_U0 is
     \mOutPtr_reg[2]_0\ : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_start_for_v_vcresampler_core_U0 : entity is "bd_0837_vsc_0_start_for_v_vcresampler_core_U0";
 end bd_0837_vsc_0_bd_0837_vsc_0_start_for_v_vcresampler_core_U0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_start_for_v_vcresampler_core_U0 is
@@ -15789,6 +15829,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram is
     ram_reg_4 : in STD_LOGIC;
     cmp76_i_reg_853 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram : entity is "bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram is
@@ -16496,6 +16538,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram is
     sel_tmp1_reg_870 : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram : entity is "bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram is
@@ -16712,6 +16756,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0_ram is
     ap_clk : in STD_LOGIC;
     vfltCoeff_q0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0_ram : entity is "bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0_ram";
 end bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0_ram;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0_ram is
@@ -19386,6 +19432,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram is
     ram_reg_1_1 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     ram_reg_1_2 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram : entity is "bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram";
 end bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram is
@@ -23838,6 +23886,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_AXIvideo2MultiPixStream is
     \ColorMode_read_reg_553_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axis_video_TDATA : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_AXIvideo2MultiPixStream : entity is "bd_0837_vsc_0_AXIvideo2MultiPixStream";
 end bd_0837_vsc_0_bd_0837_vsc_0_AXIvideo2MultiPixStream;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_AXIvideo2MultiPixStream is
@@ -27889,6 +27939,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi is
     s_axi_CTRL_BREADY : in STD_LOGIC;
     s_axi_CTRL_RREADY : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi : entity is "bd_0837_vsc_0_CTRL_s_axi";
 end bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_CTRL_s_axi is
@@ -31798,6 +31850,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_MultiPixStream2AXIvideo is
     \d_read_reg_22_reg[10]\ : in STD_LOGIC_VECTOR ( 10 downto 0 );
     \d_read_reg_22_reg[9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_MultiPixStream2AXIvideo : entity is "bd_0837_vsc_0_MultiPixStream2AXIvideo";
 end bd_0837_vsc_0_bd_0837_vsc_0_MultiPixStream2AXIvideo;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_MultiPixStream2AXIvideo is
@@ -33223,6 +33277,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S is
     SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     \SRL_SIG_reg[0][9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S : entity is "bd_0837_vsc_0_fifo_w10_d2_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d2_S is
@@ -33989,6 +34045,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S is
     \in\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S : entity is "bd_0837_vsc_0_fifo_w10_d4_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w10_d4_S is
@@ -34200,6 +34258,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S is
     SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     \SRL_SIG_reg[0][10]\ : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S : entity is "bd_0837_vsc_0_fifo_w11_d2_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w11_d2_S is
@@ -34996,6 +35056,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S is
     SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S : entity is "bd_0837_vsc_0_fifo_w24_d16_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w24_d16_S is
@@ -35724,6 +35786,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S is
     \in\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S : entity is "bd_0837_vsc_0_fifo_w32_d4_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w32_d4_S is
@@ -35926,6 +35990,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S is
     \SRL_SIG_reg[0][7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S : entity is "bd_0837_vsc_0_fifo_w8_d2_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d2_S is
@@ -36272,6 +36338,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S is
     \mOutPtr_reg[2]_0\ : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S : entity is "bd_0837_vsc_0_fifo_w8_d3_S";
 end bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_fifo_w8_d3_S is
@@ -36640,6 +36708,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1 is
     q00 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     A : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_13ns_24_4_1 is
@@ -36735,6 +36805,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1 is
     p_reg_reg : in STD_LOGIC_VECTOR ( 7 downto 0 );
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_24s_25_4_1 is
@@ -36840,6 +36912,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     P : in STD_LOGIC_VECTOR ( 24 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_25s_26_4_1 is
@@ -36945,6 +37019,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     PCOUT : in STD_LOGIC_VECTOR ( 47 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_26_4_1 is
@@ -37050,6 +37126,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     P : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_26s_27_4_1 is
@@ -37155,6 +37233,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     PCOUT : in STD_LOGIC_VECTOR ( 47 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1 : entity is "bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_mac_muladd_8ns_16s_27s_27_4_1 is
@@ -37265,6 +37345,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0 is
     ram_reg_3 : in STD_LOGIC;
     SrcYUV_empty_n : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0 : entity is "bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0 is
@@ -37432,6 +37514,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1 is
     sel_tmp1_reg_870 : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1 : entity is "bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1 is
@@ -37473,6 +37557,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0 is
     ap_clk : in STD_LOGIC;
     vfltCoeff_q0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0 : entity is "bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0";
 end bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_FiltCoeff_0 is
@@ -37696,6 +37782,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0 is
     ram_reg_0_5 : in STD_LOGIC_VECTOR ( 10 downto 0 );
     ram_reg_0_6 : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0 : entity is "bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0";
 end bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0 is
@@ -38070,6 +38158,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core is
     \add_ln1060_reg_825_reg[10]_0\ : in STD_LOGIC_VECTOR ( 10 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core : entity is "bd_0837_vsc_0_v_vcresampler_core";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_v_vcresampler_core is
@@ -43039,6 +43129,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase is
     HwReg_HeightIn_c17_empty_n : in STD_LOGIC;
     HwReg_HeightOut_c_empty_n : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase : entity is "bd_0837_vsc_0_vscale_core_polyphase";
 end bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase;
 
 architecture STRUCTURE of bd_0837_vsc_0_bd_0837_vsc_0_vscale_core_polyphase is
@@ -55753,6 +55845,8 @@ entity bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler is
   attribute C_S_AXI_DATA_WIDTH of bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
   attribute C_S_AXI_WSTRB_WIDTH of bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler : entity is 4;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler : entity is "bd_0837_vsc_0_v_vscaler";
   attribute hls_module : string;
   attribute hls_module of bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler : entity is "yes";
 end bd_0837_vsc_0_bd_0837_vsc_0_v_vscaler;
@@ -57401,7 +57495,7 @@ architecture STRUCTURE of bd_0837_vsc_0 is
   attribute X_INTERFACE_INFO of s_axi_CTRL_BREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL BREADY";
   attribute X_INTERFACE_INFO of s_axi_CTRL_BVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL BVALID";
   attribute X_INTERFACE_INFO of s_axi_CTRL_RREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_CTRL_RREADY : signal is "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 12, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 74250000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_CTRL_RREADY : signal is "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 12, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 74250000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_CTRL_RVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL RVALID";
   attribute X_INTERFACE_INFO of s_axi_CTRL_WREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL WREADY";
   attribute X_INTERFACE_INFO of s_axi_CTRL_WVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL WVALID";

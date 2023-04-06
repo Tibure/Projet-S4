@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 14:36:38 2023
+// Date        : Mon Jan 23 14:36:40 2023
 // Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top atelier4_axi_vdma_0_0 -prefix
-//               atelier4_axi_vdma_0_0_ atelier4_axi_vdma_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0_sim_netlist.v
 // Design      : atelier4_axi_vdma_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -466,6 +466,7 @@ module atelier4_axi_vdma_0_0
        (.P(\<const1> ));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover" *) 
 module atelier4_axi_vdma_0_0_axi_datamover
    (empty,
     sig_rst2all_stop_request,
@@ -817,6 +818,7 @@ module atelier4_axi_vdma_0_0_axi_datamover
         .\sig_strb_skid_reg_reg[2] (\sig_strb_skid_reg_reg[2] ));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_addr_cntl" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_addr_cntl
    (out,
     sig_posted_to_axi_reg_0,
@@ -1747,6 +1749,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_addr_cntl__parameterized0
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_cmd_status" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_cmd_status
    (sig_init_reg,
     FIFO_Full_reg,
@@ -2046,6 +2049,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_cmd_status__parameterized0
         .sig_stream_rst(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_fifo" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_fifo
    (sig_init_done,
     sig_inhibit_rdy_n_reg_0,
@@ -3770,6 +3774,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_fifo__parameterized8
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_ibttcc" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_ibttcc
    (sig_psm_pop_input_cmd,
     sig_csm_pop_child_cmd,
@@ -7528,6 +7533,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_ibttcc
         .O(rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_indet_btt" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_indet_btt
    (dout,
     empty,
@@ -8529,6 +8535,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_indet_btt
         .O(sig_data_fifo_data_in[72]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_mm2s_full_wrap" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap
    (empty,
     sig_rst2all_stop_request,
@@ -8874,6 +8881,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_mm2s_full_wrap
         .sig_s_h_halt_reg_reg_0(sig_s_h_halt_reg_reg));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_mssai_skid_buf" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf
    (sig_s_ready_out_reg_0,
     out,
@@ -10898,6 +10906,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_mssai_skid_buf
         .O(rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_pcc" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_pcc
    (in,
     sig_sm_halt_reg,
@@ -14618,6 +14627,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_pcc
         .S(\sig_strbgen_bytes_ireg2_reg_n_0_[2] ));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_rd_sf" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_rd_sf
    (sig_wr_fifo,
     full,
@@ -14912,6 +14922,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_rd_sf
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_rd_status_cntl" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl
    (sig_rsc2stat_status_valid,
     sig_rsc2data_ready,
@@ -14998,6 +15009,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_rd_status_cntl
         .R(sig_rd_sts_slverr_reg_reg_1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_rddata_cntl" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl
    (FIFO_Full_reg,
     sig_data2rsc_valid,
@@ -15819,6 +15831,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_rddata_cntl
         .O(din[3]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_reset" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_reset
    (sig_cmd_stat_rst_user_reg_n_cdc_from,
     sig_rst2all_stop_request_0,
@@ -16074,6 +16087,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_reset_32
         .O(SS));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_s2mm_full_wrap" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap
    (sig_s_ready_out_reg,
     out,
@@ -16753,6 +16767,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_s2mm_full_wrap
         .sig_wsc2stat_status_valid(sig_wsc2stat_status_valid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_s2mm_realign" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign
    (sig_s_ready_out_reg,
     out,
@@ -17044,6 +17059,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_s2mm_realign
         .R(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_s2mm_scatter" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter
    (sig_s_ready_out_reg,
     out,
@@ -18353,6 +18369,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_s2mm_scatter
         .R(sig_eop_sent_reg0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_sfifo_autord" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord
    (full,
     empty,
@@ -18657,6 +18674,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_sfifo_autord__parameterized1
         .sig_stream_rst(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_skid2mm_buf" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf
    (out,
     sig_s_ready_out_reg_0,
@@ -20409,6 +20427,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_skid2mm_buf
         .R(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_skid_buf" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_skid_buf
    (out,
     sig_m_valid_out_reg_0,
@@ -22415,6 +22434,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_skid_buf
         .O(rd_en));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_slice" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_slice
    (slice_insert_valid,
     sig_eop_halt_xfer_reg,
@@ -22781,6 +22801,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_slice
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_strb_gen2" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_strb_gen2
    (D,
     out);
@@ -22838,6 +22859,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_strb_gen2
         .O(D[5]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_wr_status_cntl" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl
    (sig_wsc2stat_status_valid,
     in,
@@ -23290,6 +23312,7 @@ module atelier4_axi_vdma_0_0_axi_datamover_wr_status_cntl
         .R(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "axi_datamover_wrdata_cntl" *) 
 module atelier4_axi_vdma_0_0_axi_datamover_wrdata_cntl
    (FIFO_Full_reg,
     sig_next_calc_error_reg,
@@ -24584,8 +24607,8 @@ endmodule
 (* C_S2MM_MAX_BURST_LENGTH = "8" *) (* C_S2MM_SOF_ENABLE = "1" *) (* C_SELECT_XPM = "0" *) 
 (* C_S_AXIS_S2MM_TDATA_WIDTH = "24" *) (* C_S_AXIS_S2MM_TUSER_BITS = "1" *) (* C_S_AXI_LITE_ADDR_WIDTH = "9" *) 
 (* C_S_AXI_LITE_DATA_WIDTH = "32" *) (* C_USE_FSYNC = "1" *) (* C_USE_MM2S_FSYNC = "0" *) 
-(* C_USE_S2MM_FSYNC = "0" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
-(* iptype = "PERIPHERAL" *) (* run_ngcbuild = "TRUE" *) 
+(* C_USE_S2MM_FSYNC = "0" *) (* ORIG_REF_NAME = "axi_vdma" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* ip_group = "LOGICORE" *) (* iptype = "PERIPHERAL" *) (* run_ngcbuild = "TRUE" *) 
 module atelier4_axi_vdma_0_0_axi_vdma
    (s_axi_lite_aclk,
     m_axi_sg_aclk,
@@ -26159,6 +26182,7 @@ module atelier4_axi_vdma_0_0_axi_vdma
         .stop(mm2s_stop));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_cmdsts_if" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if
    (sts_tready_reg_0,
     interr_i_reg_0,
@@ -27154,6 +27178,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_cmdsts_if__parameterized0
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_fsync_gen" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_fsync_gen
    (mm2s_frame_sync,
     frame_sync_aligned,
@@ -27473,6 +27498,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_fsync_gen__parameterized0
         .O(frame_sync_i0__0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_genlock_mngr" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr
    (mm2s_valid_frame_sync,
     mm2s_frame_ptr_out,
@@ -27675,6 +27701,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_genlock_mngr__parameterized0
         .R(1'b1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_genlock_mux" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_genlock_mux
    (dm_inv_raw_frame_ptr,
     regdir_idle_i1,
@@ -27704,6 +27731,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_genlock_mux
         .R(regdir_idle_i1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_intrpt" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_intrpt
    (ch1_dly_irq_set,
     ch2_dly_irq_set,
@@ -29012,6 +29040,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_intrpt
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_lite_if" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_lite_if
    (s_axi_lite_rdata,
     D,
@@ -33583,6 +33612,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_lite_if
         .R(SR));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_mm2s_axis_dwidth_converter" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter
    (m_axis_mm2s_tready_i,
     \GEN_DWIDTH_NO_SOF.all_lines_xfred_reg_0 ,
@@ -34108,6 +34138,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_mm2s_axis_dwidth_converter
         .R(SR));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_mm2s_linebuf" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf
    (full,
     out,
@@ -34879,6 +34910,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_mm2s_linebuf
         .O(crnt_vsize_cdc_tig[3]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_mngr" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_mngr
    (cmnd_wr,
     m_axis_mm2s_sts_tready,
@@ -36012,6 +36044,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_mngr__parameterized0
         .R(regdir_idle_i1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_reg_if" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_reg_if
    (s_axi_lite_rdata,
     D,
@@ -37203,6 +37236,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_reg_if
         .O(n_0_4));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_reg_module" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_reg_module
    (mm2s_dmacr,
     mm2s_soft_reset,
@@ -37975,6 +38009,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_reg_module__parameterized0
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_reg_mux" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_reg_mux
    (out,
     in0);
@@ -38000,6 +38035,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_reg_mux__parameterized0
   assign out[31:0] = ip2axi_rddata_int;
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_regdirect" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_regdirect
    (mm2s_regdir_idle,
     \reg_module_hsize_reg[0]_0 ,
@@ -39712,6 +39748,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_regdirect__parameterized0
         .R(SS));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_register" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_register
    (mm2s_dmacr,
     \dmacr_i_reg[2]_0 ,
@@ -41423,6 +41460,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_register__parameterized0
         .O(stop_i));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_reset" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_reset
    (in0,
     halt_i_reg_0,
@@ -42842,6 +42880,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_reset_2
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_rst_module" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_rst_module
    (out,
     \GEN_MIN_FOR_ASYNC.GEN_FOR_NO_SG.min_assert_sftrst_reg ,
@@ -43196,6 +43235,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_rst_module
         .O(n_0_2422));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_s2mm_axis_dwidth_converter" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter
    (s_axis_s2mm_tready_i_axis_dw_conv,
     s_axis_s2mm_tvalid_i,
@@ -43262,6 +43302,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter
         .\state_reg[1] (s_axis_s2mm_tvalid_i));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_s2mm_linebuf" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf
    (dout,
     empty,
@@ -44223,6 +44264,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_s2mm_linebuf
         .O(crnt_vsize_cdc_tig[3]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_sfifo" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_sfifo
    (full,
     dout,
@@ -44866,6 +44908,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_sfifo__parameterized0
         .O(fifo_wren));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_skid_buf" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_skid_buf
    (out,
     sig_m_valid_out_reg_0,
@@ -46646,6 +46689,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_skid_buf__parameterized0
         .R(s_axis_fifo_ainit_nosync));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_sm" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_sm
    (frame_sync_reg,
     \GEN_NORMAL_DM_COMMAND.cmnd_wr_i_reg_0 ,
@@ -50881,6 +50925,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_sm__parameterized0
         .R(regdir_idle_i1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_sof_gen" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_sof_gen
    (mm2s_vid2cdc_packet_sof,
     hold_sof_reg_0,
@@ -51116,6 +51161,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_sof_gen_0
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_sts_mngr" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_sts_mngr
    (s2mm_all_idle,
     datamover_idle,
@@ -51297,6 +51343,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_sts_mngr_67
         .R(p_0_in));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dwidth_converter
    (E,
     \state_reg[1] ,
@@ -51581,6 +51628,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axis_dw
         .\state_reg[0]_1 (\state_reg[0] ));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_downsizer
    (\state_reg[1]_0 ,
     \state_reg[1]_1 ,
@@ -55212,6 +55260,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_d
         .O(din[29]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer
    (\state_reg[0]_0 ,
     acc_user_reg,
@@ -57714,6 +57763,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_u
         .R(areset_r));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_vid_cdc" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_vid_cdc
    ();
 
@@ -58099,6 +58149,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_vid_cdc_1
         .O(frame_ptr_in_d2[2]));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_vidreg_module" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_vidreg_module
    (\GEN_REGISTER_DIRECT.GEN_REGDIRECT_DRES.video_reg_updated_reg_0 ,
     \GEN_REGISTER_DIRECT.GEN_REGDIRECT_DRES.video_prmtrs_valid_i_reg_0 ,
@@ -58420,6 +58471,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_vidreg_module_68
         .O(\GEN_REGISTER_DIRECT.GEN_REGDIRECT_DRES.video_reg_updated_reg_1 ));
 endmodule
 
+(* ORIG_REF_NAME = "axi_vdma_vregister" *) 
 module atelier4_axi_vdma_0_0_axi_vdma_vregister
    (undrflo_err0,
     zero_vsize_err0,
@@ -60457,6 +60509,7 @@ module atelier4_axi_vdma_0_0_axi_vdma_vregister_69
         .O(zero_vsize_err_i_3_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "cdc_sync" *) 
 module atelier4_axi_vdma_0_0_cdc_sync
    (axis_clear_sft_rst_hold,
     SR,
@@ -64184,6 +64237,7 @@ module atelier4_axi_vdma_0_0_cdc_sync__parameterized2_70
         .R(prmry_reset2_0));
 endmodule
 
+(* ORIG_REF_NAME = "cntr_incr_decr_addn_f" *) 
 module atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f
    (fifo_full_p1,
     Q,
@@ -66046,6 +66100,7 @@ module atelier4_axi_vdma_0_0_cntr_incr_decr_addn_f__parameterized1
         .S(SS));
 endmodule
 
+(* ORIG_REF_NAME = "dynshreg_f" *) 
 module atelier4_axi_vdma_0_0_dynshreg_f
    (sig_wr_fifo,
     out,
@@ -70737,6 +70792,7 @@ module atelier4_axi_vdma_0_0_dynshreg_f__parameterized8
         .O(sig_cmd_stat_rst_user_reg_n_cdc_from_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "srl_fifo_f" *) 
 module atelier4_axi_vdma_0_0_srl_fifo_f
    (sig_inhibit_rdy_n_reg,
     Q,
@@ -71887,6 +71943,7 @@ module atelier4_axi_vdma_0_0_srl_fifo_f__parameterized8
         .sig_stream_rst(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "srl_fifo_rbu_f" *) 
 module atelier4_axi_vdma_0_0_srl_fifo_rbu_f
    (sig_inhibit_rdy_n_reg,
     Q,
@@ -73394,6 +73451,7 @@ module atelier4_axi_vdma_0_0_srl_fifo_rbu_f__parameterized8
         .R(sig_stream_rst));
 endmodule
 
+(* ORIG_REF_NAME = "sync_fifo_fg" *) 
 module atelier4_axi_vdma_0_0_sync_fifo_fg
    (full,
     empty,
@@ -74542,6 +74600,7 @@ module atelier4_axi_vdma_0_0_sync_fifo_fg__parameterized1
         .O(lsig_good_push2fifo11_out));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_counter_updn" *) 
 module atelier4_axi_vdma_0_0_xpm_counter_updn
    (D,
     count_value_i,
@@ -78894,19 +78953,19 @@ endmodule
 (* EN_WACK = "1'b1" *) (* EN_WDC = "1'b1" *) (* FG_EQ_ASYM_DOUT = "1'b0" *) 
 (* FIFO_MEMORY_TYPE = "0" *) (* FIFO_MEM_TYPE = "0" *) (* FIFO_READ_DEPTH = "2048" *) 
 (* FIFO_READ_LATENCY = "0" *) (* FIFO_SIZE = "77824" *) (* FIFO_WRITE_DEPTH = "2048" *) 
-(* FULL_RESET_VALUE = "0" *) (* FULL_RST_VAL = "1'b0" *) (* PE_THRESH_ADJ = "8" *) 
-(* PE_THRESH_MAX = "2043" *) (* PE_THRESH_MIN = "5" *) (* PF_THRESH_ADJ = "8" *) 
-(* PF_THRESH_MAX = "2043" *) (* PF_THRESH_MIN = "5" *) (* PROG_EMPTY_THRESH = "10" *) 
-(* PROG_FULL_THRESH = "10" *) (* RD_DATA_COUNT_WIDTH = "12" *) (* RD_DC_WIDTH_EXT = "12" *) 
-(* RD_LATENCY = "2" *) (* RD_MODE = "1" *) (* RD_PNTR_WIDTH = "11" *) 
-(* READ_DATA_WIDTH = "38" *) (* READ_MODE = "1" *) (* READ_MODE_LL = "1" *) 
-(* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) 
-(* USE_ADV_FEATURES = "1717" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
-(* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "38" *) (* WR_DATA_COUNT_WIDTH = "12" *) 
-(* WR_DC_WIDTH_EXT = "12" *) (* WR_DEPTH_LOG = "11" *) (* WR_PNTR_WIDTH = "11" *) 
-(* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "6" *) (* XPM_MODULE = "TRUE" *) 
-(* both_stages_valid = "3" *) (* invalid = "0" *) (* keep_hierarchy = "soft" *) 
-(* stage1_valid = "2" *) (* stage2_valid = "1" *) 
+(* FULL_RESET_VALUE = "0" *) (* FULL_RST_VAL = "1'b0" *) (* ORIG_REF_NAME = "xpm_fifo_base" *) 
+(* PE_THRESH_ADJ = "8" *) (* PE_THRESH_MAX = "2043" *) (* PE_THRESH_MIN = "5" *) 
+(* PF_THRESH_ADJ = "8" *) (* PF_THRESH_MAX = "2043" *) (* PF_THRESH_MIN = "5" *) 
+(* PROG_EMPTY_THRESH = "10" *) (* PROG_FULL_THRESH = "10" *) (* RD_DATA_COUNT_WIDTH = "12" *) 
+(* RD_DC_WIDTH_EXT = "12" *) (* RD_LATENCY = "2" *) (* RD_MODE = "1" *) 
+(* RD_PNTR_WIDTH = "11" *) (* READ_DATA_WIDTH = "38" *) (* READ_MODE = "1" *) 
+(* READ_MODE_LL = "1" *) (* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "1717" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "38" *) 
+(* WR_DATA_COUNT_WIDTH = "12" *) (* WR_DC_WIDTH_EXT = "12" *) (* WR_DEPTH_LOG = "11" *) 
+(* WR_PNTR_WIDTH = "11" *) (* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "6" *) 
+(* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) (* invalid = "0" *) 
+(* keep_hierarchy = "soft" *) (* stage1_valid = "2" *) (* stage2_valid = "1" *) 
 module atelier4_axi_vdma_0_0_xpm_fifo_base
    (sleep,
     rst,
@@ -80934,6 +80993,7 @@ module atelier4_axi_vdma_0_0_xpm_fifo_base__parameterized3
         .wr_en(wr_en));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_fifo_reg_bit" *) 
 module atelier4_axi_vdma_0_0_xpm_fifo_reg_bit
    (rst_d1,
     clr_full,
@@ -81159,6 +81219,7 @@ module atelier4_axi_vdma_0_0_xpm_fifo_reg_bit_63
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "xpm_fifo_rst" *) 
 module atelier4_axi_vdma_0_0_xpm_fifo_rst
    (E,
     Q,
@@ -81585,13 +81646,13 @@ endmodule
 
 (* CASCADE_HEIGHT = "0" *) (* DOUT_RESET_VALUE = "0" *) (* ECC_MODE = "no_ecc" *) 
 (* EN_ADV_FEATURE_SYNC = "16'b0001011100010111" *) (* FIFO_MEMORY_TYPE = "auto" *) (* FIFO_READ_LATENCY = "0" *) 
-(* FIFO_WRITE_DEPTH = "2048" *) (* FULL_RESET_VALUE = "0" *) (* PROG_EMPTY_THRESH = "10" *) 
-(* PROG_FULL_THRESH = "10" *) (* P_COMMON_CLOCK = "1" *) (* P_ECC_MODE = "0" *) 
-(* P_FIFO_MEMORY_TYPE = "0" *) (* P_READ_MODE = "1" *) (* P_WAKEUP_TIME = "2" *) 
-(* RD_DATA_COUNT_WIDTH = "12" *) (* READ_DATA_WIDTH = "38" *) (* READ_MODE = "fwft" *) 
-(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "1717" *) (* WAKEUP_TIME = "0" *) 
-(* WRITE_DATA_WIDTH = "38" *) (* WR_DATA_COUNT_WIDTH = "12" *) (* XPM_MODULE = "TRUE" *) 
-(* keep_hierarchy = "soft" *) 
+(* FIFO_WRITE_DEPTH = "2048" *) (* FULL_RESET_VALUE = "0" *) (* ORIG_REF_NAME = "xpm_fifo_sync" *) 
+(* PROG_EMPTY_THRESH = "10" *) (* PROG_FULL_THRESH = "10" *) (* P_COMMON_CLOCK = "1" *) 
+(* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "0" *) (* P_READ_MODE = "1" *) 
+(* P_WAKEUP_TIME = "2" *) (* RD_DATA_COUNT_WIDTH = "12" *) (* READ_DATA_WIDTH = "38" *) 
+(* READ_MODE = "fwft" *) (* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "1717" *) 
+(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH = "38" *) (* WR_DATA_COUNT_WIDTH = "12" *) 
+(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) 
 module atelier4_axi_vdma_0_0_xpm_fifo_sync
    (sleep,
     rst,
@@ -82629,24 +82690,25 @@ endmodule
 (* CLOCKING_MODE = "0" *) (* ECC_MODE = "0" *) (* MAX_NUM_CHAR = "0" *) 
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "77824" *) (* MEMORY_TYPE = "1" *) 
-(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* P_ECC_MODE = "no_ecc" *) 
-(* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "2048" *) 
-(* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) (* P_MIN_WIDTH_DATA = "38" *) 
-(* P_MIN_WIDTH_DATA_A = "38" *) (* P_MIN_WIDTH_DATA_B = "38" *) (* P_MIN_WIDTH_DATA_ECC = "38" *) 
-(* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "38" *) (* P_NUM_COLS_WRITE_A = "1" *) 
-(* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) 
-(* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "yes" *) 
-(* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "11" *) (* P_WIDTH_ADDR_READ_B = "11" *) 
-(* P_WIDTH_ADDR_WRITE_A = "11" *) (* P_WIDTH_ADDR_WRITE_B = "11" *) (* P_WIDTH_COL_WRITE_A = "38" *) 
-(* P_WIDTH_COL_WRITE_B = "38" *) (* READ_DATA_WIDTH_A = "38" *) (* READ_DATA_WIDTH_B = "38" *) 
-(* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) (* READ_RESET_VALUE_A = "0" *) 
-(* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) (* RST_MODE_B = "SYNC" *) 
-(* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) (* USE_MEM_INIT = "0" *) 
-(* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
-(* WRITE_DATA_WIDTH_A = "38" *) (* WRITE_DATA_WIDTH_B = "38" *) (* WRITE_MODE_A = "2" *) 
-(* WRITE_MODE_B = "2" *) (* WRITE_PROTECT = "1" *) (* XPM_MODULE = "TRUE" *) 
-(* keep_hierarchy = "soft" *) (* rsta_loop_iter = "40" *) (* rstb_loop_iter = "40" *) 
+(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
+(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_MAX_DEPTH_DATA = "2048" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
+(* P_MIN_WIDTH_DATA = "38" *) (* P_MIN_WIDTH_DATA_A = "38" *) (* P_MIN_WIDTH_DATA_B = "38" *) 
+(* P_MIN_WIDTH_DATA_ECC = "38" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "38" *) 
+(* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) 
+(* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) 
+(* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
+(* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "11" *) 
+(* P_WIDTH_ADDR_READ_B = "11" *) (* P_WIDTH_ADDR_WRITE_A = "11" *) (* P_WIDTH_ADDR_WRITE_B = "11" *) 
+(* P_WIDTH_COL_WRITE_A = "38" *) (* P_WIDTH_COL_WRITE_B = "38" *) (* READ_DATA_WIDTH_A = "38" *) 
+(* READ_DATA_WIDTH_B = "38" *) (* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) 
+(* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) 
+(* RST_MODE_B = "SYNC" *) (* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) 
+(* USE_MEM_INIT = "0" *) (* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "38" *) (* WRITE_DATA_WIDTH_B = "38" *) 
+(* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) (* WRITE_PROTECT = "1" *) 
+(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* rsta_loop_iter = "40" *) 
+(* rstb_loop_iter = "40" *) 
 module atelier4_axi_vdma_0_0_xpm_memory_base
    (sleep,
     clka,
