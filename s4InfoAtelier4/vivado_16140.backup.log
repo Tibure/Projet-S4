@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 30 09:57:13 2023
+# Process ID: 16140
+# Current directory: C:/Travail/s4InfoAtelier4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16740 C:\Travail\s4InfoAtelier4\s4InfoAtelier4.xpr
+# Log file: C:/Travail/s4InfoAtelier4/vivado.log
+# Journal file: C:/Travail/s4InfoAtelier4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Travail/s4InfoAtelier4/s4InfoAtelier4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/S4/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1094.863 ; gain = 0.000
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+write_hw_platform -fixed -include_bit -force -file C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/S4/Vivado/2020.2/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.496 ; gain = 157.633
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 13:57:50 2023...

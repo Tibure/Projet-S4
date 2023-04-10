@@ -1,0 +1,309 @@
+
+*** Running vivado
+    with args -log atelier4_testPatternGen2_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_testPatternGen2_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source atelier4_testPatternGen2_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/S4/Vivado/2020.2/data/ip'.
+Command: synth_design -top atelier4_testPatternGen2_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'atelier4_testPatternGen2_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2720
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1095.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'testPatternGen2' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:34' bound to instance 'U0' of component 'testPatternGen2' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'testPatternGen2' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
+INFO: [Synth 8-3491] module 'Datapath' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:34' bound to instance 'inst_datapath' of component 'Datapath' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:62]
+INFO: [Synth 8-3491] module 'BackGroundManager' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:37' bound to instance 'inst_background_manager' of component 'BackGroundManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'BackGroundManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'BackGroundManager' (1#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:53]
+INFO: [Synth 8-3491] module 'ActorManager' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:35' bound to instance 'inst_actor_manager' of component 'ActorManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ActorManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:54]
+WARNING: [Synth 8-614] signal 'ActorsDefault' is read in the process but is not in the sensitivity list [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'ActorManager' (2#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:54]
+INFO: [Synth 8-3491] module 'tile' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:11' bound to instance 'inst_tile' of component 'tile' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'tile' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:33]
+WARNING: [Synth 8-614] signal 's_index' is read in the process but is not in the sensitivity list [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'tile' (3#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:23]
+INFO: [Synth 8-3491] module 'tile' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:11' bound to instance 'inst_actor' of component 'tile' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:190]
+INFO: [Synth 8-3491] module 'colorConverter' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:34' bound to instance 'inst_color_converter' of component 'colorConverter' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'colorConverter' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:39]
+INFO: [Synth 8-226] default block is never used [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:46]
+INFO: [Synth 8-256] done synthesizing module 'colorConverter' (4#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:39]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (5#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'testPatternGen2' (6#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_testPatternGen2_0_0' (7#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1295.738 ; gain = 200.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.738 ; gain = 200.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.738 ; gain = 200.430
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 1295.738 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1362.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.269 . Memory (MB): peak = 1369.953 ; gain = 7.652
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1369.953 ; gain = 274.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1369.953 ; gain = 274.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1369.953 ; gain = 274.645
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'x_1_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_2_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_3_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_4_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_5_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_6_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_7_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'x_0_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'y_1_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_2_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_3_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_4_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_5_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_6_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_7_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'y_0_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_1_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_2_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_3_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_4_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_5_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_6_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_7_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'hit_0_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_1_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_2_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_3_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_4_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_5_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_6_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_7_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_id_0_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_1_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_2_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_3_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_4_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_5_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_6_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_7_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 't_rot_0_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/ActorManager.vhd:119]
+WARNING: [Synth 8-327] inferring latch for variable 's_set_tile_id_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:121]
+WARNING: [Synth 8-327] inferring latch for variable 's_background_tuileX_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:123]
+WARNING: [Synth 8-327] inferring latch for variable 's_background_tuileY_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 's_t_rot_background_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:125]
+WARNING: [Synth 8-327] inferring latch for variable 's_set_actor_id_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 's_set_actor_gx_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:129]
+WARNING: [Synth 8-327] inferring latch for variable 's_set_actor_gy_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:130]
+WARNING: [Synth 8-327] inferring latch for variable 's_vis_actor_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 's_tileID_actor_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:132]
+WARNING: [Synth 8-327] inferring latch for variable 's_tileRot_actor_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:133]
+WARNING: [Synth 8-327] inferring latch for variable 's_viewPort_X_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:135]
+WARNING: [Synth 8-327] inferring latch for variable 's_viewPort_Y_reg' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:136]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1369.953 ; gain = 274.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   12 Bit       Adders := 16    
+	   3 Input    4 Bit       Adders := 16    
++---Registers : 
+	               31 Bit    Registers := 8     
+	                6 Bit    Registers := 960   
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	 256 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 960   
+	   2 Input    4 Bit        Muxes := 193   
+	  16 Input    4 Bit        Muxes := 198   
+	 100 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 992   
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    48|
+|2     |LUT1   |    32|
+|3     |LUT2   |   241|
+|4     |LUT3   |   123|
+|5     |LUT4   |   787|
+|6     |LUT5   |   125|
+|7     |LUT6   |  2831|
+|8     |MUXF7  |   806|
+|9     |MUXF8  |   362|
+|10    |FDRE   |  5976|
+|11    |LD     |   234|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:22 . Memory (MB): peak = 1390.531 ; gain = 221.008
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 1390.531 ; gain = 295.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1396.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1450 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'atelier4_testPatternGen2_0_0' is not ideal for floorplanning, since the cellview 'BackGroundManager' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1396.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 234 instances were transformed.
+  LD => LDCE: 234 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:33 . Memory (MB): peak = 1396.230 ; gain = 300.922
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/atelier4_testPatternGen2_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/atelier4_testPatternGen2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file atelier4_testPatternGen2_0_0_utilization_synth.rpt -pb atelier4_testPatternGen2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  6 14:35:53 2023...

@@ -1,0 +1,7 @@
+Running: xsim.dir/testPatternGen2_behav/xsimk.exe -simmode gui -wdb testPatternGen2_behav.wdb -simrunnum 0 -socket 56314
+Design successfully loaded
+Design Loading Memory Usage: 8464 KB (Peak: 8464 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9116 KB (Peak: 9116 KB)
+Simulation CPU Usage: 0 ms

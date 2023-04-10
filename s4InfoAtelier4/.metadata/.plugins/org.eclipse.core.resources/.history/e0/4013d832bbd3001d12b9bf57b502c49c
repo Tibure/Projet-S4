@@ -1,0 +1,47 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "myColorRegister.h"
+#include "sleep.h"
+#include "Game.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int areaWidth = 64;
+    int areaHeight = 64;
+
+    // Initialize the game
+    Game game;
+    init_game(&game, areaWidth, areaHeight);
+	configureScaler();
+    configureVdma();
+
+    int colorA = 0xFF;
+    int colorB = 0xFF00;
+    int colorC = 0xFF0000;
+    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorC);
+
+    // Set the initial direction of the snake
+    set_snake_direction_game(&game, 0);
+
+    // Run the game loop
+    while (1) {
+        // Update the game state
+        bool gameIsOver = !update_game(&game);
+        MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, colorA );
+         colorA = colorA + 0;
+         sleep(1);
+
+         if (gameIsOver) {
+                    printf("Game over!\n");
+                    break;
+                }
+
+
+
+
+    return 0;
+}
