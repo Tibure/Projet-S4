@@ -1,0 +1,210 @@
+#include "game.h"
+#include <stdlib.h>
+#include <string.h>
+#include "xil_printf.h"
+
+Position createPosition(double x, double y) {
+    Position position;
+    position.x = x;
+    position.y = y;
+    return position;
+}
+
+void init_game(Game* game, int areaWidth, int areaHeight) {
+
+	double areaW = (double)areaWidth;
+	double areaH = (double)areaHeight;
+    game->_snake = init_snake(createPosition(areaW/2, areaH/2));
+    game->_score = 0;
+    game->_areaWidth = areaWidth;
+    game->_areaHeight = areaHeight;
+
+    game->_apple = init_apple();
+
+    place_apple_game(game);
+    
+}
+
+bool update_game(Game* game) {
+    if (check_game_over_game(game)) return false;
+
+    move_snake(&game->_snake);
+
+
+    for( int i =0 ; i<2; i++){
+    int dataSnake = get_snake_data(&game->_snake,0);
+    xil_printf("Data: %d \n",dataSnake);
+
+    
+}
+    //FONCTION VITIS pour envoter data a utiliser avec dataSnake ici
+
+    if (check_eats_apple_game(game)) {
+        grow_snake(&game->_snake);
+        game->_score++;
+        int newtile = set_tile(&game->_apple);
+        //SEND_DATA(newtile);
+        place_apple_game(game);
+        int appleData = get_apple_data(&game->_apple);
+        //SEND_DATA(appleData);
+    }
+    return true;
+}
+
+void set_snake_direction_game(Game* game, int direction) {
+    set_snake_direction(&game->_snake, direction);
+}
+
+int get_snake_direction_game(Game* game) {
+    return get_snake_direction(&game->_snake);
+}
+
+int get_snake_length_game(Game* game) {
+    return get_snake_length(&game->_snake);
+}
+
+Position* get_snake_body_game(Game* game) {
+    return get_snake_body(&game->_snake);
+}
+
+Position get_apple_position_game(Game* game) {
+    return get_apple_position(&game->_apple);
+}
+
+int get_score_game(Game* game) {
+    return game->_score;
+}
+
+bool check_eats_apple_game(Game* game) {
+    return check_snake_collision(&game->_snake, get_apple_position(&game->_apple), false);
+}
+
+bool check_win_game(Game* game) {
+    return get_snake_length_game(game) == game->_areaWidth * game->_areaHeight;
+}
+
+bool check_game_over_game(Game* game) {
+   // return check_snake_collision(&game->_snake, get_snake_body_game(game)[0], true) ||
+          return get_snake_body_game(game)[0].x < 0 ||
+           get_snake_body_game(game)[0].x >= game->_areaWidth || 
+           get_snake_body_game(game)[0].y < 0 || 
+           get_snake_body_game(game)[0].y >= game->_areaHeight || 
+           check_win_game(game);
+}
+unsigned int custom_rand(unsigned int seed) {
+    // Linear Congruential Generator algorithm
+    seed = (seed * 83467 + 12345);
+    return seed;
+}
+void place_apple_game(Game* game) {
+    int i = 0;
+    do {
+        set_apple_position(&game->_apple, createPosition(custom_rand(i) % game->_areaWidth, custom_rand(i) % game->_areaHeight));
+        i++;
+    } while (check_snake_collision(&game->_snake, get_apple_position(&game->_apple), false));
+}
+
+
+char* to_binary_border(double nombre) {
+    char* binaire = (char *) malloc(BITS + 1);
+
+    if (nombre > 63 ) {
+        //printf("Erreur : la valeur doit être comprise entre 0 et 64.\n");
+        exit(1);
+    } else {
+        // Conversion en binaire sur 10 bits
+        uint16_t entier = (uint16_t) nombre;
+        for (int i = 6 - 1; i >= 0; i--) {
+            binaire[i] = '0' + (entier & 1);
+            entier >>= 1; // Décalage à droite de 1 bit
+        }
+    }
+    binaire[6] = '\0'; // On ajoute le caractère de fin de chaîne
+
+    return binaire;
+}
+
+void init_border(){
+	//border horizontale haut
+	for(int i=0; i<63; i++){
+		char pad[15] = "00000000000000";
+		char opcode[33] = "00";
+		char rot[3] ="01";
+		char tileID[5] = "0010";
+		char posX[7]= "000000";
+		char* posY = to_binary_border(i);
+
+
+		strcat(opcode,posX);
+		strcat(opcode,posY);
+		strcat(opcode,tileID);
+		strcat(opcode,rot);
+		strcat(opcode,pad);
+
+		//SEND_DATA(strtol(opcode,NULL,2));
+		}
+
+	//border verticale gauche
+	for(int i=0; i<63; i++){
+		char pad[15] = "00000000000000";
+		char opcode[33] = "00";
+		char rot[3] ="10";
+		char tileID[5] = "0010";
+		char* posX= to_binary_border(i);
+		char posY[7] = "000000";
+
+
+		strcat(opcode,posX);
+		strcat(opcode,posY);
+		strcat(opcode,tileID);
+		strcat(opcode,rot);
+		strcat(opcode,pad);
+
+		//SEND_DATA(strtol(opcode,NULL,2));
+		}
+
+
+	//border verticale
+	for(int i=0; i<63; i++){
+		char pad[15] = "00000000000000";
+		char opcode[33] = "00";
+		char rot[3] ="00";
+		char tileID[5] = "0010";
+		char* posX= to_binary_border(i);
+		char posY[7] = "111111";
+
+
+		strcat(opcode,posX);
+		strcat(opcode,posY);
+		strcat(opcode,tileID);
+		strcat(opcode,rot);
+		strcat(opcode,pad);
+
+		//SEND_DATA(strtol(opcode,NULL,2));
+		}
+
+	//border horizontale bas
+	for(int i=0; i<63; i++){
+		char pad[15] = "00000000000000";
+		char opcode[33] = "00";
+		char rot[3] ="11";
+		char tileID[5] = "0010";
+		char posX[7]= "111111";
+		char* posY = to_binary_border(i);
+
+
+		strcat(opcode,posX);
+		strcat(opcode,posY);
+		strcat(opcode,tileID);
+		strcat(opcode,rot);
+		strcat(opcode,pad);
+
+		//SEND_DATA(strtol(opcode,NULL,2));
+		}
+
+	//coin (0,0)
+	//SEND_DATA(00|000000|000000|0001|01|00000000000000);
+	//SEND_DATA(00|000000|111111|0001|10|00000000000000);
+	//SEND_DATA(00|111111|111111|0001|11|00000000000000);
+	//SEND_DATA(00|111111|000000|0001|00|00000000000000);
+}

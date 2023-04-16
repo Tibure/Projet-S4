@@ -1,0 +1,1094 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 24 18:46:38 2023
+# Process ID: 22888
+# Current directory: C:/Travail/s4InfoAtelier4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18508 C:\Travail\s4InfoAtelier4\s4InfoAtelier4.xpr
+# Log file: C:/Travail/s4InfoAtelier4/vivado.log
+# Journal file: C:/Travail/s4InfoAtelier4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Travail/s4InfoAtelier4/s4InfoAtelier4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1108.555 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd}
+Reading block design file <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd>...
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- grams:gramslib:mycolorRegister:1.0 - mycolorRegister_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_proc_ss:2.3 - v_proc_ss_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- grams:gramslib:pixelDataToVideoStream:1.0 - pixelDataToVideoStre_0
+Adding component instance block -- xilinx.com:module_ref:testPatternGen2:1.0 - testPatternGen2_0
+Successfully read diagram <atelier4> from block design file <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.805 ; gain = 117.914
+generate_target all [get_files C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] atelier4_smartconnect_0_0: IP atelier4_smartconnect_0_0 is configured in Low area mode as all propagated traffic is low-bandwidth (AXI4LITE). One of the SIs has property HAS_BURST == 1. This will be ignored. If wrap transactions are required then turn off Low area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /atelier4_smartconnect_0_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+Wrote  : <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ui/bd_3fe9f658.ui> 
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/sim/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hdl/atelier4_wrapper.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/synth/atelier4_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/synth/atelier4_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0837_smartconnect_0_0.hwdef
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/atelier4_v_proc_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testPatternGen2_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.hwdef
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:01:06 . Memory (MB): peak = 1752.402 ; gain = 357.066
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd]
+launch_runs atelier4_smartconnect_0_0_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_0, cache-ID = 372ef54b4ddb9ee4; cache size = 97.980 MB.
+[Fri Mar 24 18:49:45 2023] Launched atelier4_smartconnect_0_0_synth_1...
+Run output will be captured here: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_smartconnect_0_0_synth_1/runme.log
+wait_on_run atelier4_smartconnect_0_0_synth_1
+[Fri Mar 24 18:49:45 2023] Waiting for atelier4_smartconnect_0_0_synth_1 to finish...
+[Fri Mar 24 18:49:50 2023] Waiting for atelier4_smartconnect_0_0_synth_1 to finish...
+[Fri Mar 24 18:49:56 2023] Waiting for atelier4_smartconnect_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:01 2023] Waiting for atelier4_smartconnect_0_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log atelier4_smartconnect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_smartconnect_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source atelier4_smartconnect_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP atelier4_smartconnect_0_0, cache-ID = 372ef54b4ddb9ee4.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 18:49:55 2023...
+[Fri Mar 24 18:50:01 2023] atelier4_smartconnect_0_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1784.789 ; gain = 22.266
+launch_runs atelier4_smartconnect_0_1_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_1, cache-ID = 55c4870e73f3df4c; cache size = 97.980 MB.
+[Fri Mar 24 18:50:04 2023] Launched atelier4_smartconnect_0_1_synth_1...
+Run output will be captured here: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_smartconnect_0_1_synth_1/runme.log
+wait_on_run atelier4_smartconnect_0_1_synth_1
+[Fri Mar 24 18:50:04 2023] Waiting for atelier4_smartconnect_0_1_synth_1 to finish...
+[Fri Mar 24 18:50:09 2023] Waiting for atelier4_smartconnect_0_1_synth_1 to finish...
+[Fri Mar 24 18:50:14 2023] Waiting for atelier4_smartconnect_0_1_synth_1 to finish...
+
+*** Running vivado
+    with args -log atelier4_smartconnect_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_smartconnect_0_1.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source atelier4_smartconnect_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP atelier4_smartconnect_0_1, cache-ID = 55c4870e73f3df4c.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 18:50:13 2023...
+[Fri Mar 24 18:50:14 2023] atelier4_smartconnect_0_1_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1784.789 ; gain = 0.000
+launch_runs atelier4_testPatternGen2_0_0_synth_1
+[Fri Mar 24 18:50:15 2023] Launched atelier4_testPatternGen2_0_0_synth_1...
+Run output will be captured here: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/runme.log
+wait_on_run atelier4_testPatternGen2_0_0_synth_1
+[Fri Mar 24 18:50:15 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:20 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:25 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:30 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:40 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:50:51 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:51:01 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:51:11 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:51:31 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:51:51 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:52:11 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:52:32 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:53:12 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+[Fri Mar 24 18:53:53 2023] Waiting for atelier4_testPatternGen2_0_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log atelier4_testPatternGen2_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_testPatternGen2_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source atelier4_testPatternGen2_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top atelier4_testPatternGen2_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'atelier4_testPatternGen2_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5088
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1114.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'testPatternGen2' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:34' bound to instance 'U0' of component 'testPatternGen2' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'testPatternGen2' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
+INFO: [Synth 8-3491] module 'Datapath' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:34' bound to instance 'inst_datapath' of component 'Datapath' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:42]
+INFO: [Synth 8-3491] module 'BackGroundManager' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:38' bound to instance 'inst_background_manager' of component 'BackGroundManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'BackGroundManager' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:54]
+WARNING: [Synth 8-614] signal 'BackgroundDefault' is read in the process but is not in the sensitivity list [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'BackGroundManager' (1#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:54]
+INFO: [Synth 8-3491] module 'tile' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:12' bound to instance 'inst_tile' of component 'tile' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'tile' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'tile' (2#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/tile.vhd:24]
+INFO: [Synth 8-3491] module 'colorConverter' declared at 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:34' bound to instance 'inst_color_converter' of component 'colorConverter' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'colorConverter' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:39]
+INFO: [Synth 8-226] default block is never used [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:46]
+INFO: [Synth 8-256] done synthesizing module 'colorConverter' (3#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/colorConverter.vhdl:39]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (4#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/Datapath.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'testPatternGen2' (5#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_testPatternGen2_0_0' (6#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1853.684 ; gain = 739.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.684 ; gain = 739.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.684 ; gain = 739.289
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1853.684 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1853.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.371 ; gain = 20.688
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:44 ; elapsed = 00:01:58 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 4096  
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 1     
+	 256 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4096  
+	   2 Input    4 Bit        Muxes := 448   
+	  16 Input    4 Bit        Muxes := 85    
+	  85 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4160  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [5] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [4] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [4] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [3] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [2] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [1] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [0] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[12][7][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][7] [0] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][7] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [5] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [4] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [3] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [2] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [1] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [0] with 1st driver pin 'inst_background_manageri_6/BackgroundDefault_reg[10][7][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][7] [0] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][7] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [5] with 1st driver pin 'BackgroundDefault_reg[12][5][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [4] with 1st driver pin 'BackgroundDefault_reg[12][5][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [3] with 1st driver pin 'BackgroundDefault_reg[12][5][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [3] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [2] with 1st driver pin 'BackgroundDefault_reg[12][5][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [1] with 1st driver pin 'BackgroundDefault_reg[12][5][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [1] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [0] with 1st driver pin 'BackgroundDefault_reg[12][5][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][5] [0] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][5] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [5] with 1st driver pin 'BackgroundDefault_reg[10][5][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [4] with 1st driver pin 'BackgroundDefault_reg[10][5][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [3] with 1st driver pin 'BackgroundDefault_reg[10][5][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [2] with 1st driver pin 'BackgroundDefault_reg[10][5][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [1] with 1st driver pin 'BackgroundDefault_reg[10][5][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [1] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [0] with 1st driver pin 'BackgroundDefault_reg[10][5][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][5] [0] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][5] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [5] with 1st driver pin 'BackgroundDefault_reg[10][9][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [4] with 1st driver pin 'BackgroundDefault_reg[10][9][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [3] with 1st driver pin 'BackgroundDefault_reg[10][9][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [2] with 1st driver pin 'BackgroundDefault_reg[10][9][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [1] with 1st driver pin 'BackgroundDefault_reg[10][9][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [0] with 1st driver pin 'BackgroundDefault_reg[10][9][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][9] [0] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][9] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [5] with 1st driver pin 'BackgroundDefault_reg[12][9][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [5] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [4] with 1st driver pin 'BackgroundDefault_reg[12][9][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [3] with 1st driver pin 'BackgroundDefault_reg[12][9][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [2] with 1st driver pin 'BackgroundDefault_reg[12][9][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [1] with 1st driver pin 'BackgroundDefault_reg[12][9][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [0] with 1st driver pin 'BackgroundDefault_reg[12][9][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][9] [0] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][9] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [5] with 1st driver pin 'BackgroundDefault_reg[10][11][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [5] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [4] with 1st driver pin 'BackgroundDefault_reg[10][11][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [4] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [3] with 1st driver pin 'BackgroundDefault_reg[10][11][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [2] with 1st driver pin 'BackgroundDefault_reg[10][11][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [2] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [1] with 1st driver pin 'BackgroundDefault_reg[10][11][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [0] with 1st driver pin 'BackgroundDefault_reg[10][11][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[10][11] [0] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[10][11] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [5] with 1st driver pin 'BackgroundDefault_reg[12][11][5]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [5] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [4] with 1st driver pin 'BackgroundDefault_reg[12][11][4]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [4] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [3] with 1st driver pin 'BackgroundDefault_reg[12][11][3]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [3] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [2] with 1st driver pin 'BackgroundDefault_reg[12][11][2]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [2] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [1] with 1st driver pin 'BackgroundDefault_reg[12][11][1]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [1] with 2nd driver pin 'VCC' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [0] with 1st driver pin 'BackgroundDefault_reg[12][11][0]/Q' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin \BackgroundDefault_reg[12][11] [0] with 2nd driver pin 'GND' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net \BackgroundDefault_reg[12][11] [0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/BackGroundManager.vhd:65]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:03:11 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:40 ; elapsed = 00:03:18 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:03:19 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:41 ; elapsed = 00:03:20 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     7|
+|2     |LUT3  |     5|
+|3     |LUT4  |    32|
+|4     |LUT5  |     6|
+|5     |LUT6  |    67|
+|6     |MUXF7 |    13|
+|7     |MUXF8 |     2|
+|8     |FDRE  |    12|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:44 ; elapsed = 00:03:22 . Memory (MB): peak = 1874.371 ; gain = 759.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 144 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:59 ; elapsed = 00:03:14 . Memory (MB): peak = 1874.371 ; gain = 739.289
+Synthesis Optimization Complete : Time (s): cpu = 00:02:44 ; elapsed = 00:03:23 . Memory (MB): peak = 1874.371 ; gain = 759.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1874.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 2 Warnings, 144 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:48 ; elapsed = 00:03:30 . Memory (MB): peak = 1874.371 ; gain = 759.977
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/atelier4_testPatternGen2_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/atelier4_testPatternGen2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file atelier4_testPatternGen2_0_0_utilization_synth.rpt -pb atelier4_testPatternGen2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 18:53:51 2023...
+[Fri Mar 24 18:53:53 2023] atelier4_testPatternGen2_0_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:03:38 . Memory (MB): peak = 1784.789 ; gain = 0.000
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: atelier4_wrapper
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.062 ; gain = 265.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_wrapper' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
+INFO: [Synth 8-3491] module 'atelier4' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:14' bound to instance 'atelier4_i' of component 'atelier4' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'atelier4' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
+INFO: [Synth 8-3491] module 'atelier4_axi_vdma_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'atelier4_axi_vdma_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:951]
+INFO: [Synth 8-638] synthesizing module 'atelier4_axi_vdma_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:78]
+INFO: [Synth 8-3491] module 'atelier4_clk_wiz_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'atelier4_clk_wiz_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1021]
+INFO: [Synth 8-638] synthesizing module 'atelier4_clk_wiz_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'atelier4_mycolorRegister_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:5' bound to instance 'mycolorRegister_0' of component 'atelier4_mycolorRegister_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1028]
+INFO: [Synth 8-638] synthesizing module 'atelier4_mycolorRegister_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'atelier4_pixelDataToVideoStre_0_3' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:5' bound to instance 'pixelDataToVideoStre_0' of component 'atelier4_pixelDataToVideoStre_0_3' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1054]
+INFO: [Synth 8-638] synthesizing module 'atelier4_pixelDataToVideoStre_0_3' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'atelier4_proc_sys_reset_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'atelier4_proc_sys_reset_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'atelier4_proc_sys_reset_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_processing_system7_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'atelier4_processing_system7_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'atelier4_processing_system7_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:121]
+INFO: [Synth 8-3491] module 'atelier4_rgb2dvi_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'atelier4_rgb2dvi_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1217]
+INFO: [Synth 8-638] synthesizing module 'atelier4_rgb2dvi_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'atelier4_smartconnect_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1230]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:128]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_1' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:5' bound to instance 'smartconnect_1' of component 'atelier4_smartconnect_0_1' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1350]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_1' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'atelier4_testPatternGen2_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:5' bound to instance 'testPatternGen2_0' of component 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'atelier4_v_axi4s_vid_out_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'atelier4_v_axi4s_vid_out_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1433]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_axi4s_vid_out_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'atelier4_v_proc_ss_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:5' bound to instance 'v_proc_ss_0' of component 'atelier4_v_proc_ss_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1466]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_proc_ss_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'atelier4_v_tc_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'atelier4_v_tc_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1510]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'atelier4' (1#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_wrapper' (2#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2223.863 ; gain = 325.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.777 ; gain = 344.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2242.777 ; gain = 344.703
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.dcp' for cell 'atelier4_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.dcp' for cell 'atelier4_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.dcp' for cell 'atelier4_i/mycolorRegister_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.dcp' for cell 'atelier4_i/pixelDataToVideoStre_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.dcp' for cell 'atelier4_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.dcp' for cell 'atelier4_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/atelier4_rgb2dvi_0_0.dcp' for cell 'atelier4_i/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/atelier4_smartconnect_0_0.dcp' for cell 'atelier4_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/atelier4_smartconnect_0_1.dcp' for cell 'atelier4_i/smartconnect_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.dcp' for cell 'atelier4_i/testPatternGen2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0.dcp' for cell 'atelier4_i/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.dcp' for cell 'atelier4_i/v_proc_ss_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0.dcp' for cell 'atelier4_i/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_7/bd_0837_axis_fifo_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/axis_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/hsc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_3/bd_0837_input_size_set_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/input_size_set'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/reset_sel_axis'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/rst_axis'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/bd_0837_smartconnect_0_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0.dcp' for cell 'atelier4_i/v_proc_ss_0/U0/vsc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2284.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 860 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xdc] for cell 'atelier4_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xdc] for cell 'atelier4_i/axi_vdma_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0_board.xdc] for cell 'atelier4_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0_board.xdc] for cell 'atelier4_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xdc] for cell 'atelier4_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xdc] for cell 'atelier4_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0_board.xdc] for cell 'atelier4_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0_board.xdc] for cell 'atelier4_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xdc] for cell 'atelier4_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xdc] for cell 'atelier4_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xdc] for cell 'atelier4_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xdc] for cell 'atelier4_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'atelier4_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'atelier4_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/bd_de31_psr0_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/bd_de31_psr0_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/bd_de31_psr0_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/bd_de31_psr0_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/bd_de31_psr_aclk_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/bd_de31_psr_aclk_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/bd_de31_psr_aclk_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/bd_de31_psr_aclk_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/bd_de31_psr_aclk1_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/bd_de31_psr_aclk1_0_board.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/bd_de31_psr_aclk1_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/bd_de31_psr_aclk1_0.xdc] for cell 'atelier4_i/smartconnect_0/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/bd_1ef0_psr0_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/bd_1ef0_psr0_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/bd_1ef0_psr0_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/bd_1ef0_psr0_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/bd_1ef0_psr_aclk_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/bd_1ef0_psr_aclk_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/bd_1ef0_psr_aclk_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/bd_1ef0_psr_aclk_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/bd_1ef0_psr_aclk1_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/bd_1ef0_psr_aclk1_0_board.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/bd_1ef0_psr_aclk1_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/bd_1ef0_psr_aclk1_0.xdc] for cell 'atelier4_i/smartconnect_1/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/bd_0cc7_psr_aclk_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/rst_axis/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/rst_axis/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/rst_axis/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/bd_0837_rst_axis_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/rst_axis/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0_board.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/bd_0837_reset_sel_axis_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/constrs_1/imports/new/atelier4Constraints.xdc]
+Finished Parsing XDC File [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/constrs_1/imports/new/atelier4Constraints.xdc]
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0_clocks.xdc] for cell 'atelier4_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0_clocks.xdc] for cell 'atelier4_i/axi_vdma_0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'atelier4_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'atelier4_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'atelier4_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'atelier4_i/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/vsc/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/vsc/inst'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/hsc/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/bd_0837_hsc_0.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/hsc/inst'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0_clocks.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/axis_register_slice_0/inst'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0_clocks.xdc] for cell 'atelier4_i/v_proc_ss_0/U0/axis_register_slice_0/inst'
+Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0_clocks.xdc] for cell 'atelier4_i/v_tc_0/U0'
+Finished Parsing XDC File [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0_clocks.xdc] for cell 'atelier4_i/v_tc_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/atelier4_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 8 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2578.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 306 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 113 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 192 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2760.160 ; gain = 862.086
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2760.160 ; gain = 975.371
+open_bd_design {C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd}
+update_module_reference atelier4_testPatternGen2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+Upgrading 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd'
+INFO: [IP_Flow 19-1972] Upgraded atelier4_testPatternGen2_0_0 from testPatternGen2_v1_0 1.0 to testPatternGen2_v1_0 1.0
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+Wrote  : <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ui/bd_3fe9f658.ui> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2920.867 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] atelier4_smartconnect_0_0: IP atelier4_smartconnect_0_0 is configured in Low area mode as all propagated traffic is low-bandwidth (AXI4LITE). One of the SIs has property HAS_BURST == 1. This will be ignored. If wrap transactions are required then turn off Low area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /atelier4_smartconnect_0_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/sim/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hdl/atelier4_wrapper.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/synth/atelier4_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/synth/atelier4_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0837_smartconnect_0_0.hwdef
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/atelier4_v_proc_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testPatternGen2_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP atelier4_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP atelier4_smartconnect_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP bd_0837_smartconnect_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_0, cache-ID = 372ef54b4ddb9ee4; cache size = 97.980 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_1, cache-ID = 55c4870e73f3df4c; cache size = 97.980 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bd_0837_smartconnect_0_0, cache-ID = db1f6c6c552981e8; cache size = 97.980 MB.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2974.512 ; gain = 0.000
+[Fri Mar 24 19:40:33 2023] Launched atelier4_testPatternGen2_0_0_synth_1, synth_1...
+Run output will be captured here:
+atelier4_testPatternGen2_0_0_synth_1: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/runme.log
+synth_1: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runme.log
+[Fri Mar 24 19:40:33 2023] Launched impl_1...
+Run output will be captured here: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:01:40 . Memory (MB): peak = 2974.512 ; gain = 53.645
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/atelier4_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/atelier4_smartconnect_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/atelier4_smartconnect_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xml. It will be created.
+write_hw_platform -fixed -include_bit -force -file C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+ERROR: [Common 17-69] Command failed: write_hw_platform is only supported for synthesized, implemented, or checkpoint designs
+close_bd_design [get_bd_designs atelier4]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3012.254 ; gain = 37.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_wrapper' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
+INFO: [Synth 8-3491] module 'atelier4' declared at 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:14' bound to instance 'atelier4_i' of component 'atelier4' [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'atelier4' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
+INFO: [Synth 8-3491] module 'atelier4_axi_vdma_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'atelier4_axi_vdma_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:951]
+INFO: [Synth 8-638] synthesizing module 'atelier4_axi_vdma_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_axi_vdma_0_0_stub.vhdl:78]
+INFO: [Synth 8-3491] module 'atelier4_clk_wiz_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'atelier4_clk_wiz_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1021]
+INFO: [Synth 8-638] synthesizing module 'atelier4_clk_wiz_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'atelier4_mycolorRegister_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:5' bound to instance 'mycolorRegister_0' of component 'atelier4_mycolorRegister_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1028]
+INFO: [Synth 8-638] synthesizing module 'atelier4_mycolorRegister_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_mycolorRegister_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'atelier4_pixelDataToVideoStre_0_3' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:5' bound to instance 'pixelDataToVideoStre_0' of component 'atelier4_pixelDataToVideoStre_0_3' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1054]
+INFO: [Synth 8-638] synthesizing module 'atelier4_pixelDataToVideoStre_0_3' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_pixelDataToVideoStre_0_3_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'atelier4_proc_sys_reset_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'atelier4_proc_sys_reset_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'atelier4_proc_sys_reset_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_processing_system7_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'atelier4_processing_system7_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'atelier4_processing_system7_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_processing_system7_0_0_stub.vhdl:121]
+INFO: [Synth 8-3491] module 'atelier4_rgb2dvi_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'atelier4_rgb2dvi_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1217]
+INFO: [Synth 8-638] synthesizing module 'atelier4_rgb2dvi_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_rgb2dvi_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'atelier4_smartconnect_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1230]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_0_stub.vhdl:128]
+INFO: [Synth 8-3491] module 'atelier4_smartconnect_0_1' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:5' bound to instance 'smartconnect_1' of component 'atelier4_smartconnect_0_1' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1350]
+INFO: [Synth 8-638] synthesizing module 'atelier4_smartconnect_0_1' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_smartconnect_0_1_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'atelier4_testPatternGen2_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:5' bound to instance 'testPatternGen2_0' of component 'atelier4_testPatternGen2_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_testPatternGen2_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'atelier4_v_axi4s_vid_out_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'atelier4_v_axi4s_vid_out_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1433]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_axi4s_vid_out_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_axi4s_vid_out_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'atelier4_v_proc_ss_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:5' bound to instance 'v_proc_ss_0' of component 'atelier4_v_proc_ss_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1466]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_proc_ss_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_proc_ss_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'atelier4_v_tc_0_0' declared at 'C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'atelier4_v_tc_0_0' [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1510]
+INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [C:/Travail/s4InfoAtelier4/.Xil/Vivado-22888-XPS-Etienne/realtime/atelier4_v_tc_0_0_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'atelier4' (1#1) [c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_wrapper' (2#1) [C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3035.082 ; gain = 60.570
+---------------------------------------------------------------------------------
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-344] 'refresh_design' was cancelled
+close_design
+write_hw_platform -fixed -include_bit -force -file C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+update_module_reference atelier4_testPatternGen2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+Reading block design file <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd>...
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- grams:gramslib:mycolorRegister:1.0 - mycolorRegister_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_proc_ss:2.3 - v_proc_ss_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- grams:gramslib:pixelDataToVideoStream:1.0 - pixelDataToVideoStre_0
+Adding component instance block -- xilinx.com:module_ref:testPatternGen2:1.0 - testPatternGen2_0
+Successfully read diagram <atelier4> from block design file <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd>
+Upgrading 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd'
+INFO: [IP_Flow 19-1972] Upgraded atelier4_testPatternGen2_0_0 from testPatternGen2_v1_0 1.0 to testPatternGen2_v1_0 1.0
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+Wrote  : <C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ui/bd_3fe9f658.ui> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3067.449 ; gain = 0.000
+update_module_reference atelier4_testPatternGen2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+Upgrading 'C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd'
+INFO: [IP_Flow 19-1972] Upgraded atelier4_testPatternGen2_0_0 from testPatternGen2_v1_0 1.0 to testPatternGen2_v1_0 1.0
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+update_module_reference: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3067.449 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] atelier4_smartconnect_0_0: IP atelier4_smartconnect_0_0 is configured in Low area mode as all propagated traffic is low-bandwidth (AXI4LITE). One of the SIs has property HAS_BURST == 1. This will be ignored. If wrap transactions are required then turn off Low area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /atelier4_smartconnect_0_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip, but BD cell '/rgb2dvi_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </rgb2dvi_0> to completely resolve these warnings.
+Wrote  : <C:\Travail\s4InfoAtelier4\s4InfoAtelier4.srcs\sources_1\bd\atelier4\atelier4.bd> 
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/sim/atelier4.vhd
+VHDL Output written to : c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hdl/atelier4_wrapper.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(151) to pin: '/s00_nodes/S_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(57) to pin: '/m00_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(11) to pin: '/m00_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(57) to pin: '/m01_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(11) to pin: '/m01_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(57) to pin: '/m02_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(11) to pin: '/m02_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(57) to pin: '/m03_nodes/S_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(11) to pin: '/m03_nodes/S_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(55) to pin: '/s00_nodes/M_SC_R_payld'(57) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(9) to pin: '/s00_nodes/M_SC_B_payld'(11) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(147) to pin: '/m00_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(147) to pin: '/m00_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(147) to pin: '/m01_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(147) to pin: '/m01_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(147) to pin: '/m02_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(147) to pin: '/m02_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(147) to pin: '/m03_nodes/M_SC_AR_payld'(151) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(147) to pin: '/m03_nodes/M_SC_AW_payld'(151) - Only lower order bits will be connected.
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/hw_handoff/atelier4_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/synth/atelier4_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/hw_handoff/atelier4_smartconnect_0_1_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/synth/atelier4_smartconnect_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_1 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/hw_handoff/bd_0837_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0837_smartconnect_0_0.hwdef
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/hw_handoff/atelier4_v_proc_ss_0_0_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/atelier4_v_proc_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testPatternGen2_0 .
+Exporting to file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4.hwh
+Generated Block Design Tcl file c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/hw_handoff/atelier4_bd.tcl
+Generated Hardware Definition File c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP atelier4_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP atelier4_smartconnect_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP bd_0837_smartconnect_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_0, cache-ID = 372ef54b4ddb9ee4; cache size = 97.980 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP atelier4_smartconnect_0_1, cache-ID = 55c4870e73f3df4c; cache size = 97.980 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bd_0837_smartconnect_0_0, cache-ID = db1f6c6c552981e8; cache size = 97.980 MB.
+config_ip_cache: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3067.449 ; gain = 0.000
+[Fri Mar 24 22:10:23 2023] Launched atelier4_testPatternGen2_0_0_synth_1, synth_1...
+Run output will be captured here:
+atelier4_testPatternGen2_0_0_synth_1: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1/runme.log
+synth_1: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runme.log
+[Fri Mar 24 22:10:23 2023] Launched impl_1...
+Run output will be captured here: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:01:35 . Memory (MB): peak = 3067.449 ; gain = 0.000
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_rgb2dvi_0_0/atelier4_rgb2dvi_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/atelier4_smartconnect_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/atelier4_smartconnect_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xml. It will be created.
+write_hw_platform -fixed -include_bit -force -file C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 25 01:18:25 2023...

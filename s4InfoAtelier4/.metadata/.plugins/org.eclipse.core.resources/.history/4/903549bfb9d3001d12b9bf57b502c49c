@@ -1,0 +1,167 @@
+#include "snake.h"
+#include <stdio.h>
+#include <math.h>
+#define BITS 10
+
+Snake init_snake(Position position) {
+    Snake snake;
+    snake._length = 2;
+    snake._direction = UP;
+    snake._body[0].x = position.x;
+    snake._body[0].y = position.y;
+    move_snake(&snake);
+}
+
+double my_round_S(double x) {
+    double floor_val, ceil_val;
+
+    if (x >= 0.0) {
+        floor_val = (double)((long)x);
+        ceil_val = floor_val + 1.0;
+    } else {
+        ceil_val = (double)((long)x);
+        floor_val = ceil_val - 1.0;
+    }
+
+    if ((x - floor_val) < (ceil_val - x)) {
+        return floor_val;
+    } else {
+        return ceil_val;
+    }
+}
+
+
+char* to_binary_S(double nombre) {	
+    char* binaire = (char *) malloc(BITS + 1);
+    double resultat_arrondi = my_round(nombre * 16);
+    if (resultat_arrondi < 0.0 || resultat_arrondi > 1023.0) {
+        printf("Erreur : la valeur doit être comprise entre 0 et 64.\n");
+        exit(1);
+    } else {
+        // Conversion en binaire sur 10 bits
+        uint16_t entier = (uint16_t) resultat_arrondi;
+        for (int i = BITS - 1; i >= 0; i--) {
+            binaire[i] = '0' + (entier & 1);
+            entier >>= 1; // Décalage à droite de 1 bit
+        }
+    }
+    binaire[BITS] = '\0'; // On ajoute le caractère de fin de chaîne
+
+    return binaire;
+}
+
+
+void move_snake(Snake* snake) {
+    int i;
+    for (i = snake->_length - 1; i > 0; i--) {
+        snake->_body[i].x = snake->_body[i - 1].x;
+        snake->_body[i].y = snake->_body[i - 1].y;
+    }
+    switch (snake->_direction) {
+        case DOWN:
+            snake->_body[0].y = snake->_body[0].y - 0.0625 ;
+            break;
+        case RIGHT:
+            snake->_body[0].x = snake->_body[0].x + 0.0625;
+            break;
+        case UP:
+            snake->_body[0].y = snake->_body[0].y + 0.0625;
+            break;
+        case LEFT:
+            snake->_body[0].x = snake->_body[0].x - 0.0625;
+            break;
+    }
+}
+
+void grow_snake(Snake* snake) {
+    // TODO: Implement
+}
+
+void set_snake_direction(Snake* snake, int direction) {
+    snake->_direction = direction;
+}
+
+int get_snake_direction(Snake* snake) {
+    return snake->_direction;
+}
+
+int get_snake_length(Snake* snake) {
+    return snake->_length;
+}
+
+Position* get_snake_body(Snake* snake) {
+    return snake->_body;
+}
+
+
+bool check_snake_collision(Snake* snake, Position position, bool ignoreHead) {
+    int i;
+    for (i = ignoreHead ? 1 : 0; i < snake->_length; i++) {
+        if (snake->_body[i].x == position.x && snake->_body[i].y == position.y) {
+            return true;
+        }
+    }
+    return false;
+}
+
+int get_snake_data(Snake* snake,int body_part){
+
+        //rotation
+        char rot[2] = "";
+        switch (snake->_direction) {
+        case DOWN:
+            strcpy(rot, "00"); 
+            break;
+        case RIGHT:
+            strcpy(rot, "01"); 
+            break;
+        case UP:
+            strcpy(rot, "10"); 
+            break;
+        case LEFT:
+            strcpy(rot, "11"); 
+            break;
+    }
+
+    //Actor ID
+    char actorID[4] = "";
+    if (body_part == 0) {
+		strcpy(actorID,"1000");//tete
+        
+
+    }
+    else if(body_part != (sizeof(snake->_body)/sizeof(snake->_body[0]))-1){
+		strcpy(actorID,"0101");//corps normal
+        
+
+    }
+    else{
+		strcpy(actorID,"0111");//queue
+        
+    }
+
+    //position x
+    char* posX= to_binary_S(snake->_body[body_part].x);
+
+    //position y
+    char* posY= to_binary_S(snake->_body[body_part].y);
+
+	
+	strcat(posX,posY);
+	strcat(posX,rot);
+	strcat(posX,actorID);
+	
+	int data = strtol(posX,NULL,2);
+	return data;
+	
+
+	
+	
+
+
+
+
+    
+
+
+}

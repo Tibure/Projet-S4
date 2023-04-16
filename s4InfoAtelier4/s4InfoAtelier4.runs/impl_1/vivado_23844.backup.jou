@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  6 14:19:08 2023
+# Process ID: 23844
+# Current directory: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1
+# Command line: vivado.exe -log atelier4_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source atelier4_wrapper.tcl -notrace
+# Log file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1/atelier4_wrapper.vdi
+# Journal file: C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source atelier4_wrapper.tcl -notrace

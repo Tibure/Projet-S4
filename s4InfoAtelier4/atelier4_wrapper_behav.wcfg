@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testPatternGen2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ppu_package" />
+            <top_module name="testPatternGen2" />
+            <top_module name="tile_package" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="904981fs"></ZoomStartTime>
+      <ZoomEndTime time="1019004fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="249"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_g_X" type="array">
+      <obj_property name="ElementShortName">i_g_X[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_g_X[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_g_Y" type="array">
+      <obj_property name="ElementShortName">i_g_Y[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_g_Y[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/set_t_id" type="array">
+      <obj_property name="ElementShortName">set_t_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">set_t_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_we_t_id" type="logic">
+      <obj_property name="ElementShortName">i_we_t_id</obj_property>
+      <obj_property name="ObjectShortName">i_we_t_id</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_tuileX" type="array">
+      <obj_property name="ElementShortName">i_tuileX[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_tuileX[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_tuileY" type="array">
+      <obj_property name="ElementShortName">i_tuileY[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_tuileY[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/i_tuileRotation" type="array">
+      <obj_property name="ElementShortName">i_tuileRotation[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_tuileRotation[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/o_x" type="array">
+      <obj_property name="ElementShortName">o_x[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_x[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/o_y" type="array">
+      <obj_property name="ElementShortName">o_y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/o_t_id" type="array">
+      <obj_property name="ElementShortName">o_t_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_t_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/o_Rotation" type="array">
+      <obj_property name="ElementShortName">o_Rotation[1:0]</obj_property>
+      <obj_property name="ObjectShortName">o_Rotation[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/BackgroundDefault" type="array">
+      <obj_property name="ElementShortName">BackgroundDefault[0:64][0:64][5:0]</obj_property>
+      <obj_property name="ObjectShortName">BackgroundDefault[0:64][0:64][5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/s_gX" type="array">
+      <obj_property name="ElementShortName">s_gX[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gX[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testPatternGen2/inst_datapath/inst_background_manager/s_gY" type="array">
+      <obj_property name="ElementShortName">s_gY[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gY[11:0]</obj_property>
+   </wvobject>
+</wave_config>
